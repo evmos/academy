@@ -33,7 +33,7 @@ const config = {
   tagline: 'Learning Evmos',
   url: 'https://academy.evmos.org',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
@@ -174,11 +174,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Academy',
             items: [
               {
-                label: 'Use Evmos',
-                to: '/use',
+                label: 'Learn Evmos',
+                to: '/about',
               },
             ],
           },
