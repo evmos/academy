@@ -7,7 +7,7 @@ sidebar_position: 1
 
 Learn how to properly integrate [Metamask](https://metamask.io/)
 or [Keplr](https://www.keplr.app/) with a dApp on Evmos.
-{synopsis}
+
 
 :::tip
 **Note**: want to learn more about wallet integration beyond what's covered here?
