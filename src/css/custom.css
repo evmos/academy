@@ -6,12 +6,9 @@
 
 /* You can override the default Infima variables here. */
 
-@import './reset.css';
-@import './variables.css';
-
 @font-face {
   font-family: 'GreyCliffOblique';
-  src: url('../../static/GreyCliff/GreycliffCF-ExtraBoldOblique.otf');
+  src: url('../../static/fonts/GreyCliff/GreycliffCF-ExtraBoldOblique.otf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -19,7 +16,7 @@
 
 @font-face {
   font-family: 'GreyCliff';
-  src: url('../../static/GreyCliff/GreycliffCF-ExtraBold.otf');
+  src: url('../../static/fonts/GreyCliff/GreycliffCF-ExtraBold.otf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -27,7 +24,7 @@
 
 @font-face {
   font-family: 'IBM Plex';
-  src: url('../../static/IBM_Plex_Sans/IBMPlexSans-Bold.ttf');
+  src: url('../../static/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -35,7 +32,7 @@
 
 @font-face {
   font-family: 'IBM Plex';
-  src: url('../../static/IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf');
+  src: url('../../static/fonts/IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -43,7 +40,7 @@
 
 @font-face {
   font-family: 'IBM Plex';
-  src: url('../../static/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+  src: url('../../static/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -51,7 +48,7 @@
 
 @font-face {
   font-family: 'IBM Plex Mono';
-  src: url('../../static/IBM_Plex_Mono/IBMPlexMono-Regular.ttf');
+  src: url('../../static/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -59,7 +56,7 @@
 
 @font-face {
   font-family: 'FFDIN';
-  src: url('../../static/FFDIN/FFDIN-Regular.otf');
+  src: url('../../static/fonts/FFDIN/FFDIN-Regular.otf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -67,8 +64,8 @@
 
 @font-face {
   font-family: 'FFDIN';
-  src: url('../../static/FFDIN/FFDIN-Regular.otf');
-  src: url('../../static/FFDIN/FFDIN-Medium.otf');
+  src: url('../../static/fonts/FFDIN/FFDIN-Regular.otf');
+  src: url('../../static/fonts/FFDIN/FFDIN-Medium.otf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -86,9 +83,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+article a {
+  text-decoration: underline;
+  color: var(--ifm-color-primary);
   touch-action: manipulation;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -125,7 +122,7 @@ button,
   --ifm-color-primary-light: #e49656;
   --ifm-color-primary-lighter: #e4a26c;
   --ifm-color-primary-lightest: #e5a26b;
-  --ifm-code-font-size: 95%;
+  --ifm-code-font-size: 100%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
@@ -232,4 +229,11 @@ main {
 
 .card__header h3 {
   color: #e84142;
+}
+
+article a[href^="http"]::after {
+  content: url("data:image/svg+xml,%3Csvg fill='rgb(228, 118, 27)' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z'/%3E%3C/svg%3E");
+  width: 0.6rem;
+  display: inline-block;
+  margin-left: 0.3rem;
 }
