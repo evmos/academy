@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 # Query Balances
@@ -188,6 +188,6 @@ func GetEvmosAddressFromBech32(address string) (string, error) {...}
 
 - [Evmos Swagger API](https://api.evmos.dev/): a comprehensive description of all gRPC endpoints
 - [Cosmos SDK Go API](https://pkg.go.dev/github.com/cosmos/cosmos-sdk) &
-  [Evmos Go API](https://pkg.go.dev/github.com/tharsis/evmos): packages to implement queries in Go scripts
+  [Evmos Go API](https://pkg.go.dev/github.com/evmos/evmos): packages to implement queries in Go scripts
 
 :::
