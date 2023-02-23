@@ -1,13 +1,9 @@
 ---
-sidebar_position: 1
+sidebar_position: 9
 ---
 
 
 # Wallet Integration
-
-Learn how to properly integrate [Metamask](https://metamask.io/)
-or [Keplr](https://www.keplr.app/) with a dApp on Evmos.
-
 
 :::tip
 **Note**: want to learn more about wallet integration beyond what's covered here?
@@ -32,8 +28,8 @@ The integration implementation checklist for dApp developers consists of three c
 
 Make sure to create a wallet-connection button for Metamask and/or Keplr on the frontend of the application.
 For instance, consider the "Connect to a wallet" button on
-the interface of [Diffusion Finance](https://app.diffusion.fi/)
-or the analagous button on the interface of [EvmoSwap](https://app.evmoswap.org/).
+the interface of [EvmoSwap](https://app.evmoswap.org/)
+or the analogous button on the interface of [Evmos Dashboard Assets](https://app.evmos.org/assets).
 
 ### Transactions
 
@@ -55,7 +51,7 @@ If either `window.ethereum` or `window.keplr` returns `undefined` after `documen
 then MetaMask (or, correspondingly, Keplr) is not installed.
 There are several ways to wait for the load event to check the status:
 for instance, developers can register functions to `window.onload`,
-or they can track the document's ready state through the document event listener.
+or they can track the document's ready state through the document event listener. If developer is checking for the document state's readiness, then `document.readyState === 'complete'` is a suitable check.
 
 After the user's wallet type has been determined, developers can proceed with creating, signing,
 and sending transactions.
@@ -67,10 +63,10 @@ and sending transactions.
 For more info, check the Evmos Chain IDs reference document [here](https://docs.evmos.org/protocol/concepts/chain-id).
 :::
 
-Developers can create `MsgSend` transactions using the [evmosjs](https://github.com/evmos/evmosjs) library.
+Developers can create `MsgSend` transactions using the official [EvmosJS](https://github.com/evmos/evmosjs) library.
 
 ```js
-import { createMessageSend } from @tharsis/transactions
+import { createMessageSend } from @evmos/transactions
 
 const chain = {
     chainId: 9000,
@@ -107,36 +103,34 @@ const msg = createMessageSend(chain, sender, fee, memo, params)
 
 #### Sign and Broadcast the Transaction
 
-<!-- textlint-disable -->
 After creating the transaction, developers need to send the payload to the appropriate wallet to be signed
 ([`msg.signDirect`](https://docs.keplr.app/api/#sign-direct-protobuf) is the transaction in Keplr format,
 and `msg.eipToSign` is the [`EIP712`](https://eips.ethereum.org/EIPS/eip-712) data to sign with MetaMask).
 
 With the signature, we add a Web3Extension to the transaction and broadcast it to the Evmos node.
 
-<!-- textlint-enable -->
 ```js
-// Note that this example is for MetaMask, using evmosjs
+// Note that this example is for MetaMask, using EvmosJS
 
 // Follow the previous code block to generate the msg object
-import { evmosToEth } from '@tharsis/address-converter'
-import { generateEndpointBroadcast, generatePostBodyBroadcast } from '@tharsis/provider'
-import { createTxRawEIP712, signatureToWeb3Extension } from '@tharsis/transactions'
+import { evmosToEth } from '@evmos/address-converter'
+import { generateEndpointBroadcast, generatePostBodyBroadcast } from '@evmos/provider'
+import { createTxRawEIP712, signatureToWeb3Extension } from '@evmos/transactions'
 
 // Init Metamask
 await window.ethereum.enable();
 
 // Request the signature
-let signature = await window.ethereum.request({
+const signature = await window.ethereum.request({
     method: 'eth_signTypedData_v4',
     params: [evmosToEth(sender.accountAddress), JSON.stringify(msg.eipToSign)],
 });
 
 // The chain and sender objects are the same as the previous example
-let extension = signatureToWeb3Extension(chain, sender, signature)
+const extension = signatureToWeb3Extension(chain, sender, signature)
 
 // Create the txRaw
-let rawTx = createTxRawEIP712(msg.legacyAmino.body, msg.legacyAmino.authInfo, extension)
+const rawTx = createTxRawEIP712(msg.legacyAmino.body, msg.legacyAmino.authInfo, extension)
 
 // Broadcast it
 const postOptions = {
@@ -145,23 +139,23 @@ const postOptions = {
     body: generatePostBodyBroadcast(rawTx),
 };
 
-let broadcastPost = await fetch(
+const broadcastPost = await fetch(
     `https://eth.bd.evmos.dev:8545${generateEndpointBroadcast()}`,
     postOptions
 );
-let response = await broadcastPost.json();
+const response = await broadcastPost.json();
 ```
 
 #### Sign and Broadcast EVM Transactions
 
-Developers can use Metamask or Keplr to help users sign off on EVM transactions with either Ledger or software keys,
+Developers can leverage Metamask or Keplr to aid users' sign off on EVM transactions with either Ledger or software keys,
 to manage NFTs, exchange ERC-20 tokens, and more.
 
 ```js
 import { JsonRpcProvider } from '@ethersproject/providers';
-import { evmosToEth } from "@tharsis/address-converter"
+import { evmosToEth } from "@evmos/address-converter"
 const provider = new JsonRpcProvider('https://eth.bd.evmos.org:8545');
-const chainId = 'evmos_9001-1';
+const chainId = 'evmos_9001-2'; //mainnet; testnet is evmos_9000-4
 
 // EIP-1559
 async function signAndBroadcastEthereumTx() {
@@ -243,3 +237,5 @@ async function signAndBroadcastEthereumTx() {
 
 For Ethereum RPC, Evmos gRPC, and/or REST queries, dApp developers should implement providers client-side,
 and store RPC details in the environment variable as secrets.
+
+<!-- TODO: Link to the networks and prune nodes link back on Docs. -->

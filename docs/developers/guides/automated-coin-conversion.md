@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 1
 ---
 
 # Automated Coin Conversion
@@ -97,7 +97,9 @@ their **whole balance** will be converted to the ERC20 format
 
 ## FAQ
 
-### How do I send an ERC-20 via IBC?
+<details>
+
+<summary><b>How do I send an ERC-20 via IBC?</b></summary>
 
 With the new automated coin conversion feature, you can send ERC-20 via IBC right away.
 The conversion step is done automatically under the hood.
@@ -107,14 +109,22 @@ use `Token.Denom = "erc20/<test-coin-contract-address>"`.
 Keep in mind that to perform this operation, you need to
 [register the token pair](https://docs.evmos.org/developers/guides/erc20_registration.html) previously.
 
-### Can I send WEVMOS to other chains?
+</details>
+
+<details>
+
+<summary><b>Can I send WEVMOS to other chains?</b></summary>
 
 WEVMOS transfers are not supported at the moment.
 However, you can unwrap manually the WEVMOS tokens
 using the [Evmos dashboard](https://app.evmos.org/assets) or [Diffusion](https://app.diffusion.fi/).
 Then you can perform a regular IBC transfer using the EVMOS tokens.
 
-### Does automated coin conversion apply to all coins?
+</details>
+
+<details>
+
+<summary><b>Does automated coin conversion apply to all coins?</b></summary>
 
 The automated coin conversion covers all IBC coins and ERC-20 tokens
 as long as the appropriate token mapping was registered through governance
@@ -125,13 +135,21 @@ Considering that the EVMOS token is used for staking and paying gas fees,
 the team decided to exclude the native token automated conversion.
 Thus, the user experience is not undermined by this feature.
 
-### How do I convert the EVMOS token to ERC-20?
+</details>
+
+<details>
+
+<summary><b>How do I convert the EVMOS token to ERC-20?</b></summary>
 
 The conversion from EVMOS token to WEVMOS is not automated.
 If you want to convert EVMOS tokens into its ERC-20 representation,
 you will need to use [the Assets page](https://app.evmos.org/assets).
 
-### Do I still need to use [the Assets page](https://app.evmos.org/assets)?
+</details>
+
+<details>
+
+<summary><b>Do I still need to use [the Assets page](https://app.evmos.org/assets)?</b></summary>
 
 Yes! If you want to convert EVMOS tokens into their ERC-20 representation,
 you will need to do it manually on [the Assets page](https://app.evmos.org/assets).
@@ -139,3 +157,5 @@ EVMOS token automated conversion was excluded in this feature
 because it is used for staking, governance and paying for gas on the EVM.
 Additionally, you can still manually convert IBC coins to ERC-20 tokens.
 On top of that, the assets page allows you to see all your token balances.
+
+</details>

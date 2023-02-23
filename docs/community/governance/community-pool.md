@@ -30,11 +30,18 @@ without having to be dependent upon the foundation alone.
 
 ## FAQ
 
-### How is the Community Pool funded?
+
+<details>
+
+<summary><b>How is the Community Pool funded?</b></summary>
 
 10% of all tokens generated (via block rewards) are continually transferred to and accrue within the Community Pool.
 
-### How can funding for the Community Pool change?
+</details>
+
+<details>
+
+<summary><b>How can funding for the Community Pool change?</b></summary>
 
 Though the rate of funding is currently fixed at 10% of tokens minted per epoch.
 The current value of funding may be modified with a governance proposal and enacted immediately after the proposal passes.
@@ -42,17 +49,31 @@ The current value of funding may be modified with a governance proposal and enac
 Funded projects that fail to deliver may return funding to Community Pool
 and entities may help fund the Community Pool by depositing funds directly to the escrow account.
 
-### What is the balance of the Community Pool?
+</details>
+
+
+<details>
+
+<summary><b>What is the balance of the Community Pool?</b></summary>
 
 - **Community Pool Account**: [`evmos1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8974jnh`](https://www.mintscan.io/evmos/account/evmos1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8974jnh)
 
-### How can funds from the Community Pool be spent?
+</details>
+
+<details>
+
+<summary><b>How can funds from the Community Pool be spent?</b></summary>
 
 Funds from the Evmos Community Pool may be spent via successful governance proposal.
 
-### How are funds disbursed after a community-spend proposal is passed?
+</details>
+
+<details>
+
+<summary><b>How are funds disbursed after a community-spend proposal is passed?</b></summary>
 
 If a community-spend proposal passes successfully,
 the number of EVMOS encoded in the proposal will be transferred
 from the community pool to the address encoded in the proposal,
 and this will happen immediately after the voting period ends.
+</details>
