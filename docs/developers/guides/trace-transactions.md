@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Trace Transactions
 
-Learn how to trace transactions and blocks on Evmos. {synopsis}
+Learn how to trace transactions and blocks on Evmos.
 
 This guide will cover the following topics:
 

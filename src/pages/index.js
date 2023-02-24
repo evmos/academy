@@ -18,7 +18,7 @@ function Home() {
               <Card
                 to="about"
                 header={{
-                  label: "Learn more about Evmos",
+                  label: "Learn More About Evmos",
                 }}
                 body={{
                   label:
@@ -27,57 +27,35 @@ function Home() {
               />
 
               <Card
-                to="developers/guides"
+                to="developers/guides/wallet-integration"
                 header={{
-                  label: "Explore our Guides",
+                  label: "Learn About Wallet Integration",
                 }}
                 body={{
                   label:
-                    "",
+                    "Integrating wallet should not be complicated. Our guide will show with EvmosJS",
                 }}
               />
 
               <Card
-                to="community/"
+                to="community/governance"
                 header={{
-                  label: "Dive into our Community",
+                  label: "Dive Into Our Governance",
                 }}
                 body={{
                   label:
-                    "",
+                    "Want to summit a proposal to Evmos Governance? Come learn the best practices.",
                 }}
               />
 
               <Card
-                to="apis/avalanchego"
+                to="https://docs.evmos.org/develop/build-a-dApp/build-smart-contracts"
                 header={{
                   label: "Develop on Evmos",
                 }}
                 body={{
                   label:
                     "Access low-level protocol interfaces to build your custom dapp",
-                }}
-              />
-
-              <Card
-                to="dapps/launch-your-ethereum-dapp"
-                header={{
-                  label: "Learn the terminologies of Evmos",
-                }}
-                body={{
-                  label:
-                    "Learn everything you need to deploy an EVM-compatible smart contract",
-                }}
-              />
-
-              <Card
-                to="https://core.app"
-                header={{
-                  label: "Explore our Ecosystem",
-                }}
-                body={{
-                  label:
-                    "Access your portfolio with a wallet built specifically for subnets on Avalanche",
                 }}
               />
             </div>

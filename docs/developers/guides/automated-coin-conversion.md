@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Automated Coin Conversion
 
-Learn how to the Automated Coin Conversion feature works. {synopsis}
+Learn how to the Automated Coin Conversion feature works.
 
 In their [ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) representations,
 assets can be used to interact with dApps using the EVM.

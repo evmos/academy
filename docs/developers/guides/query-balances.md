@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Query Balances
 
-Learn how to query balances of IBC Cosmos Coins and ERC-20s on Evmos. {synopsis}
+Learn how to query balances of IBC Cosmos Coins and ERC-20s on Evmos.
 
 This guide will cover the following query methods:
 

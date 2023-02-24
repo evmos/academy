@@ -191,8 +191,16 @@ const config = {
             title: 'Academy',
             items: [
               {
-                label: 'Learn Evmos',
-                to: '/about',
+                label: 'Earn More Revenue',
+                to: '/developers/guides/smart-contract-registration',
+              },
+              {
+                label: 'Best Practice to Governance',
+                to: '/community/governance/best-practices',
+              },
+              {
+                label: 'Terminology',
+                to: '/terminology',
               },
             ],
           },
