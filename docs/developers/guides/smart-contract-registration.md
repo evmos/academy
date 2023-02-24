@@ -6,7 +6,6 @@ sidebar_position: 7
 
 This guide explains how to register your smart contract in the Evmos dApp store,
 and start earning income every time a user interacts with your smart contract.
-{synopsis}
 
 The Evmos dApp store is a revenue-per-transaction model,
 which allows developers to get paid for deploying their decentralized application (dApps) on Evmos.
