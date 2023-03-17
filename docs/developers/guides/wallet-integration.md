@@ -17,6 +17,13 @@ and [Keplr Wallet Documentation](https://docs.keplr.app/).
 Follow the build and installation instructions specified in
 [EvmosJS](https://github.com/evmos/evmosjs#installation) to get setup.
 
+## Packages
+
+Visit our documentation on 
+[client integrations](https://docs.evmos.org/develop/tools/client-integrations)
+to learn more about [EvmosJS](https://github.com/evmos/evmosjs) and
+the libraries we recommend in integrations.
+
 ## Overview
 
 The integration checklist for dApp developers consists of three categories:
@@ -101,7 +108,8 @@ const address = ethToEvmos(accounts[0])
 ## Queries
 
 After fetching a user's address, developers can query the node for a user's account fields,
-in order to generate Cosmos Transaction payloads.
+in order to generate [Cosmos Transaction](https://docs.cosmos.network/main/core/transactions)
+payloads.
 
 ### Query Account Information
 
@@ -261,16 +269,21 @@ const tx: TxPayload = createTxMsgSend(context, params)
 
 After creating the transaction, developers need to send the payload to the appropriate wallet to be signed.
 
-To sign a payload **using MetaMask**, developers are encouraged to use the EIP-712 signing format,
-as this is compatible with the Ledger Ethereum app.
+To sign a payload **using MetaMask**, developers are encouraged to
+use the [EIP-712](https://eips.ethereum.org/EIPS/eip-712)
+signing format, as this is compatible with the Ledger Ethereum app.
 
-To sign a payload **using Keplr with a Ledger device**, developers must use the EIP-712 signing format,
-since the Ledger Ethereum app cannot sign native Cosmos payloads. Evmos uses different signing and
-address generation than that of the Cosmos Ledger app, which is thus incompatible.
+To sign a payload **using Keplr with a Ledger device**, developers must use the
+[EIP-712](https://eips.ethereum.org/EIPS/eip-712) signing format, since the
+Ledger Ethereum app cannot sign native Cosmos payloads. Evmos
+uses different signing and address generation than that of the
+Cosmos Ledger app, which is thus incompatible.
 
-To sign a payload **using Keplr otherwise**, developers may use either the EIP-712 signing
-format or the native Cosmos `SignDirect` format. We encourage using the `SignDirect` format, since
-it provides a native signing experience.
+To sign a payload **using Keplr otherwise**, developers may
+use either the [EIP-712](https://eips.ethereum.org/EIPS/eip-712)
+signing format or the native Cosmos `SignDirect` format.
+We encourage using the `SignDirect` format, since it provides
+a native signing experience.
 
 #### Sign the Transaction with MetaMask (EIP-712)
 
@@ -282,7 +295,7 @@ import { createTxRaw } from '@evmos/proto'
 import { evmosToEth } from '@evmos/address-converter'
 
 // First, populate a TxContext object and create a signable Tx payload.
-// (See 'Create a Signable Transaction' to learn how to create these).
+// (See 'Create the Transaction' to learn how to create these).
 const context = ...
 const tx = ...
 
@@ -461,7 +474,8 @@ const txHash = await ethereum.request({
 ### Sign EVM Transaction using Keplr
 
 Keplr supports signing EVM transactions from the wallet. These must be
-broadcast using a provider, such as that from `ethersjs`.
+broadcast using a provider, such as that from
+[ethersjs](https://docs.ethers.org/v5/).
 
 ```ts
 import { JsonRpcProvider } from '@ethersproject/providers'
