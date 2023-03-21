@@ -33,7 +33,7 @@ function Home() {
                 }}
                 body={{
                   label:
-                    "Integrating wallet should not be complicated. Our guide will show with EvmosJS",
+                    "Integrating with wallets should not be complicated. Learn how using EvmosJS.",
                 }}
               />
 

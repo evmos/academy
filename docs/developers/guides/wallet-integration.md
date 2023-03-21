@@ -234,11 +234,11 @@ const chain: Chain = {
 // Populate the transaction sender parameters using the
 // query API.
 const sender: Sender = {
-  accountAddress: [sender_account_address],
-  sequence: [sender_sequence],
-  accountNumber: [sender_account_number],
+  accountAddress: <sender_account_address>,
+  sequence: <sender_sequence>,
+  accountNumber: <sender_account_number>,
   // Use an empty string if the pubkey is unknown.
-  pubkey: [sender_pub_key],
+  pubkey: <sender_pub_key>,
 }
 
 const fee: Fee = {
@@ -257,8 +257,8 @@ const context: TxContext = {
 }
 
 const params: MsgSendParams = {
-  destinationAddress: [destination_address],
-  amount: [transaction_amount],
+  destinationAddress: <destination_address>,
+  amount: <transaction_amount>,
   denom: 'aevmos',
 }
 
@@ -498,9 +498,9 @@ const signerAddress = evmosToEth(signerAddressBech32);
 
 let rawTx = {
   chainId: 9001, // Use 9000 for testnet
-  to: [destination_address],
-  value: [value],
-  data: [data],
+  to: <destination_address>,
+  value: <value>,
+  data: <data>,
   accessList: [],
   type: 2, // Use type=2 to specify EIP-1559-style transaction
 }
