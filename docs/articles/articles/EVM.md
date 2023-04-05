@@ -2,7 +2,8 @@
 sidebar_position: 3
 ---
 
-# EVM
+
+# What is EVM?
 
 EVM stands for Ethereum Virtual Machine. It is a software environment that runs on the Ethereum network and enables smart contracts to be executed.
 
