@@ -90,10 +90,6 @@ Articles published by the Evmos team can be found on the Evmos [Medium page](htt
 You may send your proposal to https://t.me/liamdig on Telegram via direct message.
 
 </details>
-
-
-
-
 ### Wallets / Addresses
 
 <details>
