@@ -21,10 +21,9 @@ function defineSection(section, options = {}) {
 }
 
 const SECTIONS = [
-  defineSection('about'),
-  defineSection('community'),
-  defineSection('developers'),
-  defineSection('terminology'),
+  defineSection('articles'),
+  defineSection('videos'),
+  defineSection('faq'),
 ];
 
 /** @type {import('@docusaurus/types').Config} */
@@ -126,24 +125,20 @@ const config = {
         items: [
           {
             position: 'left',
-            label: 'About',
-            to: '/about',
+            label: 'Articles',
+            to: '/articles/beginner/wallets',
           },
           {
             position: 'left',
-            label: 'Developers',
-            to: '/developers',
+            label: 'Videos',
+            to: '/videos',
           },
           {
             position: 'left',
-            label: 'Community',
-            to: '/community',
+            label: 'FAQ',
+            to: '/faq',
           },
-          {
-            position: 'left',
-            label: 'Terminology',
-            to: '/terminology',
-          },
+        
           // {
           //   position: 'left',
           //   label: 'Courses',
