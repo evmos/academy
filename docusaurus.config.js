@@ -156,21 +156,29 @@ const config = {
           },
         ],
       },
-      algolia: {
-        // The application ID provided by Algolia
-        appId: 'YQVSVI0B4E',
+      // algolia: {
+      //   // The application ID provided by Algolia
+      //   appId: 'YOUR_APP_ID',
   
-        // Public API key: it is safe to commit it
-        apiKey: 'ebb655bb17a6bbacc2448c6f9bd48409',
+      //   // Public API key: it is safe to commit it
+      //   apiKey: 'YOUR_SEARCH_API_KEY',
   
-        indexName: 'academy-evmos',
+      //   indexName: 'YOUR_INDEX_NAME',
   
-        // Optional: see doc section below
-        contextualSearch: true,
-        
-        // Optional: Algolia search parameters
-        searchParameters: {},
-      },
+      //   // Optional: see doc section below
+      //   contextualSearch: true,
+  
+      //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      //   externalUrlRegex: 'external\\.com|domain\\.com',
+  
+      //   // Optional: Algolia search parameters
+      //   searchParameters: {},
+  
+      //   // Optional: path for search page that enabled by default (`false` to disable it)
+      //   searchPagePath: 'search',
+  
+      //   //... other Algolia params
+      // },
       footer: {
         style: 'dark',
         links: [
@@ -179,15 +187,15 @@ const config = {
             items: [
               {
                 label: 'Earn More Revenue',
-                to: '/developers/guides/smart-contract-registration',
+                to: '/articles/advanced/smart-contract-registration',
               },
               {
-                label: 'Best Practice to Governance',
-                to: '/community/governance/best-practices',
+                label: 'Wallet Integration',
+                to: '/articles/advanced/wallet-integration',
               },
               {
-                label: 'Terminology',
-                to: '/terminology',
+                label: 'Frequently Asked Questions',
+                to: '/faq',
               },
             ],
           },
