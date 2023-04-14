@@ -178,12 +178,12 @@ const config = {
             title: 'Academy',
             items: [
               {
-                label: 'Earn More Revenue',
-                to: '/developers/guides/smart-contract-registration',
+                label: 'Register and Earn Revenue',
+                to: '/articles/advanced/incentives-registration',
               },
               {
-                label: 'Best Practice to Governance',
-                to: '/community/governance/best-practices',
+                label: 'Learn About Wallet Integration',
+                to: '/articles/advanced/wallet-integration',
               },
               {
                 label: 'Terminology',
@@ -209,11 +209,11 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Links',
             items: [
               {
                 label: 'Blog',
-                to: 'https://medium.com/evmos',
+                href: 'https://medium.com/evmos',
               },
               {
                 label: 'Evmos GitHub',

@@ -4,8 +4,6 @@ sidebar_position: 5
 
 # Smart Contract Incentive Registration
 
-Learn how to register smart contract incentives through [Evmos Governance](./../../community/governance/overview).
-
 An incentive for a smart contract can be registered through governance to encourage more interaction with that contract.
 Users who interact with a registered contract (eg.
 through submission of transactions) will have rewards distributed to them.
