@@ -120,7 +120,7 @@ Deposit amounts will also be burned if the quorum isn't met in the vote or the p
 
 #### An Example
 
-This is a governance protocol which [Flux Protocol](https://www.fluxprotocol.org/),
+This is a governance protocol which [Seda](https://www.seda.xyz/),
 the provider of a cross-chain oracle which provides smart contracts with access to economically secure data feeds,
 submitted to cover costs of the subsidised FPO (First Party Oracle) solution which they deployed on the Evmos mainnet.
 
@@ -148,7 +148,7 @@ Users can query the proposal details with the `evmosd` command-line interface us
 ### Params-Change Proposals
 
 :::tip
-Changes to the [`gov` module](./overview) are different from the other kinds of parameter changes
+Changes to the [`gov` module](./) are different from the other kinds of parameter changes
 because `gov` has subkeys, [as discussed here](https://github.com/cosmos/cosmos-sdk/issues/5800).
 Only the `key` part of the JSON file is different for `gov` parameter-change proposals.
 :::
@@ -212,7 +212,7 @@ If the minimum deposit isn't reached before this time, the deposit amounts will 
 ## Sending the transaction that submits your governance proposal
 
 For information on how to use `evmosd` binary to submit an on-chain proposal through the governance module,
-please refer to the [quickstart](https://docs.evmos.org/develop/build-a-dApp/run-a-node/evmosd) documentation.
+please refer to the [quickstart](https://docs.evmos.org/protocol/evmos-cli#using-evmosd) documentation.
 
 ### CLI
 
@@ -293,6 +293,6 @@ Submitting your proposal to the testnet increases the likelihood that you will d
 before deploying your proposal on mainnet.
 A few things to keep in mind:
 
-- you'll need testnet tokens for your proposal (ask around for a [faucet](https://docs.evmos.org/develop/move-to-testnet/faucet))
+- you'll need testnet tokens for your proposal (ask around for a [faucet](https://docs.evmos.org/develop/testnet#faucet))
 - the parameters for testnet proposals are different (eg. voting period timing, deposit amount, deposit denomination)
 - the deposit denomination is in `'atevmos'` instead of `'aevmos'`

@@ -183,7 +183,7 @@ const config = {
               },
               {
                 label: 'Best Practice to Governance',
-                to: '/community/governance/best-practices',
+                to: '/articles/advanced/governance/best-practices',
               },
               {
                 label: 'Terminology',
