@@ -11,7 +11,7 @@ Go-ethereum responds to instructions encoded as JSON objects as defined in the [
 ## Prerequisite Readings
 
 - [Go-ethereum CLI](https://geth.ethereum.org/docs/interface/javascript-console)
-- [Evmos (local) node](https://docs.evmos.org/developers/localnet/single_node.html)
+- [Evmos (local) node](https://docs.evmos.org/protocol/evmos-cli/single-node/)
 
 ### Installing Go-Ethereum
 
@@ -71,7 +71,7 @@ To exit, press ctrl-d or type exit
 
 ## Use JSON-RPC methods
 
-Now we can use all implemented JSON-RPC methods. Find an exhaustive list of the supported JSON-RPC methods on [Evmos docs](https://docs.evmos.org/developers/json-rpc/endpoints.html).
+Now we can use all implemented JSON-RPC methods. Find an exhaustive list of the supported JSON-RPC methods on [Evmos docs](https://docs.evmos.org/develop/api/ethereum-json-rpc/methods).
 
 Below are some examples of how to use the console.
 
