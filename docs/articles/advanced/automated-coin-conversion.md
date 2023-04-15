@@ -38,7 +38,7 @@ The same applies to any ERC-20 token that is not a representation of a Native Co
 For example, if we want to send an ERC-20 token called `TestCoin` via IBC,
 use `Token.Denom = "erc20/<test-coin-contract-address>"`.
 Before transferring ERC-20 tokens via IBC, make sure you
-[register the ERC-20 token](https://docs.evmos.org/developers/guides/erc20_registration.html) for the conversion.
+[register the ERC-20 token](./erc20-registration.md) for the conversion.
 Under the hood, the protocol will automatically make the conversion from ERC-20 token to IBC coin
 and perform the transfer to the desired Cosmos chain.
 
@@ -107,7 +107,7 @@ To do this operation you only need to specify the corresponding denomination on 
 For example, if we want to send an ERC-20 token called `TestCoin` via IBC,
 use `Token.Denom = "erc20/<test-coin-contract-address>"`.
 Keep in mind that to perform this operation, you need to
-[register the token pair](https://docs.evmos.org/developers/guides/erc20_registration.html) previously.
+[register the token pair](./erc20-registration.md) previously.
 
 </details>
 
@@ -128,7 +128,7 @@ Then you can perform a regular IBC transfer using the EVMOS tokens.
 
 The automated coin conversion covers all IBC coins and ERC-20 tokens
 as long as the appropriate token mapping was registered through governance
-([guide to register an ERC-20 token](https://docs.evmos.org/developers/guides/erc20_registration.html)).
+([guide to register an ERC-20 token](./erc20-registration.md)).
 If the token pair is not registered, the IBC coin will be left as is.
 Additionally, EVMOS token conversion is not automated.
 Considering that the EVMOS token is used for staking and paying gas fees,
