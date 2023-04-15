@@ -179,7 +179,7 @@ const config = {
             items: [
               {
                 label: 'Earn More Revenue',
-                to: '/developers/guides/smart-contract-registration',
+                to: '/articles/advanced/smart-contract-registration',
               },
               {
                 label: 'Best Practice to Governance',
