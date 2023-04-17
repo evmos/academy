@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Cosmos Coin Registration
 
-Learn how to register native Cosmos Coins through [Evmos Governance](./../../community/governance/overview).
+Learn how to register native Cosmos Coins through [Evmos Governance](./governance).
 
 :::tip
 **Note**: Not sure what the difference between Cosmos Coin and ERC-20 Registration is?
@@ -16,7 +16,7 @@ and you want to add functionality
 to convert the ERC-20 token to a native Cosmos Coin denomination,
 check out [ERC-20 Registration](./erc20-registration) instead.
 
-Still confused? Learn more about the differences [here](https://docs.evmos.org/modules/erc20/01_concepts.html).
+Still confused? Learn more about the differences [here](https://docs.evmos.org/protocol/modules/erc20#concepts).
 :::
 
 The ERC-20 Module (also known as `x/erc20`) allows users
@@ -62,7 +62,7 @@ The following topics must be addressed when drafting a Cosmos Coin Proposal:
     Make sure to mention the original [blog post](https://medium.com/evmos/introducing-evmos-erc20-module-f40a61e05273)
     that introduced the ERC-20 Module,
     along with a brief explanation of what the ERC-20 Module does.
-    It's also a good idea to link the [ERC-20 Module documentation](https://docs.evmos.org/modules/erc20/)!
+    It's also a good idea to link the [ERC-20 Module documentation](https://docs.evmos.org/protocol/modules/erc20)!
 
 3. Describe how ERC-20 Module changes will be made.
 
@@ -103,8 +103,8 @@ for details on writing markdown files.
 
 ### Submit the Proposal to Testnet
 
-To [submit the proposal](./../../community/governance/submit-a-proposal) to testnet
-through the command line with [`evmosd`](https://docs.evmos.org/develop/build-a-dApp/run-a-node/evmosd),
+To [submit the proposal](governance/submit-a-proposal) to testnet
+through the command line with [`evmosd`](https://docs.evmos.org/protocol/evmos-cli#using-evmosd),
 use the following command with `register-coin`:
 
 ```bash
@@ -173,7 +173,7 @@ it's recommended to put the proposal text into a json file
 and include that file as part of the CLI proposal,
 as opposed to individual fields in flags.
 The process of creating a json file containing the proposal can be found
-[here](./../../community/governance/submit-a-proposal#formatting-the-json-file-for-the-governance-proposal),
+[here](governance/submit-a-proposal#formatting-the-json-file-for-the-governance-proposal),
 and the CLI command for submitting the file is below:
 
 ```bash
@@ -198,7 +198,7 @@ should probably be aware of the proposal
 and have considered it before the proposal goes live on-chain.
 If you're taking a conservative approach,
 you should have reasonable confidence that your proposal will pass
-before risking deposit contributions by [submitting the proposal](./../../community/governance/submit-a-proposal).
+before risking deposit contributions by [submitting the proposal](governance/submit-a-proposal).
 Make revisions to your draft proposal after each stage of engagement.
 
 ### The Deposit Period
@@ -214,7 +214,7 @@ and also contact stakeholders directly
 (particularly stakeholders who are enthusiastic about your proposal).
 Remember that each contributor is risking their funds,
 and you can
-[read more about the conditions for burning deposits here](./../../community/governance/proposal-process#burned-deposits).
+[read more about the conditions for burning deposits here](governance/proposal-process#burned-deposits).
 
 This is a stage where proposals may begin to get broader attention.
 Most popular explorers currently display proposals

@@ -13,7 +13,7 @@ Developers generate revenue every time a user interacts with their dApp in the d
 providing them a steady income.
 Users can discover new applications in the dApp store and pay for the transaction fees that finance the dApp's revenue.
 This value-reward exchange of dApp services for transaction fees is implemented by
-the [x/revenue module](https://docs.evmos.org/modules/revenue/01_concepts.html).
+the [x/revenue module](https://docs.evmos.org/protocol/modules/revenue#concepts).
 
 ## Requirements
 
@@ -69,14 +69,14 @@ Congrats ☄️☄️☄️ Now that you've registered a revenue for your contra
 it is part of the Evmos dApp store,
 and you will receive a cut of the transaction fees every time a user interacts with your contract.
 If you are wondering how large your cut is, have a look at the
-[revenue parameter `DeveloperShares`](https://docs.evmos.org/modules/revenue/07_parameters.html),
+[revenue parameter `DeveloperShares`](https://docs.evmos.org/protocol/modules/revenue#parameters),
 which is controlled through governance.
-You can query the parameters using our [OpenAPI documentation](https://api.evmos.org).
+You can query the parameters using our [OpenAPI documentation](https://api.evmos.dev/).
 
 ### Deployed Factory Pattern
 
 You can also register a contract which has been deployed by a smart contract instead of an
-[EOA](https://docs.evmos.org/modules/evm/01_concepts.html#accounts).
+[EOA](https://docs.evmos.org/protocol/modules/evm#accounts).
 In this case, you need to provide a sequence of nonces that proves the trace from an original deployer
 who deployed the factory to the contract that is being registered.
 

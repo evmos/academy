@@ -204,7 +204,7 @@ so a few more pointers for Parameter-Change, Community Spend, and ERC-20 Module 
    - a mention of the original [blog post](https://medium.com/evmos/introducing-evmos-erc20-module-f40a61e05273)
      that introduced the ERC-20 Module
    - a brief explanation of what the ERC-20 Module does
-   - a mention of the [ERC-20 Module documentation](https://docs.evmos.org/modules/erc20/)
+   - a mention of the [ERC-20 Module documentation](https://docs.evmos.org/protocol/modules/erc20)
 3. Solution - generally how ERC-20 Module changes will be made
    - a brief explanation of what the proposal will do if it passes
    - a brief explanation of the precautions taken, how it was tested, and who was consulted prior to making the proposal
@@ -274,7 +274,7 @@ If you're taking a conservative approach,
 you should have reasonable confidence that your proposal will pass before risking deposit contributions.
 Make revisions to your draft proposal after each stage of engagement.
 
-See the [submitting guide](./subit-a-proposal) for more on submitting proposals.
+See the [submitting guide](./submit-a-proposal) for more on submitting proposals.
 
 ### The Deposit Period
 

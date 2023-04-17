@@ -115,7 +115,7 @@ which can be obtained by specifying a JavaScript filter.
 although it can be invoked from outside the node using JSON-RPC <!-- markdown-link-check-disable-next-line -->
 (e.g. using Curl), as seen in the [following section](#json-rpc-debugtrace-endpoints).
 If developers want to use `debug.traceTransaction` as it is used here, maintenance of a node is required,
-so see [this document](https://docs.evmos.org/develop/build-a-dApp/run-a-node).
+so see [this document](https://docs.evmos.org/protocol/evmos-cli/single-node#enable-tracing).
 :::
 
 1. Create a file, `filterTrace_1.js`, with this content:
@@ -351,6 +351,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"debug_traceBlockByNumber","param
 
 See the sources below for details not covered above:
 
-- [JSON-RPC Methods on Evmos](https://docs.evmos.org/develop/build-a-dApp/clients/ethereum-JSON-RPC/JSON-RPC-methods)
+- [JSON-RPC Methods on Evmos](https://docs.evmos.org/develop/api/ethereum-json-rpc/methods/)
 - [Basic EVM Tracing](https://geth.ethereum.org/docs/developers/evm-tracing)
 - [Filtered EVM Tracing](https://web.archive.org/web/20211215184312/https://geth.ethereum.org/docs/dapp/tracing-filtered)
