@@ -20,8 +20,8 @@ and [evmosjs](https://github.com/evmos/evmosjs) is recommended instead.
 
 ## `evmosd` & Tendermint RPC
 
-Upon [installation](https://docs.evmos.org/develop/build-a-dApp/run-a-node/installation)
-and [configuration](https://docs.evmos.org/develop/build-a-dApp/run-a-node/evmosd) of the Evmos Daemon,
+Upon [installation](https://docs.evmos.org/protocol/evmos-cli#installation)
+and [configuration](https://docs.evmos.org/protocol/evmos-cli/configuration/) of the Evmos Daemon,
 developers can query account balances using `evmosd` with the following CLI command:
 
 ```bash
@@ -60,7 +60,7 @@ where `$DENOM` is the denomination of the coin (eg. `ibc/ED07A3391A1...`).
 
 ## JSON-RPC
 
-Developers can query account balances of `aevmos` using the [`eth_getBalance`](https://docs.evmos.org/develop/build-a-dApp/clients/ethereum-JSON-RPC/JSON-RPC-methods#ethgetbalance)
+Developers can query account balances of `aevmos` using the [`eth_getBalance`](https://docs.evmos.org/develop/api/ethereum-json-rpc/methods#ethgetbalance)
 JSON-RPC method in conjunction with [`curl`](https://curl.se/):
 
 ```bash
@@ -82,7 +82,7 @@ where:
   (e.g. `https://eth.bd.evmos.org:8545`).
 
 Developers can also query account balances of `x/erc20`-module registered coins
-using the [`eth_call`](https://docs.evmos.org/develop/build-a-dApp/clients/ethereum-JSON-RPC/JSON-RPC-methods#ethcall) JSON-RPC method in conjunction with [`curl`](https://curl.se/):
+using the [`eth_call`](https://docs.evmos.org/develop/api/ethereum-json-rpc/methods#ethcall) JSON-RPC method in conjunction with [`curl`](https://curl.se/):
 
 ```bash
 # Request

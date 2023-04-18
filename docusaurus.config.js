@@ -187,7 +187,7 @@ const config = {
               },
               {
                 label: 'Terminology',
-                to: '/terminology',
+                to: '/articles/terminology',
               },
             ],
           },

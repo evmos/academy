@@ -4,6 +4,8 @@ sidebar_position: 5
 
 # Smart Contract Incentive Registration
 
+Learn how to register smart contract incentives through [Evmos Governance](./governance).
+
 An incentive for a smart contract can be registered through governance to encourage more interaction with that contract.
 Users who interact with a registered contract (eg.
 through submission of transactions) will have rewards distributed to them.
@@ -21,7 +23,7 @@ To register smart contract incentives, consider the following stages:
 
 This document also discusses [incentives analysis through telemetry](#incentives-analysis-through-telemetry).
 
-Check out the [incentives module specification](https://docs.evmos.org/modules/incentives/) for more information on incentives.
+Check out the [incentives module specification](https://docs.evmos.org/protocol/modules/incentives/) for more information on incentives.
 
 ## Drafting the Contract Incentives Proposal
 
@@ -36,7 +38,7 @@ The following topics must be addressed when drafting a Contract Incentives Propo
 
 2. Promote understanding of the `x/incentives` Module.
 
-    Make sure to mention the [`x/incentives` Module Documentation](https://docs.evmos.org/modules/incentives/)
+    Make sure to mention the [`x/incentives` Module Documentation](https://docs.evmos.org/protocol/modules/incentives/)
     along with a brief explanation of what the `x/incentives` Module does.
     It's also a good idea to link the [Evmos Token Model](https://medium.com/evmos/the-evmos-token-model-edc07014978b),
     since incentives are directly intertwined with Evmos tokenomics!
@@ -71,8 +73,8 @@ for details on writing markdown files.
 
 ### Submit the Proposal to Testnet
 
-To [submit the proposal](./../../community/governance/submit-a-proposal) to testnet through the command line
-with [`evmosd`](https://docs.evmos.org/develop/build-a-dApp/run-a-node/evmosd),
+To [submit the proposal](governance/submit-a-proposal) to testnet through the command line
+with [`evmosd`](https://docs.evmos.org/protocol/evmos-cli#using-evmosd),
 use the following command with `register-incentive`:
 
 ```bash
@@ -114,7 +116,7 @@ the text will be [escaped](https://en.wikipedia.org/wiki/Escape_sequences_in_C) 
 If the proposal creator is using markdown or line breaks it's recommended to put the proposal text into a json file
 and include that file as part of the CLI proposal, as opposed to individual fields in flags.
 The process of creating a json file containing the proposal can be found
-[here](./../../community/governance/submit-a-proposal#formatting-the-json-file-for-the-governance-proposal),
+[here](governance/submit-a-proposal#formatting-the-json-file-for-the-governance-proposal),
 and the CLI command for submitting the file is below:
 
 ```bash
@@ -134,7 +136,7 @@ that you will be alerted to a flaw before deploying your proposal to mainnet.
 A majority of the voting community should probably be aware of the proposal
 and have considered it before the proposal goes live on-chain.
 If you're taking a conservative approach, you should have reasonable confidence
-that your proposal will pass before risking deposit contributions by [submitting the proposal](./../../community/governance/submit-a-proposal).
+that your proposal will pass before risking deposit contributions by [submitting the proposal](governance/submit-a-proposal).
 Make revisions to your draft proposal after each stage of engagement.
 
 ### The Deposit Period
@@ -148,7 +150,7 @@ by contributing (and risking) their EVMOS as a bond for your proposal.
 You can request contributions openly and also contact stakeholders directly
 (particularly stakeholders who are enthusiastic about your proposal).
 Remember that each contributor is risking their funds, and you can
-[read more about the conditions for burning deposits here](./../../community/governance/proposal-process#burned-deposits).
+[read more about the conditions for burning deposits here](governance/proposal-process#burned-deposits).
 
 This is a stage where proposals may begin to get broader attention.
 Most popular explorers currently display proposals that are in the deposit period,
@@ -197,7 +199,7 @@ Evmos supports the following metrics related to the `x/incentives` module,
 which can be collected for incentive analysis:
 
 | Metric                                         | Description                                                                         | Unit        | Type    |
-| :--------------------------------------------- | :---------------------------------------------------------------------------------- | :---------- | :------ |
+|:-----------------------------------------------|:------------------------------------------------------------------------------------|:------------|:--------|
 | `tx_msg_ethereum_tx_incentives_total`          | Total number of txs with an incentivized contract processed via the EVM             | tx          | counter |
 | `tx_msg_ethereum_tx_incentives_gas_used_total` | Total amount of gas used by txs with an incentivized contract processed via the EVM | token       | counter |
 | `incentives_distribute_participant_total`      | Total number of participants who received rewards                                   | participant | counter |
@@ -207,11 +209,11 @@ To calculate specific values, such as paid out incentives to a given smart contr
 custom metrics will have to be made following the [above section](#telemetry-basics--setup).
 
 In addition, gRPC queries related to the `x/incentives` module found
-[here](https://docs.evmos.org/modules/incentives/) can produce useful analysis.
+[here](https://docs.evmos.org/protocol/modules/incentives/) can produce useful analysis.
 
 ### Additional Telemetry Information
 
 See the telemetry sources below for details not covered above:
 
 - [Cosmos SDK Telemetry Documentation](https://docs.cosmos.network/main/core/telemetry.html)
-- [Evmos Supported Telemetry Metrics](https://docs.evmos.org/protocol/telemetry.html)
+- [Evmos Supported Telemetry Metrics](https://docs.evmos.org/protocol/metrics/)

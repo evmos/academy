@@ -36,7 +36,7 @@ The integration checklist for dApp developers consists of three categories:
 
 Make sure to create a wallet-connection button for Metamask and/or Keplr on the frontend of the application.
 For instance, consider the "Connect to a wallet" button on
-the interface of [EvmoSwap](https://app.evmoswap.org/)
+the interface of [EvmoSwap](https://app.evmoswap.org/swap)
 or the analogous button on the interface of [Evmos Dashboard Assets](https://app.evmos.org/assets).
 
 ### Identify the User's Wallet

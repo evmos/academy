@@ -5,7 +5,7 @@ sidebar_position: 1
 # Governance Overview
 
 :::tip
-**Note:** Working on a governance proposal? Make sure to look at the [best practices](./best_practices).
+**Note:** Working on a governance proposal? Make sure to look at the [best practices](./best-practices).
 :::
 
 Evmos has an on-chain governance mechanism for passing
