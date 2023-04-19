@@ -6,6 +6,10 @@ sidebar_position: 10
 
 Learn how to use Evmos EVM extensions to include Evmos and Cosmos SDK modules functionalities in your smart contracts.
 
+Stateful EVM Extensions on the core protocol allow dApps and users to access logic outside of the EVM.
+Acting as a gateway, these EVM Extensions define how smart contracts can perform cross-chain transactions
+(via IBC) and interact with core functionalities on the Evmos chain (e.g. staking, voting) from the EVM.
+
 :::tip
 **Note**: Not sure what EVM extensions are?
 EVM extensions behave like smart contracts that are compiled and deployed within the EVM. If you are familiar with the EVM, you may know them as Precompiles.
@@ -15,10 +19,6 @@ or access state data (queries), extensions are considered "stateful";
 when they don't, they're "stateless."
 Find a [list of the available EVM extensions in the Evmos documentation site](https://docs.evmos.org/develop/build-a-dapp/build-smart-contracts/evm_extensions).
 :::
-
-Stateful EVM Extensions on the core protocol allow dApps and users to access logic outside of the EVM.
-Acting as a gateway, these EVM Extensions define how smart contracts can perform cross-chain transactions
-(via IBC) and interact with core functionalities on the Evmos chain (e.g. staking, voting) from the EVM.
 
 This article presents a step-by-step guide to use the EVM extensions
 corresponding to the `staking` and `distribution` modules.
