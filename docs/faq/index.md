@@ -14,7 +14,7 @@ Yes. You can find out about Evmos’ roadmap by reading the [Evmos Manifesto](ht
 
 <details>
 
-<summary><b>What is a faucet? Where can i find the official Evmos mainnet faucet?</b></summary>
+<summary><b>What is a faucet? Where can I find the official Evmos mainnet faucet?</b></summary>
 
 A faucet is an application that dispenses small amounts of cryptocurrencies to users for free. The purpose of a faucet is to introduce new users to a cryptocurrency by giving them a small amount of tokens to play with, and to encourage them to explore the network’s features and potential use cases.
 
@@ -24,7 +24,7 @@ You can claim from the official Evmos faucet in the [faucet channel](https://dis
 
 <details>
 
-<summary><b>Where can i find projects/dApps that are part of the Evmos ecosystem?</b></summary>
+<summary><b>Where can I find projects/dApps that are part of the Evmos ecosystem?</b></summary>
 
 You can discover all the Web3 apps and projects built in the Evmos ecosystem, such as wallets, bridges and decentralized exchanges on our official [ecosystem page](https://evmos.org/ecosystem).
 
@@ -62,7 +62,7 @@ A more detailed breakdown on the Half-Life/inflation can be found [here](https:/
 
 <details>
 
-<summary><b>Where can i find more information about the Evmos Token Model?</b></summary>
+<summary><b>Where can I find more information about the Evmos Token Model?</b></summary>
 
 A detailed breakdown of the Evmos token model can be found [here](https://medium.com/evmos/the-evmos-token-model-edc07014978b).
 
@@ -70,7 +70,7 @@ A detailed breakdown of the Evmos token model can be found [here](https://medium
 
 <details>
 
-<summary><b>Where can i find data about the Evmos network and its parameters, such as the staking APR, Inflation and validator list?</b></summary>
+<summary><b>Where can I find data about the Evmos network and its parameters, such as the staking APR, Inflation and validator list?</b></summary>
 
 [Mintscan](https://www.mintscan.io/evmos) is a great way to find information and data on the Evmos network (or other Cosmos chains). Another example would be [SmartStake](https://evmos.smartstake.io/). 
 
@@ -78,7 +78,7 @@ A detailed breakdown of the Evmos token model can be found [here](https://medium
 
 <details>
 
-<summary><b>Where can i read about the newest developments and partnerships of Evmos?</b></summary>
+<summary><b>Where can I read about the newest developments and partnerships of Evmos?</b></summary>
 
 Articles published by the Evmos team can be found on the Evmos [Medium page](https://medium.com/@Evmos).
 
@@ -86,7 +86,7 @@ Articles published by the Evmos team can be found on the Evmos [Medium page](htt
 
 <details>
 
-<summary><b>I have a marketing proposal. Whom do i reach out to?</b></summary>
+<summary><b>I have a marketing proposal. Whom do I reach out to?</b></summary>
 
 You may send your proposal to https://t.me/liamdig on Telegram via direct message.
 
@@ -99,7 +99,7 @@ You may send your proposal to https://t.me/liamdig on Telegram via direct messag
 
 <details>
 
-<summary><b>Which wallets can i use for Evmos?</b></summary>
+<summary><b>Which wallets can I use for Evmos?</b></summary>
 
 You can find an overview of Evmos-compatible wallets [here](https://docs.evmos.org/use/wallet).
 
@@ -107,7 +107,7 @@ You can find an overview of Evmos-compatible wallets [here](https://docs.evmos.o
 
 <details>
 
-<summary><b>How do i connect Evmos to my wallet?</b></summary>
+<summary><b>How do I connect Evmos to my wallet?</b></summary>
 
 Guides on how to add the Evmos network to your wallet:
 
@@ -118,7 +118,7 @@ Guides on how to add the Evmos network to your wallet:
 
 <details>
 
-<summary><b>Can i use Ledger with Evmos?</b></summary>
+<summary><b>Can I use Ledger with Evmos?</b></summary>
 
 Yes. A guide on how to start using Ledger with Evmos can be found [here](https://docs.evmos.org/use/connect-your-wallet/ledger).
 
@@ -142,7 +142,7 @@ Both formats represent the same address/account.
 
 <details>
 
-<summary><b>Can i use the same Evmos address/account on both Metamask and Keplr at the same time?</b></summary>
+<summary><b>Can I use the same Evmos address/account on both Metamask and Keplr at the same time?</b></summary>
 
 Yes, you can use the same Evmos address on both Metamask and Keplr at the same time. This is because Evmos is a blockchain network that supports both EVM and Cosmos networks.
 
@@ -193,7 +193,7 @@ The unbonding period of 2 weeks is artificial and is set by governance.
 
 <details>
 
-<summary><b>I accidentally undelegated my Evmos tokens. Can i cancel the undelegation process?</b></summary>
+<summary><b>I accidentally undelegated my Evmos tokens. Can I cancel the undelegation process?</b></summary>
 
 Yes, you can do so via [Disperze](https://evmos.disperze.network/welcome), which is a third-party dashboard for the Evmos network.
 
@@ -201,7 +201,7 @@ Yes, you can do so via [Disperze](https://evmos.disperze.network/welcome), which
 
 <details>
 
-<summary><b>Where can i check the time left until my staked tokens are fully unbonded?</b></summary>
+<summary><b>Where can I check the time left until my staked tokens are fully unbonded?</b></summary>
 
 1. Navigate to [https://www.mintscan.io/evmos](https://www.mintscan.io/evmos) 
 2. Search for your Evmos address using the search bar
@@ -221,7 +221,7 @@ This depends. If it is your first time re-delegating your tokens, the redelegati
 
 <details>
 
-<summary><b>I’m having an issue. Where can i ask for help?</b></summary>
+<summary><b>I’m having an issue. Where can I ask for help?</b></summary>
 
 The easiest and fastest way to get support is by opening a [support-ticket](https://discord.com/channels/809048090249134080/976564857048559636)
  on our official [Discord](https://discord.com/invite/evmos) server. 
@@ -246,7 +246,7 @@ Clearing browser cache or a hard refresh should help solve this problem. If not,
 
 <details>
 
-<summary><b>How can i withdraw tokens from Osmosis to Evmos and vice versa?</b></summary>
+<summary><b>How can I withdraw tokens from Osmosis to Evmos and vice versa?</b></summary>
 
 To withdraw or deposit (IBC transfer) any assets to and from Evmos you can use the official [asset](https://app.evmos.org/assets) page found on the Evmos website.
 
@@ -254,7 +254,7 @@ To withdraw or deposit (IBC transfer) any assets to and from Evmos you can use t
 
 <details>
 
-<summary><b>How can i download my Evmos transaction history in CSV?</b></summary>
+<summary><b>How can I download my Evmos transaction history in CSV?</b></summary>
 
 [StakeTax](https://stake.tax/) supports Evmos and other chains in Cosmos.
 
@@ -262,7 +262,7 @@ To withdraw or deposit (IBC transfer) any assets to and from Evmos you can use t
 
 <details>
 
-<summary><b>where can i find the offical Evmos Logo Kit?</b></summary>
+<summary><b>where can I find the official Evmos Logo Kit?</b></summary>
 
 The Evmos Press Kit can be found [here](https://drive.google.com/drive/folders/1fw9a8DgLJ0X-LuI4hHG36JkMC9eFGJL6). Make sure to follow the guidelines mentioned in the PDF file when making use of the kit.
 
@@ -270,7 +270,7 @@ The Evmos Press Kit can be found [here](https://drive.google.com/drive/folders/1
 
 <details>
 
-<summary><b>How do i change the Evmos RPC in Metamask?</b></summary>
+<summary><b>How do I change the Evmos RPC in Metamask?</b></summary>
 
 To change your RPC follow this [guide](https://www.reddit.com/r/EVMOS/comments/x5y7j4/how_to_change_your_rpc/).
 
