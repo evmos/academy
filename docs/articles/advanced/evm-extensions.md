@@ -8,11 +8,11 @@ Learn how to use Evmos EVM extensions to include Evmos and Cosmos SDK modules fu
 
 :::tip
 **Note**: Not sure what EVM extensions are?
-EVM extensions are smart contracts that are compiled and deployed right at the EVM initialization.
+EVM extensions behave like smart contracts that are compiled and deployed within the EVM. If you are familiar with the EVM, you may know them as Precompiles.
 These have predefined addresses and, according to their logic, can be classified as stateful or stateless.
 When they change the state of the chain (transactions)
 or access state data (queries), extensions are considered "stateful";
-when they don't, they're "stateless".
+when they don't, they're "stateless."
 Find a [list of the available EVM extensions in the Evmos documentation site](https://docs.evmos.org/develop/build-a-dapp/build-smart-contracts/evm_extensions).
 :::
 
@@ -49,7 +49,7 @@ You will need this material to code along:
 
 Before executing any transaction using the EVM Extensions,
 the user interacting with the smart contract must first approve these.
-In case of staking transactions, should specify the amount allowed.
+In case of staking transactions, they should specify the amount allowed.
 The smart contract developer can choose to either separate
 the approval and execution of the EVM extensions transactions
 or to combine them into a single transaction.
@@ -158,7 +158,7 @@ evmosd keys unsafe-export-eth-key dev0 --keyring-backend test --home ~/.tmp-evmo
 Copy the private key returned.
 Then select the "Import Account" option in MetaMask
 and select Private Key type.
-Paste the private key and clic "Import".
+Paste the private key and click "Import".
 
 ![add account](/img/mm_add_acc.png)
 ![import private key](/img/mm_priv_key.png)
@@ -174,7 +174,7 @@ Paste the private key and clic "Import".
 ![prepare deployment](/img/remix_prepare_deploy.png)
 
 Upon a successful deployment,
-you should see the contract with it’s exposed methods being listed under ***Deployed Contracts***.
+you should see the contract with its exposed methods being listed under ***Deployed Contracts***.
 
 ![contract deployed](/img/remix_deployed.png)
 
