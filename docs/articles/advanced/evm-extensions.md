@@ -100,70 +100,16 @@ and withdraw staking rewards (`MSG_WITHDRAW_DELEGATOR_REWARD`)
 
 - Compile the contract with Remix
 
-## Step 2: Run a local node
-
-To start a localnode, you can use the [local_node.sh](https://github.com/evmos/evmos/blob/main/local_node.sh) script on Evmos repo.
-
-If you didn't clone the repo already, run the following commands on your terminal:
-
-```bash
-git clone https://github.com/evmos/evmos.git
-cd evmos
-./local_node.sh
-```
-
-For more information on how to run a local node, refer to the [single node guide on Evmos docs](https://docs.evmos.org/protocol/evmos-cli/single-node).
-
-## Step 3: Connect MetaMask to the local node
+## Step 2: Connect MetaMask to the Evmos testnet
 
 Follow [the corresponding guide on the Evmos docs](https://docs.evmos.org/use/connect-your-wallet/metamask) to achieve this.
 
-## Step 4: Get some funds
+## Step 3: Get some funds
 
-For this step, you have two options:
+If you don't have tEVMOS on your wallet,
+get some tokens from the [Evmos Testnet Faucet](https://faucet.evmos.dev/).
 
-### Option 1: Fund your MetaMask account
-
-Using a terminal window, send some funds to your MetaMask address from one of the preconfigured keys on the local node.
-To do this, use following commands:
-
-```bash
-ADDR=<YOUR_METAMASK_ADDR>
-BECH32ADDR=$(evmosd debug addr $ADDR | grep "Bech32 Acc" | cut -c 13-56)
-```
-
-This will convert the hex address into the Bech32 format, which can be used in bank transfers using the CLI:
-
-```bash
-evmosd tx bank send dev0 $BECH32ADDR 100000000000000000000aevmos \
---home $HOME/.tmp-evmosd \
---from dev0 \
---fees 200000000000000aevmos \
---gas auto \
--b block \
--y
-```
-
-After this transaction was successfully executed, you should see the balance in your MetaMask wallet.
-
-### Option 2: Import keys from keyring
-
-You can use the default `dev0` account which has a lot of funds.
-Use this command to export the `dev0` private key:
-
-```bash
-evmosd keys unsafe-export-eth-key dev0 --keyring-backend test --home ~/.tmp-evmosd 
-```
-
-Copy the private key returned.
-Then select the "Import Account" option in MetaMask
-and select Private Key type.
-Paste the private key and click "Import".
-
-![add account](/img/mm_add_acc.png)
-![import private key](/img/mm_priv_key.png)
-
-## Step 5: Deploy the `SimpleStaker.sol` contract
+## Step 4: Deploy the `SimpleStaker.sol` contract
 
 - Go to ***Deploy & Run Transactions*** option on Remix side bar
 - Configure Remix Environment to use ***Injected Provider - MetaMask***
@@ -178,7 +124,7 @@ you should see the contract with its exposed methods being listed under ***Deplo
 
 ![contract deployed](/img/remix_deployed.png)
 
-## Step 6: Interact with the deployed contract
+## Step 5: Interact with the deployed contract
 
 ### Get current validators
 
@@ -186,7 +132,7 @@ To use the `SimpleStaker` contract, we need a validator's address.
 Check the current validators using the following command:
 
 ```bash
-evmosd q staking validators --home ~/.tmp-evmosd
+evmosd q staking validators --node https://tendermint.bd.evmos.dev:26657
 ```
 
 Copy the `operator_address` of the validator you want to use.
@@ -213,7 +159,7 @@ Additionally, you can check the current delegations using the evmos binary with 
 
 ```bash
 BECH32ADDR=$(evmosd debug addr <YOUR_METAMASK_ADDR> | grep "Bech32 Acc" | cut -c 13-56)
-evmosd q staking delegations $BECH32ADDR --home ~/.tmp-evmosd 
+evmosd q staking delegations $BECH32ADDR --node https://tendermint.bd.evmos.dev:26657
 ```
 
 ### Withdraw staking rewards
