@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # EVM Extensions - Staking & Distribution
 
-Learn how to use Evmos EVM extensions to include Evmos and Cosmos SDK modules functionalities in your smart contracts.
+Learn how to use Evmos EVM extensions to include Evmos and Cosmos SDK module functionalities in your smart contracts.
 
 Stateful EVM Extensions on the core protocol allow dApps and users to access logic outside of the EVM.
 Acting as a gateway, these EVM Extensions define how smart contracts can perform cross-chain transactions
@@ -17,7 +17,7 @@ These have predefined addresses and, according to their logic, can be classified
 When they change the state of the chain (transactions)
 or access state data (queries), extensions are considered "stateful";
 when they don't, they're "stateless."
-Find a [list of the available EVM extensions in the Evmos documentation site](https://docs.evmos.org/develop/build-a-dapp/build-smart-contracts/evm_extensions).
+Find a [list of the available EVM extensions in the Evmos documentation](https://docs.evmos.org/develop/build-a-dapp/build-smart-contracts/evm_extensions).
 :::
 
 This article presents a step-by-step guide to use the EVM extensions
@@ -43,21 +43,24 @@ You will need this material to code along:
   [Authorization.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/Authorization.sol) &
   [GenericAuthorization.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/GenericAuthorization.sol)
 - Example contract that uses the EVM extensions:
-  [SimpleStaker.sol](https://github.com/evmos/extensions/blob/main/examples/simple-staker/contracts/SimpleStaker.sol) contract
+  [SimpleStaker.sol](https://github.com/evmos/extensions/blob/main/examples/simple-staker/contracts/SimpleStaker.sol)
 
 ## Approvals
 
 Before executing any transaction using the EVM Extensions,
 the user interacting with the smart contract must first approve these.
+This is a security measure, that is required to ensure
+that no unauthorized transactions can be executed on behalf of the user.
 In case of staking transactions, they should specify the amount allowed.
 The smart contract developer can choose to either separate
 the approval and execution of the EVM extensions transactions
 or to combine them into a single transaction.
 
 We have provided convenient constants (e.g.: `MSG_DELEGATE`, `MSG_UNDELEGATE`,
-`MSG_WITHDRAW_DELEGATOR_REWARD`, `MSG_WITHDRAW_VALIDATOR_COMMISSION`) for easier use.
+`MSG_WITHDRAW_DELEGATOR_REWARD`, `MSG_WITHDRAW_VALIDATOR_COMMISSION`),
+that store the corresponding message type URLs required for the approval process.
 
-This is done by calling the `approve` function and will create an authorization grant for the given Cosmos SDK message.
+This is done by calling the `approve` function, which will create an authorization grant for the given Cosmos SDK message.
 
 Note that the `approve` method for the `Staking` extension is different
 than the `Distribution` extension.
@@ -71,7 +74,7 @@ and `DISTRIBUTION_CONTRACT.approve(...)` for distribution methods).
 The [Simple Staker](https://github.com/evmos/extensions/blob/main/examples/simple-staker/contracts/SimpleStaker.sol) has the function `approveRequiredMethods()`
 to perform the necessary approvals.
 It approves the required methods for staking tokens (`MSG_DELEGATE`)
-and withdraw staking rewards (`MSG_WITHDRAW_DELEGATOR_REWARD`)
+and withdrawing staking rewards (`MSG_WITHDRAW_DELEGATOR_REWARD`).
 
 ## Step 1: Compile the contract
 
@@ -111,11 +114,11 @@ get some tokens from the [Evmos Testnet Faucet](https://faucet.evmos.dev/).
 
 ## Step 4: Deploy the `SimpleStaker.sol` contract
 
-- Go to ***Deploy & Run Transactions*** option on Remix side bar
-- Configure Remix Environment to use ***Injected Provider - MetaMask***
+- Go to ***Deploy & Run Transactions*** option on Remix's side bar
+- Configure ***Injected Provider - MetaMask*** as the used environment
 - Select the account with funds from the previous step
 - Make sure the `SimpleStaker` compiled contract is selected in the ***CONTRACT*** field
-- Deploy the smart contract by pressing the ***Deploy*** button & approving the transaction on Metamask.
+- Deploy the smart contract by pressing the ***Deploy*** button & approving the transaction on Metamask
 
 ![prepare deployment](/img/remix_prepare_deploy.png)
 
@@ -129,16 +132,12 @@ you should see the contract with its exposed methods being listed under ***Deplo
 ### Get current validators
 
 To use the `SimpleStaker` contract, we need a validator's address.
-Check the current validators using the following command:
-
-```bash
-evmosd q staking validators --node https://tendermint.bd.evmos.dev:26657
-```
+Check the current validators on our [testnet Swagger API page](https://api.evmos.dev/#/Query/Validators) or directly via REST at the [/cosmos/staking/v1beta1/validators](https://rest.bd.evmos.dev:1317/cosmos/staking/v1beta1/validators) endpoint.
 
 Copy the `operator_address` of the validator you want to use.
 Use this as the `_validatorAddr` in the `SimpleStaker` functions.
 
-### Grant Approvals
+### Grant approvals
 
 Before performing any transaction,
 make sure to set the corresponding approvals.
@@ -155,12 +154,7 @@ and the desired amount to stake.
 Once the transaction is processed successfully,
 you can check your current delegations calling the `getDelegation` function.
 
-Additionally, you can check the current delegations using the evmos binary with the following command:
-
-```bash
-BECH32ADDR=$(evmosd debug addr <YOUR_METAMASK_ADDR> | grep "Bech32 Acc" | cut -c 13-56)
-evmosd q staking delegations $BECH32ADDR --node https://tendermint.bd.evmos.dev:26657
-```
+Additionally, you can check the current delegations using the [Swagger API page](https://api.evmos.dev/#/Query/DelegatorDelegations) where you use your Bech32-formatted address as the delegator.
 
 ### Withdraw staking rewards
 
