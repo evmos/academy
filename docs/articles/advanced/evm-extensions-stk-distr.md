@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# EVM Extensions
+# EVM Extensions - Staking & Distribution
 
 Learn how to use Evmos EVM extensions to include Evmos and Cosmos SDK modules functionalities in your smart contracts.
 
