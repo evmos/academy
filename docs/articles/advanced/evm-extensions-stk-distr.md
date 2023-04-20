@@ -120,12 +120,20 @@ get some tokens from the [Evmos Testnet Faucet](https://faucet.evmos.dev/).
 - Make sure the `SimpleStaker` compiled contract is selected in the ***CONTRACT*** field
 - Deploy the smart contract by pressing the ***Deploy*** button & approving the transaction on Metamask
 
+<div style={{textAlign: 'center'}}>
+
 ![prepare deployment](/img/remix_prepare_deploy.png)
+
+</div>
 
 Upon a successful deployment,
 you should see the contract with its exposed methods being listed under ***Deployed Contracts***.
 
+<div style={{textAlign: 'center'}}>
+
 ![contract deployed](/img/remix_deployed.png)
+
+</div>
 
 ## Step 5: Interact with the deployed contract
 
