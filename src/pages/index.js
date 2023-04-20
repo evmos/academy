@@ -35,6 +35,16 @@ function Home() {
                     "Access low-level protocol interfaces to build your custom dapp",
                 }}
               />
+              <Card
+                to="https://docs.evmos.org/develop/build-a-dApp/build-smart-contracts"
+                header={{
+                  label: "BUIDL on Evmos: Testnet Guide",
+                }}
+                body={{
+                  label:
+                    "A helpful overview guide to get you building fast on Evmos Testnet",
+                }}
+              />
             </div>
           </div>
         </section>
