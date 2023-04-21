@@ -45,6 +45,8 @@ You will need this material to code along:
 - Example contract that uses the EVM extensions:
   [SimpleStaker.sol](https://github.com/evmos/extensions/blob/main/examples/simple-staker/contracts/SimpleStaker.sol)
 
+**Use [this link](https://remix.ethereum.org/#version=soljson-v0.8.18+commit.87f61d96.js&optimize=false&runs=200&gist=e259420aec8d85ea2219e4154536ad35) to open Remix with all the required files.**
+
 ## Approvals
 
 Before executing any transaction using the EVM Extensions,
@@ -78,30 +80,8 @@ and withdrawing staking rewards (`MSG_WITHDRAW_DELEGATOR_REWARD`).
 
 ## Step 1: Compile the contract
 
-- Go to [Remix IDE](https://remix.ethereum.org/)
-- Copy and paste the required solidity files:
-  - [Distribution.sol](https://github.com/evmos/extensions/blob/main/precompiles/stateful/Distribution.sol)
-  - [Staking.sol](https://github.com/evmos/extensions/blob/main/precompiles/stateful/Staking.sol)
-  - [Types.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/Types.sol)
-  - [Authorization.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/Authorization.sol)
-  - [GenericAuthorization.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/GenericAuthorization.sol)
-  - [SimpleStaker.sol](https://github.com/evmos/extensions/blob/main/examples/simple-staker/contracts/SimpleStaker.sol)
-- Fix the imports. If you're pasting all these files in the `contracts` directory,
-  make sure to update the imports, for example, in `Staking.sol`:
-
-  ```solidity
-    import "../common/Authorization.sol" as authorization;
-    import "../common/Types.sol";
-  ```
-
-  Replace with:
-
-  ```solidity
-    import "./Authorization.sol" as authorization;
-    import "./Types.sol";
-  ```
-
-- Compile the contract with Remix
+- Go to [this link to open the Remix IDE with the necessary contracts](https://remix.ethereum.org/#version=soljson-v0.8.18+commit.87f61d96.js&optimize=false&runs=200&gist=e259420aec8d85ea2219e4154536ad35)
+- Compile the `SimpleStaker` contract with Remix
 
 ## Step 2: Connect MetaMask to the Evmos testnet
 
