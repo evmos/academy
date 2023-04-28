@@ -14,9 +14,7 @@ The Evmos Core Team is continually improving and adding new features to our Exte
 and features, head over to [this repo](https://github.com/evmos/extensions).
 
 Here at the Academy, Evmos will continue to create articles on each EVM Extensions feature release. The current ones
-available are:
-
-- Staking and Distribution (links to come when article is merged)
+available are all located [here](http://docs.evmos.org/develop/smart-contracts/evm-extensions/authorization)
 
 ## Networks and API
 

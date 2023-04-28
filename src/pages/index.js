@@ -36,7 +36,7 @@ function Home() {
                 }}
               />
               <Card
-                to="https://docs.evmos.org/develop/build-a-dApp/build-smart-contracts"
+                to="./articles/intermediate/developing-on-evmos-testnet"
                 header={{
                   label: "BUIDL on Evmos: Testnet Guide",
                 }}
