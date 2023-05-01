@@ -35,6 +35,16 @@ function Home() {
                     "Access low-level protocol interfaces to build your custom dapp",
                 }}
               />
+              <Card
+                to="./articles/intermediate/developing-on-evmos-testnet"
+                header={{
+                  label: "BUIDL on Evmos: Testnet Guide",
+                }}
+                body={{
+                  label:
+                    "A helpful overview guide to get you building fast on Evmos Testnet",
+                }}
+              />
             </div>
           </div>
         </section>
