@@ -86,7 +86,7 @@ Evmos is always here to help. The community and the Core Team can easily be reac
 We hope this guide has been helpful. Please share this guide with anyone. If we are missing anything, please feel free to contribute
 or reach out and we will add to this guide. Happy building!
 
-## Useful resources
+## Useful Resources
 
 - [Evmos docs](https://docs.evmos.org/)
 - [Getting started on Testnet Workshop (DoraHacks Hackathon)](https://www.youtube.com/live/pzk70FaqtQE?feature=share)
