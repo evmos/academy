@@ -147,3 +147,8 @@ Additionally, you can check the current delegations using the [Swagger API page]
 ### Withdraw staking rewards
 
 Proceed similarly with the `withdrawRewards` function to get your staking rewards.
+
+## Other learning resources
+
+- [EVM Extensions docs](https://docs.evmos.org/develop/smart-contracts/evm-extensions)
+- [Diving into EVM Extensions Workshop (DoraHacks Hackathon)](https://www.youtube.com/live/pJhOfZ0ScAE?feature=share)
