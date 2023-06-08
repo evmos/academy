@@ -17,7 +17,7 @@ These have predefined addresses and, according to their logic, can be classified
 When they change the state of the chain (transactions)
 or access state data (queries), extensions are considered "stateful";
 when they don't, they're "stateless."
-Find a [list of the available EVM extensions in the Evmos documentation](https://docs.evmos.org/develop/build-a-dapp/build-smart-contracts/evm_extensions).
+Find a [list of the available EVM extensions in the Evmos documentation](https://docs.evmos.org/develop/smart-contracts/evm-extensions).
 :::
 
 This article presents a step-by-step guide to use the EVM extensions
