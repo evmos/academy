@@ -6,74 +6,75 @@ sidebar_position: 1
 
 Learn how to the Automated Coin Conversion feature works.
 
-In their [ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) representations,
-assets can be used to interact with dApps using the EVM.
-This standard allows developers to build applications that are interoperable with other products and services.
-In their Native Coin representation, they can be transferred
-between accounts on Evmos and other Cosmos chains using IBC.
-They cannot, however, be used to interact with dApps on Evmos,
-as Native Coins are not supported by the EVM
-since they don’t implement the ERC-20 standard.
+In their
+[ERC-20](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
+representation, assets can be used to interact with dApps using the EVM. This
+standard allows developers to build applications that are interoperable with
+other products and services. In their Cosmos Coin representation (as IBC token),
+they can be transferred between accounts on Evmos and other Cosmos chains using
+IBC. They cannot, however, be used to interact with dApps on Evmos, as Cosmos
+Coins are not supported by the EVM since they don’t implement the ERC-20
+standard.
 
-In order to reduce end-user complexity,
-Evmos should only allow single-token representation use between IBC Coin and ERC-20s.
-Consequently, the Evmos team developed the Automated Coin Conversion feature to achieve this goal.
-It converts incoming IBC vouchers to ERC-20s and modifies outgoing IBC transfers to convert ERC-20s to IBC Coins.
-This automated conversion occurs if, and *only* if, the appropriate token mapping was registered through governance.
-If the token pair is not registered, the IBC coin will be left as is.
+In order to reduce end-user complexity, Evmos should only allow single-token
+representation use between IBC and ERC-20 tokens. Consequently, the Evmos team
+developed the Automated Coin Conversion feature to achieve this goal. It
+converts incoming IBC to ERC-20 tokens and modifies outgoing IBC transfers to
+convert ERC-20 to IBC tokens. This automated conversion occurs if, and *only*
+if, the appropriate token pair was registered through governance. If the token
+pair is not registered, the IBC token will be left as is.
 
 ## Outbound transactions
 
 Your users may want to move their ERC-20 tokens from Evmos onto other Cosmos chains.
 The automated coin conversion feature simplifies this operation, because it enables you
-to send ERC-20 tokens via an IBC transfer in a single step.
-To do so, there is no need to make any changes on your IBC transfer logic.
-You only need to ensure that the corresponding denomination is passed as a parameter.
-For example, if you want to transfer the ERC-20 representation of the `uosmo` token on Evmos,
-specifying the corresponding denomination (`Token.Denom = "uosmo"`) on the `MsgTransfer` struct will suffice.
-Another example, if you want to transfer Wrapped Bitcoin on Axelar (axlWBTC),
-you could achieve this by using `Token.Denom = "ibc/C834CD421B4FD910BBC97E06E86B5E6F64EA2FE36D6AE0E4304C2E1FB1E7333C"`,
-as that is the denomination in the registered token pair.
-The same applies to any ERC-20 token that is not a representation of a Native Coin on other Cosmos chains.
-For example, if we want to send an ERC-20 token called `TestCoin` via IBC,
-use `Token.Denom = "erc20/<test-coin-contract-address>"`.
-Before transferring ERC-20 tokens via IBC, make sure you
-[register the ERC-20 token](./erc20-registration.md) for the conversion.
-Under the hood, the protocol will automatically make the conversion from ERC-20 token to IBC coin
-and perform the transfer to the desired Cosmos chain.
+to send ERC-20 tokens cross-chain (via an IBC transfer) in a single step.
 
-:::tip
-**Note**: In case Evmos is not the source chain of the sent IBC coin,
-you will have to specify the corresponding IBC denom
-(e.g. `ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518`).
-:::
+To do so, you only need to ensure that the corresponding denomination is passed
+as a parameter, when performing an outgoing [transfer via IBC](https://ibc.cosmos.network/main/apps/transfer/messages.html#msgtransfer).
+
 
 ```go
 type MsgTransfer struct {
-	// the port on which the packet will be sent
-	SourcePort string `protobuf:"bytes,1,opt,name=source_port,json=sourcePort,proto3" json:"source_port,omitempty" yaml:"source_port"`
-	// the channel by which the packet will be sent
-	SourceChannel string `protobuf:"bytes,2,opt,name=source_channel,json=sourceChannel,proto3" json:"source_channel,omitempty" yaml:"source_channel"`
+	// ...
 	// the tokens to be transferred
 	Token types.Coin `protobuf:"bytes,3,opt,name=token,proto3" json:"token"`
-	// the sender address
-	Sender string `protobuf:"bytes,4,opt,name=sender,proto3" json:"sender,omitempty"`
-	// the recipient address on the destination chain
-	Receiver string `protobuf:"bytes,5,opt,name=receiver,proto3" json:"receiver,omitempty"`
-	// Timeout height relative to the current block height.
-	// The timeout is disabled when set to 0.
-	TimeoutHeight types1.Height `protobuf:"bytes,6,opt,name=timeout_height,json=timeoutHeight,proto3" json:"timeout_height" yaml:"timeout_height"`
-	// Timeout timestamp in absolute nanoseconds since unix epoch.
-	// The timeout is disabled when set to 0.
-	TimeoutTimestamp uint64 `protobuf:"varint,7,opt,name=timeout_timestamp,json=timeoutTimestamp,proto3" json:"timeout_timestamp,omitempty" yaml:"timeout_timestamp"`
-	// optional memo
-	Memo string `protobuf:"bytes,8,opt,name=memo,proto3" json:"memo,omitempty"`
+	// ...
 }
 
 type Coin struct {
 	Denom  string `protobuf:"bytes,1,opt,name=denom,proto3" json:"denom,omitempty"`
 	Amount Int    `protobuf:"bytes,2,opt,name=amount,proto3,customtype=Int" json:"amount"`
 }
+```
+
+### ERC20 Token Pairs
+
+For [ERC-20 tokens that were deployed on the Evmos chain and then registered through governance](./erc20-registration.md) to support cross-chain transfer, you will have to specify the
+corresponding IBC denom (e.g. `erc20/0xe46910336479F254723710D57e7b683F3315b22B`)
+in the ibc transfer parameter:
+
+```
+token_pair:
+  contract_owner: OWNER_EXTERNAL
+  denom: erc20/0xe46910336479F254723710D57e7b683F3315b22B
+  enabled: true
+  erc20_address: 0xe46910336479F254723710D57e7b683F3315b22B
+```
+
+### Cosmos Token Pairs
+
+For [Cosmos tokens that were registered through governance](./cosmos-coin-registration.md) to support usage on
+the EVM (e.g. OSMO), you can specify the corresponding IBC denom (e.g.
+`ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518`) or their
+alias (e.g. `uosmo`):
+
+```
+token_pair:
+  contract_owner: OWNER_MODULE
+  denom: ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518
+  enabled: true
+  erc20_address: 0xFA3C22C069B9556A4B2f7EcE1Ee3B467909f4864
 ```
 
 ## Inbound transactions
