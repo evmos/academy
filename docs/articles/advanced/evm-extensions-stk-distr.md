@@ -41,11 +41,11 @@ You will need this material to code along:
 - EVM extensions common types and authorization interfaces:
   [Types.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/Types.sol),
   [Authorization.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/Authorization.sol) &
-  [GenericAuthorization.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/GenericAuthorization.sol)
+  [DistributionAuthorization.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/DistributionAuthorization.sol)
 - Example contract that uses the EVM extensions:
   [SimpleStaker.sol](https://github.com/evmos/extensions/blob/main/examples/simple-staker/contracts/SimpleStaker.sol)
 
-**Use [this link](https://remix.ethereum.org/#version=soljson-v0.8.18+commit.87f61d96.js&optimize=false&runs=200&gist=e259420aec8d85ea2219e4154536ad35) to open Remix with all the required files.**
+**Use [this link](https://remix.ethereum.org/#version=soljson-v0.8.18+commit.87f61d96.js&optimize=false&runs=200&gist=04e1b1a960cf1651e2a49a6c919f1deb) to open Remix with all the required files.**
 
 ## Approvals
 
@@ -67,7 +67,7 @@ This is done by calling the `approve` function, which will create an authorizati
 Note that the `approve` method for the `Staking` extension is different
 than the `Distribution` extension.
 The `Staking` extension uses the [AuthorizationI](https://github.com/evmos/extensions/blob/a776030516f396af4e6cd5588f59103017c0e6fe/precompiles/common/Authorization.sol#L7)
-interface, while the `Distribution` extension uses the [GenericAuthorizationI](https://github.com/evmos/extensions/blob/a776030516f396af4e6cd5588f59103017c0e6fe/precompiles/common/GenericAuthorization.sol#L7).
+interface, while the `Distribution` extension uses the [DistributionAuthorizationI](https://github.com/evmos/extensions/blob/4054adca6f4062f39c499b7a8a11da8231f0b7fa/precompiles/common/DistributionAuthorization.sol#L7).
 
 Use the corresponding method when approving methods for each EVM extension
 (e.g., use `STAKING_CONTRACT.approve(...)` for staking methods,
@@ -80,7 +80,7 @@ and withdrawing staking rewards (`MSG_WITHDRAW_DELEGATOR_REWARD`).
 
 ## Step 1: Compile the contract
 
-- Go to [this link to open the Remix IDE with the necessary contracts](https://remix.ethereum.org/#version=soljson-v0.8.18+commit.87f61d96.js&optimize=false&runs=200&gist=e259420aec8d85ea2219e4154536ad35)
+- Go to [this link to open the Remix IDE with the necessary contracts](https://remix.ethereum.org/#version=soljson-v0.8.18+commit.87f61d96.js&optimize=false&runs=200&gist=04e1b1a960cf1651e2a49a6c919f1deb)
 - Compile the `SimpleStaker` contract with Remix
 
 ## Step 2: Connect MetaMask to the Evmos testnet
