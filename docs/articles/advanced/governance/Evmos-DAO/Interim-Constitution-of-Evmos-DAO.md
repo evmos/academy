@@ -71,3 +71,7 @@ The community holds the power to propose an amendment to the Constitution by fol
 We recognize that this Constitution is missing a few key topics — however, we also see the need to tread carefully in these sensitive and controversial topics. While it is inarguable that these are necessary components of the Constitution, there was clear signaling that we needed more time to allow for the natural growth of the community before we could formally ratify some sections with confidence. We pledge to continue our research and continue to engage with the community to find general consensus on the best step forward.
 
 While some topics will be amended into the Constitution when they are ready, most will likely be implemented through the Governance Framework.
+
+
+
+Document created by the Evmos DAO, https://evmos.community
