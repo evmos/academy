@@ -225,3 +225,6 @@ Deposits are burned when proposals:
 1. **Expire** - deposits will be burned if the deposit period ends before reaching the minimum deposit (192 EVMOS)
 2. **Fail to reach quorum** - deposits will be burned for proposals that do not reach quorum ie. 33.4% of all staked EVMOS must vote
 3. **Are vetoed** - deposits for proposals with 33.4% of voting power backing the `NoWithVeto` option are also burned
+
+
+Document created by the Evmos DAO, https://evmos.community
