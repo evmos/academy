@@ -41,6 +41,7 @@ You will need this material to code along:
 - EVM extensions common types and authorization interfaces:
   [Types.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/Types.sol) &
   [Authorization.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/Authorization.sol):
+- Example contract that uses the EVM extensions:
   [SimpleStaker.sol](https://github.com/evmos/extensions/blob/main/examples/simple-staker/contracts/SimpleStaker.sol)
 
 **Use [this link](https://remix.ethereum.org/#version=soljson-v0.8.18+commit.87f61d96.js&optimize=false&runs=200&gist=cb19b4d41158234ba65d80c1f1bd2969) to open Remix with all the required files.**
