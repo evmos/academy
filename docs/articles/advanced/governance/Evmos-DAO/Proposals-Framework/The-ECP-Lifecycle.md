@@ -85,3 +85,6 @@ Core developers are not bound to the ECP Framework for network and protocol rela
 ## **Assistance & Review**
 
 All proposers are welcome to approach the Governance Workstream for assistance in any part of the Proposal Lifecycle. In addition, proposers may request a formal review of the proposal before going on chain.
+
+
+Document created by the Evmos DAO, https://evmos.community
