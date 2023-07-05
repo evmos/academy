@@ -245,3 +245,6 @@ Proposal Identification Tags are only required for Governance, Workstream (subDA
 The `ECP-#` tag will be assigned and added by a Governance Council member in the `Phase 2: ECP Formalization` or `Phase 3: ECP Signaling` phase. **You do not have to worry about adding in the tag yourself.**
 
 These tags are for internal tracking and organization purposes. Make sure to check the[ ](https://evmos.community/governance/proposals/submission)Proposal Submission Guidelines for more information on how to properly prepare your proposal for on-chain voting.
+
+
+Document created by the Evmos DAO, https://evmos.community
