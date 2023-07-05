@@ -20,3 +20,6 @@ The Evmos Community Proposal (ECP) Framework sets the guideline for all subseque
 **3. ECP Standards and Templates** - _Defines the processes, rules, and components required for all proposals before going to vote._
 
 **4. ECP Submission Guidelines** - _Defines the proposal submission procedures and guidelines for on-chain voting._
+
+
+Document created by the Evmos DAO, https://evmos.community
