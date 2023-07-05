@@ -11,3 +11,7 @@ The Evmos network, like other Cosmos-based chains, utilizes `on-chain governance
 ## **Limitations and Shortcomings**
 
 While the governance module in Cosmos SDK is sufficient for on-chain governance, there are limitations and shortcomings of the module that make it difficult to conduct off-chain governance - a crucial component for a DAO to be able to operate efficiently. Furthermore, the Cosmos ecosystem is lacking the innovative DAO management toolings that EVM-based DAOs have at their disposal. We hope to bridge the growing gap in innovations and tools between Ethereum and Cosmos with the deployment of interoperable tools onto our EVM, opening up a new world of tools for IBC chains.
+
+
+
+Document created by the Evmos DAO, https://evmos.community
