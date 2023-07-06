@@ -39,17 +39,16 @@ You will need this material to code along:
 - EVM extensions interfaces: [Distribution.sol](https://github.com/evmos/extensions/blob/main/precompiles/stateful/Distribution.sol)
   & [Staking.sol](https://github.com/evmos/extensions/blob/main/precompiles/stateful/Staking.sol)
 - EVM extensions common types and authorization interfaces:
-  [Types.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/Types.sol),
-  [Authorization.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/Authorization.sol) &
-  [GenericAuthorization.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/GenericAuthorization.sol)
+  [Types.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/Types.sol) &
+  [Authorization.sol](https://github.com/evmos/extensions/blob/main/precompiles/common/Authorization.sol):
 - Example contract that uses the EVM extensions:
   [SimpleStaker.sol](https://github.com/evmos/extensions/blob/main/examples/simple-staker/contracts/SimpleStaker.sol)
 
-**Use [this link](https://remix.ethereum.org/#version=soljson-v0.8.18+commit.87f61d96.js&optimize=false&runs=200&gist=e259420aec8d85ea2219e4154536ad35) to open Remix with all the required files.**
+**Use [this link](https://remix.ethereum.org/#version=soljson-v0.8.18+commit.87f61d96.js&optimize=false&runs=200&gist=cb19b4d41158234ba65d80c1f1bd2969) to open Remix with all the required files.**
 
 ## Approvals
 
-Before executing any transaction using the EVM Extensions,
+Before executing certain transactions using the EVM Extensions,
 the user interacting with the smart contract must first approve these.
 This is a security measure, that is required to ensure
 that no unauthorized transactions can be executed on behalf of the user.
@@ -58,29 +57,18 @@ The smart contract developer can choose to either separate
 the approval and execution of the EVM extensions transactions
 or to combine them into a single transaction.
 
-We have provided convenient constants (e.g.: `MSG_DELEGATE`, `MSG_UNDELEGATE`,
-`MSG_WITHDRAW_DELEGATOR_REWARD`, `MSG_WITHDRAW_VALIDATOR_COMMISSION`),
+We have provided convenient constants (e.g.: `MSG_DELEGATE`, `MSG_UNDELEGATE`),
 that store the corresponding message type URLs required for the approval process.
 
 This is done by calling the `approve` function, which will create an authorization grant for the given Cosmos SDK message.
 
-Note that the `approve` method for the `Staking` extension is different
-than the `Distribution` extension.
-The `Staking` extension uses the [AuthorizationI](https://github.com/evmos/extensions/blob/a776030516f396af4e6cd5588f59103017c0e6fe/precompiles/common/Authorization.sol#L7)
-interface, while the `Distribution` extension uses the [GenericAuthorizationI](https://github.com/evmos/extensions/blob/a776030516f396af4e6cd5588f59103017c0e6fe/precompiles/common/GenericAuthorization.sol#L7).
-
-Use the corresponding method when approving methods for each EVM extension
-(e.g., use `STAKING_CONTRACT.approve(...)` for staking methods,
-and `DISTRIBUTION_CONTRACT.approve(...)` for distribution methods).
-
 The [Simple Staker](https://github.com/evmos/extensions/blob/main/examples/simple-staker/contracts/SimpleStaker.sol) has the function `approveRequiredMethods()`
 to perform the necessary approvals.
-It approves the required methods for staking tokens (`MSG_DELEGATE`)
-and withdrawing staking rewards (`MSG_WITHDRAW_DELEGATOR_REWARD`).
+It approves the required methods for staking tokens (`MSG_DELEGATE`).
 
 ## Step 1: Compile the contract
 
-- Go to [this link to open the Remix IDE with the necessary contracts](https://remix.ethereum.org/#version=soljson-v0.8.18+commit.87f61d96.js&optimize=false&runs=200&gist=e259420aec8d85ea2219e4154536ad35)
+- Go to [this link to open the Remix IDE with the necessary contracts](https://remix.ethereum.org/#version=soljson-v0.8.18+commit.87f61d96.js&optimize=false&runs=200&gist=cb19b4d41158234ba65d80c1f1bd2969)
 - Compile the `SimpleStaker` contract with Remix
 
 ## Step 2: Connect MetaMask to the Evmos testnet
@@ -131,7 +119,7 @@ Before performing any transaction,
 make sure to set the corresponding approvals.
 To do so, call the `approveRequiredMethods` function.
 This function will grant permissions to the smart contract
-to use the `MsgDelegate` and `MsgWithdrawDelegatorWithdraw`
+to use the `MsgDelegate`
 on behalf of the caller.
 
 ### Stake some tokens
