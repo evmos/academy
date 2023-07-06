@@ -23,5 +23,3 @@ jobs:
           files: .
           config_file: .markdownlint.yml
           # ignore_path: .markdownlintignore
-        # Check only if there are differences in the source code
-        if: env.GIT_DIFF
