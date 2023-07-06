@@ -1,0 +1,16 @@
+{
+    "ignorePatterns": [
+        {
+            "pattern": "^/"
+        },
+        {
+            "pattern": "^#"
+        },
+        {
+            "pattern": "^./"
+        }
+  ],
+    "retryOn429": true,
+    "retryCount": 3,
+    "fallbackRetryDelay": "20s"
+}
