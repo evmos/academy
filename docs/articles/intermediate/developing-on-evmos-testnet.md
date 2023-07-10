@@ -29,8 +29,8 @@ Evmos supports a wide gamut of wallets. To see the latest head over [here](https
 However, we recommend using Metamask, Keplr, WalletConnect, and Ledger.
 
 :::tip
-If you are using Keplr for Testnet, and need to add Testnet configuration to the wallet, head over [here](https://docs.evmos.org/develop/testnet) and
-click on the `Add Configuration to Testnet`.
+If you are using Keplr for Testnet, and need to add Testnet configuration to the wallet, head over [here](https://docs.evmos.org/develop/testnet)
+and click on the `Add Configuration to Testnet`.
 :::
 
 Testnet tokens can be obtained from our faucet, located [here](https://faucet.evmos.dev/). The faucet will emit
@@ -67,8 +67,8 @@ A list of latest oracles are [here](https://docs.evmos.org/develop/tools/oracles
 
 ## Evmos Modules
 
-The Evmos blockchain contains homegrown modules and more details can be found [here](https://docs.evmos.org/protocol/modules) alongside ones
-from the [Cosmos SDK](https://docs.evmos.org/protocol/modules).
+The Evmos blockchain contains homegrown modules and more details can be found [here](https://docs.evmos.org/protocol/modules)
+alongside ones from the [Cosmos SDK](https://docs.evmos.org/protocol/modules).
 
 A list of our Ethereum JSON-RPC can be found [here](https://docs.evmos.org/develop/api/ethereum-json-rpc).
 
@@ -83,8 +83,8 @@ Evmos is always here to help. The community and the Core Team can easily be reac
 
 ## Conclusion
 
-We hope this guide has been helpful. Please share this guide with anyone. If we are missing anything, please feel free to contribute
-or reach out and we will add to this guide. Happy building!
+We hope this guide has been helpful. Please share this guide with anyone. If we are missing anything, please feel free
+to contribute or reach out and we will add to this guide. Happy building!
 
 ## Useful Resources
 
