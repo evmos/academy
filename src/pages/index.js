@@ -26,7 +26,7 @@ function Home() {
                 }}
               />
               <Card
-                to="https://docs.evmos.org/develop/smart-contracts"
+                to="https://docs.evmos.org/develop/build-a-dApp/build-smart-contracts"
                 header={{
                   label: "Develop on Evmos",
                 }}
