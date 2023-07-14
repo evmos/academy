@@ -8,9 +8,12 @@ To contribute/update content in the Academy website, we welcome you to create a 
 
 ### Steps to create a pull request:
 
-You must have git installed and configured on your local computer.
+You must have git installed and configured on your local computer. 
 
-#### Step 1: Clone the repository:
+#### Step 1: Fork the repository:
+
+
+#### Step 2: Clone the repository
 
 SSH:
 
@@ -20,17 +23,13 @@ HTTPS:
 
 `git clone https://github.com/evmos/academy.git`
 
-#### Step 2: Create a new branch locally:
-
-`git checkout -b <my-updates>`
-
 #### Step 3: Install project dependencies
 
-Please note that the project uses `package-lock.json` lock file. Therefore you are expected to install package dependencies only using `npm install`.
+Please note that the project uses `package-lock.json` lock file, therefore you are expected to install package dependencies only using `npm install`.
 
 `npm install`
 
-#### Step 4: Make your updates in the new branch
+#### Step 4: Make your updates
 
 You can contribute new content or fix typos/grammatical errors or update existing content. All of this must be done on your local device.
 
@@ -73,7 +72,7 @@ Images in Markdown can be added this way:
 
 #### Step 5: Add changes, commit, and push to remote
 
-For github to track the changes you make, you must first add the files to the staging area:
+For Github to track the changes you make, you must first add the files to the staging area:
 
 If you would like to add all files to staging:
 
@@ -89,12 +88,11 @@ Commit Changes:
 
 Push to academy repository:
 
-Replace `my-updates` with the name of your branch
-`git push origin <my-updates>`
+`git push origin main`
 
 #### Step 6: Create a pull request on Github
 
-Go to `https://github.com/evmos/academy`, click on Pull Requests -> New Pull Request -> Select your branch in `compare` and click on Create pull request.
+Go to `https://github.com/evmos/academy`, click on Pull Requests -> New Pull Request -> Select your repo/branch in `compare` and click on Create pull request.
 
 
 
