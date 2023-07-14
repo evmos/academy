@@ -12,16 +12,17 @@ You must have git installed and configured on your local computer.
 
 #### Step 1: Fork the repository:
 
+![Fork Academy](static/img/AcademyFork.png)
 
 #### Step 2: Clone the repository
 
 SSH:
 
-`git clone git@github.com:evmos/academy.git`
+`git clone git@github.com:<usename>/academy.git`
 
 HTTPS:
 
-`git clone https://github.com/evmos/academy.git`
+`git clone https://github.com/<username>/academy.git`
 
 #### Step 3: Install project dependencies
 
@@ -50,6 +51,8 @@ Let us assume the article you are creating belongs to the intermediate category.
 You can create a new folder in docs/articles/intermediate
 
 Create a folder with an intuitive name: `<new-article>`
+
+![Create Folder](static/img/AcademyCreateFolder.png)
 
 **4.3**: Create a markdown file: `index.md`
 
