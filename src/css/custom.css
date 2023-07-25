@@ -237,3 +237,23 @@ article a[href^="http"]::after {
   display: inline-block;
   margin-left: 0.3rem;
 }
+
+.landing-page-box {
+  width: 100%;
+  height: 30vh;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.landing-page-box img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.gap-top {
+  margin-top: 2%;
+}
