@@ -54,6 +54,22 @@ function Home() {
             </div>
           </div>
         </div>
+
+        <div className="container gap-top">
+          <div className="article-card">
+            <div className="row">
+              <div className="col col--5" style={{padding: 30, marginLeft:'5%'}}>
+                <h2 className="burgundy">Title of Article</h2>
+                <p>Praesent et blandit ligula, at euismod dolor. Cras tincidunt mi eget porta sagittis. 
+                  Praesent finibus sem quis nibh egestas feugiat. Aliquam eleifend ex et diam volutpat, a egestas purus semper. 
+                </p>
+              </div>
+              <div className="col col--6">
+                <img src="https://cryptoslate.com/wp-content/uploads/2022/04/image_2022-04-28_183437814.png" style={{width:'100%', height:'63%', borderRadius:'10px'}} />
+              </div>
+            </div>
+          </div>
+        </div>
         
         <section className={styles.features}>
           <div className="container">
