@@ -71,6 +71,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Evmos Display';
+  src: url('../../static/fonts/Evmos/EvmosDisplay-ExtraBold.otf');
+  src: url('../../static/fonts/Evmos/EvmosDisplay-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   font-size: 16px;
 }
@@ -245,6 +254,7 @@ article a[href^="http"]::after {
   border-bottom: 1px solid white;
   border-radius: 10px;
   text-align: center;
+  
 }
 
 .landing-page-box img {
@@ -256,4 +266,34 @@ article a[href^="http"]::after {
 
 .gap-top {
   margin-top: 2%;
+}
+
+.evmos-display {
+  font-family: 'Evmos Display'; 
+  font-style: normal; 
+  font-weight: 100%; 
+  font-size: 100%; 
+  line-height: 99px; 
+  color: #FDF4E3;  
+}
+
+.feature-card {
+  border: 1px solid #A3A18B;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  height: 100px;
+  margin-top: 2%;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.fccream {
+  color: #FDF4E3;
+}
+
+.burgundy {
+  color:'#A3A18B'
 }
