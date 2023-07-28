@@ -137,6 +137,7 @@ button,
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
+  background: #121212;
   --ifm-color-primary: #e37923;
   --ifm-color-primary-dark: #d57220;
   --ifm-color-primary-darker: #ce6611;
@@ -286,16 +287,72 @@ article a[href^="http"]::after {
   margin-top: 2%;
 }
 
-.article-card {
-  border: 1px solid #A3A18B;
-  border-radius: 10px;
-  width: 100%;
-  height: 215px;
-  margin-top: 2%;
+@media screen and (max-width: 996px){
+  .evmos-header {
+    font-size: 50px;
+  }
+
+  .article-card {
+    border: 1px solid #A3A18B;
+    border-radius: 10px;
+    width: 100%;
+    height: 500px;
+    margin-top: 2%;
+  }
+
+  .article-card img {
+    width:100%;
+    height:200px;
+    border-radius:10px;
+  }
+
+  .article-text {
+    padding: 20px;
+    margin-left: 5px;
+  }
 }
+
+@media screen and (min-width: 996px){
+  .evmos-header {
+    font-size: 120px;
+  }
+
+  .article-card {
+    border: 1px solid #A3A18B;
+    border-radius: 10px;
+    width: 100%;
+    height: 215px;
+    margin-top: 2%;
+  }
+
+  .article-card img {
+    width:100%;
+    height:210px;
+    border-radius:10px;
+    margin-left: 7%;
+  }
+
+  .article-text {
+    padding: 30px;
+    margin-left: 5%;
+  }
+
+  .glossary-card {
+    height: 300px;
+  }
+
+  .glossary-card img {
+    height: 295px;
+  }
+}
+
 
 .text-left {
   text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
 }
 
 .fccream {
@@ -304,4 +361,16 @@ article a[href^="http"]::after {
 
 .burgundy {
   color:'#A3A18B'
+}
+
+.action-button {
+  background: white;
+  color: black;
+  padding: 15px;
+  height: 55px;
+  border-radius: 10px;
+  font-family: 'IBM Plex', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 18px;
 }

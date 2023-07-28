@@ -6,7 +6,9 @@ import Card from "../components/Card"
 import FeatureCard from "../components/FeatureCard"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBook, faComputer, faGlobe } from "@fortawesome/free-solid-svg-icons"
+import ArticleCard from "../components/ArticleCard";
 
+const testImageLink = "https://cryptoslate.com/wp-content/uploads/2022/04/image_2022-04-28_183437814.png";
 function Home() {
   const context = useDocusaurusContext();
 
@@ -15,15 +17,15 @@ function Home() {
       <main>
         <br />
         <div className="container">
-          <h1 align="center" className="evmos-display" style={{ fontWeight: '800', fontSize:120 }}>LEARN EVERYTHING</h1>
+          <h1 align="center" className="evmos-display evmos-header" style={{ fontWeight: '800'}}>LEARN EVERYTHING</h1>
           <div className="landing-page-box">
-            <img src="https://cryptoslate.com/wp-content/uploads/2022/04/image_2022-04-28_183437814.png" />
+            <img src={testImageLink} />
           </div>
         </div>
         <div className="container gap-top">
           <div className="row">
             <div className="col col--6">
-              <h1 className="evmos-display" style={{fontSize:100}}>Evmos</h1>
+              <h1 className="evmos-display evmos-header" >Evmos</h1>
             </div>
             <div className="col col--6">
               <p className="fccream">The Evmos Academy is your guide to building on and using Evmos. Learn how to deploy an app, integrate wallets,
@@ -58,14 +60,65 @@ function Home() {
         <div className="container gap-top">
           <div className="article-card">
             <div className="row">
-              <div className="col col--5" style={{padding: 30, marginLeft:'5%'}}>
+              <div className="col col--5 article-text" >
                 <h2 className="burgundy">Title of Article</h2>
                 <p>Praesent et blandit ligula, at euismod dolor. Cras tincidunt mi eget porta sagittis. 
                   Praesent finibus sem quis nibh egestas feugiat. Aliquam eleifend ex et diam volutpat, a egestas purus semper. 
                 </p>
               </div>
               <div className="col col--6">
-                <img src="https://cryptoslate.com/wp-content/uploads/2022/04/image_2022-04-28_183437814.png" style={{width:'100%', height:'63%', borderRadius:'10px'}} />
+                <img src={testImageLink}  />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container gap-top">
+          <div className="row">
+            <div className="col col--6">
+              <h2>Latest Articles</h2>
+            </div>
+            <div className="col col--6 text-right">
+              <button className="action-button">ALL ARTICLES</button>
+            </div>
+          </div>
+          <div className="row gap-top">
+            <div className="col col--4">
+              <ArticleCard
+                  title="Frequently Asked Questions"
+                  desc="Quisque nec neque et felis maximus ac dolor."
+                  imgLink={testImageLink}
+              />
+            </div>
+            <div className="col col--4">
+              <ArticleCard
+                  title="What's the EVM?"
+                  desc="Quisque nec neque et felis maximus ac dolor."
+                  imgLink={testImageLink}
+              />
+            </div>
+            <div className="col col--4">
+              <ArticleCard
+                  title="What's the EVM?"
+                  desc="Quisque nec neque et felis maximus ac dolor."
+                  imgLink={testImageLink}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="container gap-top">
+          <div className="article-card glossary-card">
+            <div className="row">
+              <div className="col col--5 article-text" >
+                <h2 className="burgundy">Glossary</h2>
+                <p>Praesent et blandit ligula, at euismod dolor. Cras tincidunt mi eget porta sagittis.
+                  Praesent finibus sem quis nibh egestas feugiat. Aliquam eleifend ex et diam volutpat, a egestas purus semper.
+                </p>
+                <button className="action-button">EXPLORE GLOSSARY</button>
+              </div>
+              <div className="col col--6">
+                <img src={testImageLink}  />
               </div>
             </div>
           </div>
