@@ -88,7 +88,7 @@ Articles published by the Evmos team can be found on the Evmos [Medium page](htt
 
 <summary><b>I have a marketing proposal. Whom do I reach out to?</b></summary>
 
-You may send your proposal via our support ticket system on [Discord}(https://discord.com/invite/evmos) or [Telegram](https://t.me/EvmosOrg).
+You may send your proposal via our support ticket system on [Discord](https://discord.com/invite/evmos) or [Telegram](https://t.me/EvmosOrg).
 
 </details>
 
