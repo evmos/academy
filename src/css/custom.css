@@ -137,7 +137,6 @@ button,
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  background: #121212;
   --ifm-color-primary: #e37923;
   --ifm-color-primary-dark: #d57220;
   --ifm-color-primary-darker: #ce6611;
@@ -248,6 +247,26 @@ article a[href^="http"]::after {
   margin-left: 0.3rem;
 }
 
+html[data-theme='dark'] {
+  background-color: #121212;
+}
+
+html[data-theme='dark'] .footer {
+  background-color: #000000;
+}
+
+html[data-theme='dark'] .footer__title {
+  color: #FDF4E3;
+}
+
+html[data-theme='dark'] .footer__link-item {
+  color: #A3A18B;
+}
+
+footer {
+  margin-top: -5%;
+}
+
 .landing-page-box {
   width: 100%;
   height: 30vh;
@@ -288,6 +307,18 @@ article a[href^="http"]::after {
 }
 
 @media screen and (max-width: 996px){
+
+  .support-section {
+    background: #000000;
+    height: 498px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .support-section h1{
+    margin-top: 20%;
+  }
+
   .evmos-header {
     font-size: 50px;
   }
@@ -313,6 +344,19 @@ article a[href^="http"]::after {
 }
 
 @media screen and (min-width: 996px){
+
+  .support-section {
+    background: #000000;
+    height: 498px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .support-section h1{
+    margin-top: 20%;
+    font-size: 72px;
+  }
+
   .evmos-header {
     font-size: 120px;
   }
@@ -373,4 +417,13 @@ article a[href^="http"]::after {
   font-weight: 500;
   cursor: pointer;
   font-size: 18px;
+}
+
+.m-left {
+  margin-left: 5%;
+}
+
+.support-section p {
+  margin-top: -5%;
+  color: #75705D;
 }

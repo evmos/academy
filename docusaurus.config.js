@@ -175,54 +175,91 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Academy',
+            title: 'Developer',
             items: [
               {
-                label: 'Register and Earn Revenue',
+                label: 'Docs',
                 to: '/articles/advanced/incentives-registration',
               },
               {
-                label: 'Learn About Wallet Integration',
+                label: 'Onboarding',
                 to: '/articles/advanced/wallet-integration',
               },
               {
-                label: 'Terminology',
+                label: 'Bug Bounty',
                 to: '/articles/terminology',
               },
+              {
+                label: 'Evmos Academy',
+                to: '/articles/terminology',
+              }
             ],
           },
           {
-            title: 'Community',
+            title: 'Explore',
             items: [
               {
-                label: 'Telegram',
+                label: 'Ecosystem',
                 href: 'https://t.me/EvmosOrg',
               },
               {
-                label: 'Discord',
+                label: 'Learn (Community)',
                 href: 'https://discord.gg/evmos',
               },
               {
-                label: 'Twitter',
+                label: 'Block Explorers',
                 href: 'https://twitter.com/EvmosOrg',
               },
             ],
           },
           {
-            title: 'Links',
+            title: 'Social',
             items: [
               {
-                label: 'Blog',
+                label: 'Twitter',
                 href: 'https://medium.com/evmos',
               },
               {
-                label: 'Evmos GitHub',
+                label: 'Discord',
+                href: 'https://github.com/evmos',
+              },
+              {
+                label: 'Telegram',
+                href: 'https://github.com/evmos',
+              },
+              {
+                label: 'Commonwealth',
+                href: 'https://github.com/evmos',
+              },
+              {
+                label: 'Reddit',
                 href: 'https://github.com/evmos',
               },
             ],
           },
+          {
+            title: 'About',
+            items: [
+              {
+                label: 'Manifesto',
+                href: 'https://medium.com/evmos',
+              },
+              {
+                label: 'Blog',
+                href: 'https://github.com/evmos',
+              },
+              {
+                label: 'Careers',
+                href: 'https://github.com/evmos',
+              },
+              {
+                label: 'Contact Us',
+                href: 'https://github.com/evmos',
+              }
+            ],
+          },
         ],
-        copyright: `Built with ❤️ by the Evmos Team. © ${new Date().getFullYear()} All rights reserved.`,
+        //copyright: `Built with ❤️ by the Evmos Team. © ${new Date().getFullYear()} All rights reserved.`,
       },
       prism: {
         theme: lightCodeTheme,

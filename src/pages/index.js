@@ -7,6 +7,7 @@ import FeatureCard from "../components/FeatureCard"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBook, faComputer, faGlobe } from "@fortawesome/free-solid-svg-icons"
 import ArticleCard from "../components/ArticleCard";
+import { faDiscord, faTelegram } from "@fortawesome/free-brands-svg-icons"
 
 const testImageLink = "https://cryptoslate.com/wp-content/uploads/2022/04/image_2022-04-28_183437814.png";
 function Home() {
@@ -123,7 +124,27 @@ function Home() {
             </div>
           </div>
         </div>
+
+        <div className="support-section gap-top">
+          <div className="container">
+            <div className="row">
+              <div className="col col--6">
+                <h1 className="evmos-display evmos-header" style={{ fontWeight: '800'}}>GET SUPPORT</h1>
+                <p>Chat with one of our community moderators. Or shoot us an email and we’ll get back to you ASAP.</p>
+                <span>
+                  <button className="action-button">
+                    <FontAwesomeIcon icon={faTelegram} /> Telegram
+                  </button>
+                  <button className="action-button m-left">
+                    <FontAwesomeIcon icon={faDiscord} /> Discord
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
         
+        {false ? 
         <section className={styles.features}>
           <div className="container">
             <div className="row cards__container">
@@ -159,7 +180,7 @@ function Home() {
               />
             </div>
           </div>
-        </section>
+        </section> : <></> }
       </main>
     </Layout>
   )
