@@ -5,7 +5,7 @@ Governance is the process of interaction and decision-making among the stakehold
 
 ## **Truly Decentralized, Community Governed Network**
 
-The Evmos network, like other Cosmos-based chains, utilizes `on-chain governance` for all protocol level execution of proposals via the `gov` module included in the Cosmos SDK. This gives the [community](https://evmos.community/governance/parameters/) full control of the network, including complex parameter changes, distribution changes, treasury pool spending, and even upgrades to the network. Anyone who holds or stakes EVMOS can participate in these votes, regardless of the voter's validator choices. Immense power is given to the community to govern and dictate the future of the chain.
+The Evmos network, like other Cosmos-based chains, utilizes `on-chain governance` for all protocol level execution of proposals via the `gov` module included in the Cosmos SDK. This gives the community full control of the network, including complex parameter changes, distribution changes, treasury pool spending, and even upgrades to the network. Anyone who holds or stakes EVMOS can participate in these votes, regardless of the voter's validator choices. Immense power is given to the community to govern and dictate the future of the chain.
 
 
 ## **Limitations and Shortcomings**
