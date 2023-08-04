@@ -95,7 +95,10 @@ Push to academy repository:
 
 #### Step 6: Create a pull request on Github
 
-Go to `https://github.com/evmos/academy`, click on Pull Requests -> New Pull Request -> Select your repo/branch in `compare` and click on Create pull request.
+Go to the repository you forked in Github and click on Pull Requests -> New Pull Request -> and ensure the following: 
+`base respository: evmos/academy` and `base:main`
+with `head repository` being the forked repository and `compare` with the branch you wish to merge.
 
+!['Create PR'](static/img/create-pr.png)
 
 
