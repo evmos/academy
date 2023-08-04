@@ -26,7 +26,7 @@ You can claim from the official Evmos faucet in the [faucet channel](https://dis
 
 <summary><b>Where can I find projects/dApps that are part of the Evmos ecosystem?</b></summary>
 
-You can discover all the Web3 apps and projects built in the Evmos ecosystem, such as wallets, bridges and decentralized exchanges on our official [ecosystem page](https://evmos.org/ecosystem).
+You can discover all the Web3 apps and projects built in the Evmos ecosystem, such as wallets, bridges and decentralized exchanges on our official [ecosystem page](https://altiplanic.notion.site/a188bd13dd114a88a7763fd2a8cc601e?v=403420ad21db41ce81f09b7e3f77e4e2).
 
 </details>
 
@@ -88,7 +88,7 @@ Articles published by the Evmos team can be found on the Evmos [Medium page](htt
 
 <summary><b>I have a marketing proposal. Whom do I reach out to?</b></summary>
 
-You may send your proposal to https://t.me/liamdig on Telegram via direct message.
+You may send your proposal via our support ticket system on [Discord](https://discord.com/invite/evmos) or [Telegram](https://t.me/EvmosOrg).
 
 </details>
 
