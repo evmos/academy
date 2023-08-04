@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # BUIDL on Evmos: Testnet Guide
 
 Welcome builders! We are excited to have you build on Evmos. This guide will provide an overview of the
