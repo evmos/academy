@@ -13,7 +13,7 @@ Each explorer queries data respective to their environment with the EVM explorer
 (blocks, transactions, accounts, smart contracts, etc) and the Cosmos explorers querying Cosmos-formatted data
 (Cosmos and IBC transactions, blocks, accounts, module data, etc).
 
-## List of Block Explorers
+## List of block explorers
 
 Below is a list of public block explorers that support Evmos Mainnet and Testnet:
 
@@ -33,6 +33,5 @@ Below is a list of public block explorers that support Evmos Mainnet and Testnet
 | ---------- | -------------- | ------------------------------------------------------------------------------ |
 | Escan      | `cosmos` `evm` | [testnet.escan.live](https://testnet.escan.live)                               |
 | Mintscan   | `cosmos` `evm` | [testnet.mintscan.io/evmos-testnet](https://testnet.mintscan.io/evmos-testnet) |
-| BigDipper  | `cosmos`       | [testnet.bigdipper.live](https://testnet.evmos.bigdipper.live/)                |
-| Blockscout | `evm`          | [evm.evmos.dev](https://evm.evmos.dev/)                                        |
+| BigDipper  | `cosmos`       | [testnet.bigdipper.live](https://testnet.evmos.bigdipper.live/)                |                                     |
 | NGExplorer | `cosmos`       | [testnet.evmos.explorers.guru](https://testnet.evmos.explorers.guru)           |

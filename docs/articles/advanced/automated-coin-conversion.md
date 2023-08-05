@@ -48,7 +48,7 @@ type Coin struct {
 }
 ```
 
-### ERC20 Token Pairs
+### ERC20 token pairs
 
 For [ERC-20 tokens that were deployed on the Evmos chain and then registered through governance](./erc20-registration.md) to support cross-chain transfer, you will have to specify the
 corresponding IBC denom (e.g. `erc20/0xe46910336479F254723710D57e7b683F3315b22B`)
@@ -62,7 +62,7 @@ token_pair:
   erc20_address: 0xe46910336479F254723710D57e7b683F3315b22B
 ```
 
-### Cosmos Token Pairs
+### Cosmos token pairs
 
 For [Cosmos tokens that were registered through governance](./cosmos-coin-registration.md) to support usage on
 the EVM (e.g. OSMO), you can specify the corresponding IBC denom (e.g.

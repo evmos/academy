@@ -34,7 +34,7 @@ This avoids the situation of a malicious individual/employee deployer (including
 who leaves your project and could later change the withdrawal address unilaterally.
 :::
 
-## Register Contract
+## Register contract
 
 To add your contract in the Evmos dApp Store, you need to register a `revenue` for that contract.
 The `revenue` includes the details for receiving a cut of the transaction fees,
@@ -73,7 +73,7 @@ If you are wondering how large your cut is, have a look at the
 which is controlled through governance.
 You can query the parameters using our [OpenAPI documentation](https://api.evmos.dev/).
 
-### Deployed Factory Pattern
+### Deployed factory pattern
 
 You can also register a contract which has been deployed by a smart contract instead of an
 [EOA](https://docs.evmos.org/protocol/modules/evm#accounts).
@@ -88,7 +88,7 @@ Then, `DeployerEOA` sends a transaction to the `FactoryB` contract, through whic
 If this is the first contract created by FactoryB - the nonce is `1`.
 To be able to verify that `DeployerEOA` can register `MyContract`, we need to provide the following nonces: `[5, 2, 1]`.
 
-## Update Contract
+## Update contract
 
 Registered contracts can also be updated.
 To update the withdrawer address of your `revenue`, use the following CLI command:
@@ -104,7 +104,7 @@ If the specified withdrawer is the same address as the deployer,
 then the revenue is updated with an empty withdrawer address,
 so that all transaction fees are sent to the deployer address.
 
-## Cancel Contract
+## Cancel contract
 
 Revenues can also be canceled.
 In order to stop receiving transaction fees for interaction with your contract, use the following CLI command:

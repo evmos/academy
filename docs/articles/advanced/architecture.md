@@ -47,7 +47,7 @@ Another example of a cryptocurrency application built on CometBFT is the Cosmos
 network. CometBFT can decompose the blockchain design by offering a very
 simple API (ie. the ABCI) between the application process and consensus process.
 
-## EVM Compatibility
+## EVM compatibility
 
 Evmos enables EVM compatibility by implementing various components
 that together support all the EVM state transitions
