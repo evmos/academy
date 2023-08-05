@@ -31,7 +31,7 @@ and request testnet tokens from the Faucet to start developing.
 Note, that tokens on Testnet don’t have actual value,
 so that you don’t need to worry about losing funds.
 
-## Connect to Testnet
+## Connect to testnet
 
 :::tip
 Add Evmos Testnet to Keplr.

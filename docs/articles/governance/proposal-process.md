@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Proposal Process
 
-## Deposit Period
+## Deposit period
 
 The deposit period lasts either 3 days or until the proposal deposit totals 3500 EVMOS, whichever happens first.
 
@@ -32,7 +32,7 @@ Deposits are burned when proposals:
    i.e. 33.4% of all staked EVMOS must vote
 3. **Are vetoed** - deposits for proposals with 33.4% of voting power backing the `NoWithVeto` option are also burned
 
-## Voting Period
+## Voting period
 
 The voting period is currently a fixed 5-day period.
 During the voting period, participants may select a vote of either `Yes`, `No`, `Abstain`, or `NoWithVeto`.

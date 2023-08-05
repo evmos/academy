@@ -44,8 +44,6 @@ Let us assume the article you are creating belongs to the intermediate category.
 
 **4.1**: Open your favorite choice of editor
 
-`code .`
-
 **4.2**: Create a folder for your article
 
 You can create a new folder in docs/articles/intermediate
@@ -58,7 +56,7 @@ Create a folder with an intuitive name: `<new-article>`
 
 In markdown, you can add text, images, videos and more.
 
-A brief intro to markdown:
+A brief intro to [markdown](https://www.markdownguide.org/getting-started/):
 
 - Single # is used to create a header
 - Double ## is used to create a paragraph header
@@ -95,7 +93,10 @@ Push to academy repository:
 
 #### Step 6: Create a pull request on Github
 
-Go to `https://github.com/evmos/academy`, click on Pull Requests -> New Pull Request -> Select your repo/branch in `compare` and click on Create pull request.
+Go to the repository you forked in Github and click on Pull Requests -> New Pull Request -> and ensure the following: 
+`base respository: evmos/academy` and `base:main`
+with `head repository` being the forked repository and `compare` with the branch you wish to merge.
 
+!['Create PR'](static/img/create-pr.png)
 
 
