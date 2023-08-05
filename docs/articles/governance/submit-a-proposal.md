@@ -53,13 +53,13 @@ the text will be [escaped](https://en.wikipedia.org/wiki/Escape_sequences_in_C) 
 If you're using markdown or line breaks it's recommended to put the proposal text into a json file
 and include that file as part of the CLI proposal, as opposed to individual fields in flags.
 
-### Text Proposals
+### Text proposals
 
 `TextProposal`s are used by delegators to agree to a certain strategy, plan, commitment, future upgrade,
 or any other statement in the form of text.
 Aside from having a record of the proposal outcome on the Evmos chain, a text proposal has no direct effect on Evmos.
 
-#### Real Example
+#### Real example
 
 [Proposal 1](https://commonwealth.im/evmos/proposal/1-airdrop-claim-mission) was representative of
 one of four core network activities that users had to participate in to claim tokens from the Evmos Rektdrop.
@@ -72,7 +72,7 @@ one of four core network activities that users had to participate in to claim to
 }
 ```
 
-### Community Pool Spend Proposals
+### Community pool spend proposals
 
 For community pool spend proposals, there are five components:
 
@@ -83,7 +83,7 @@ For community pool spend proposals, there are five components:
 4. **Amount** - the amount of funding that the recipient will receive in atto-EVMOS (`aevmos`)
 5. **Deposit** - the amount that will be contributed to the deposit (in `aevmos`) from the account submitting the proposal
 
-#### Made-Up Example
+#### Made-Up example
 
 In this simple example (below), a network explorer will list the governance proposal as a `CommunityPoolSpendProposal`.
 When an observer selects the proposal, they'll see the description.
@@ -118,7 +118,7 @@ Deposit amounts will also be burned if the quorum isn't met in the vote or the p
 
 ```
 
-#### An Example
+#### An example
 
 This is a governance protocol which [Seda](https://www.seda.xyz/),
 the provider of a cross-chain oracle which provides smart contracts with access to economically secure data feeds,
@@ -145,7 +145,7 @@ Users can query the proposal details with the `evmosd` command-line interface us
 }
 ```
 
-### Params-Change Proposals
+### Params-Change proposals
 
 :::tip
 Changes to the [`gov` module](./) are different from the other kinds of parameter changes
@@ -165,7 +165,7 @@ For parameter-change proposals, there are seven components:
 7. **Amount** - the amount that will be contributed to the deposit (in `aevmos`)
    from the account submitting the proposal
 
-#### Real Example
+#### Real example
 
 In the example below, a network explorer listed the governance proposal by its title:
 "Increase the minimum deposit for governance proposals."

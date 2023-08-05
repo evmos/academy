@@ -12,7 +12,7 @@ to reflect the latest and greatest on Evmos.
 To find the latest and greatest, head over to our [developer docs](https://docs.evmos.org/).
 :::
 
-## EVM Extensions
+## EVM extensions
 
 The Evmos Core Team is continually improving and adding new features to our Extensions. For the latest ABI, examples,
 and features, head over to [this repo](https://github.com/evmos/extensions).
@@ -42,7 +42,7 @@ Testnet tokens can be obtained from our faucet, located [here](https://faucet.ev
 [Telegram Builders Channel](https://t.me/EvmosBuilders) or as one of our testnet validators on
 [Discord](https://discord.gg/evmos) `validators-testnet` under `Validator Station` section can help out.
 
-## Block Explorers
+## Block explorers
 
 - [Escan](https://testnet.escan.live/) supports both EVM and Cosmos transactions. Note that this testnet
 block explorer does not have complete historical state. This block explorer supports contract verification
@@ -50,9 +50,8 @@ permissionlessly.
 - [Mintscan](https://testnet.mintscan.io/evmos-testnet/) supports both EVM and Cosmos transactions. The depth of
 EVM data is not as extensive as Escan but Mintscan has historical dataset to query. The search bar will only support
 Cosmos transaction hashes.
-- [BlockScout](https://evm.evmos.dev/) supports EVM transactions.
 
-## Client Library
+## Client library
 
 The official support client library is [EvmosJS](https://github.com/evmos/evmosjs). Users will also need
 [EthersJS](https://docs.ethers.org/v5/) or [web3](https://web3js.readthedocs.io/) to interact with contract
@@ -63,20 +62,20 @@ the implementation.
 
 ## Indexers
 
-Evmos has a wide array of indexers to choose from and for the latest, please head over [here](https://docs.evmos.org/develop/tools/indexers).
+Evmos has a wide array of indexers to choose from and for the latest, please head over [here](https://docs.evmos.org/develop/graphs-indexers).
 
 ## Oracles
 
-A list of latest oracles are [here](https://docs.evmos.org/develop/tools/oracles).
+A list of latest oracles are [here](https://docs.evmos.org/develop/oracles).
 
-## Evmos Modules
+## Evmos modules
 
 The Evmos blockchain contains homegrown modules and more details can be found [here](https://docs.evmos.org/protocol/modules) alongside ones
 from the [Cosmos SDK](https://docs.evmos.org/protocol/modules).
 
 A list of our Ethereum JSON-RPC can be found [here](https://docs.evmos.org/develop/api/ethereum-json-rpc).
 
-## Stay Connected
+## Stay connected
 
 Evmos is always here to help. The community and the Core Team can easily be reached here:
 
@@ -90,7 +89,7 @@ Evmos is always here to help. The community and the Core Team can easily be reac
 We hope this guide has been helpful. Please share this guide with anyone. If we are missing anything, please feel free to contribute
 or reach out and we will add to this guide. Happy building!
 
-## Useful Resources
+## Useful resources
 
 - [Evmos docs](https://docs.evmos.org/)
 - [Getting started on Testnet Workshop (DoraHacks Hackathon)](https://www.youtube.com/live/pzk70FaqtQE?feature=share)

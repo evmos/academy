@@ -15,7 +15,7 @@ An Evmos validator, Stakely.io, runs a [faucet](https://stakely.io/en/faucet/evm
 
 ## Deployment
 
-You can deploy your contracts on Mainnet using the [JSON-RPC](../develop/smart-contracts#deploy-with-ethereum-json-rpc).
+You can deploy your contracts on Mainnet using the [JSON-RPC](https://docs.evmos.org/develop/smart-contracts#deploy-with-ethereum-json-rpc).
 This is the same procedure as on Testnet, but instead targeting the [Mainnet network endpoints](./../develop/api/networks).
 Before you do so, have a look at the following considerations.
 
@@ -61,7 +61,7 @@ decide on how to distribute them and what kind of narrative you want to create.
 One option is to distribute tokens to users through an airdrop. For some inspiration on how to select
 eligible receivers of an airdrop have a look at the [Evmos Rektdrop](https://medium.com/evmos/the-evmos-rektdrop-abbe931ba823).
 
-### Token Registration
+### Token registration
 
 Evmos allows for ERC-20 tokens to be used cross-chain. Once some of your tokens have been minted, you can register a token
 pair through governance, which will allow users to send your tokens across chains. Head over to our Academy to learn how

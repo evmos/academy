@@ -1,4 +1,3 @@
-
 # Validating on Evmos
 
 Evmos is based on [CometBFT](https://github.com/cometbft/cometbft),
@@ -42,7 +41,7 @@ We officially support macOS and Linux only in the following architectures:
 * `linux/arm64`
 * `linux/amd64`
 
-### Minimum Requirements
+### Minimum requirements
 
 To run mainnet or testnet validator nodes, you will need a machine with the following minimum hardware requirements:
 
@@ -54,7 +53,7 @@ To run mainnet or testnet validator nodes, you will need a machine with the foll
 As the usage of the blockchain grows, the server requirements may increase as well, so you should have a plan for
 updating your server as well.
 
-## Get Involved
+## Get involved
 
 :::tip
 Seek legal advice if you intend to run a validator.

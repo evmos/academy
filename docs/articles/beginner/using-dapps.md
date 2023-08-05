@@ -6,14 +6,14 @@ sidebar_position: 7
 
 Before engaging with dApps, it is important to have a wallet with some Evmos tokens. If you have not installed a wallet,
 please visit our [wallet's](./../use/wallet) section to select an appropriate wallet. If you do not have any EVMOS tokens,
-you can acquire them by reading the [Onramp to Evmos](../transfer-tokens/index.md#onramp-to-evmos) strategies.
+you can acquire them by reading the [Onramp to Evmos](https://docs.evmos.org/use/transfer#onramp-to-evmos) strategies.
 
 <!-- add link to [dApps](../intro#what-are-dapps) -->
 
 You can start by using the Evmos dApps that are built and maintained by the Evmos core development team or use our
 [Ecosystem Page](https://evmos.org/ecosystem) to browse through the rich ecosystem of dApps on Evmos.
 
-## Queries and Transactions
+## Queries and transactions
 
 Once you have your wallet set up, you can start using dApps on Evmos. Generally, reading information from the network
 (querying) is free and doesn't require you to pay transaction fees. So dApps can always display blockchain information,
@@ -78,6 +78,6 @@ governance proposals.
 
 :::note
 Engage with our community on [Commonwealth](https://commonwealth.im/evmos) and learn about upcoming proposals. If you are
-interested in launching your own governance proposals, head over [here](https://academy.evmos.org/community/governance/)
+interested in launching your own governance proposals, head over [here](../governance/)
 for a guide.
 :::

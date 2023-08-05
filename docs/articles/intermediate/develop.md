@@ -37,5 +37,5 @@ through the Inter Blockchain Communication Protocol (IBC).
 ## Contributors
 
 You can also contribute to the Evmos ecosystem without building a dApp. Head over to [tools](./tools/index.md) to learn
-how to contribute as a full-stack developer by building new dev tools or [protocol](../protocol) to help
+how to contribute as a full-stack developer by building new dev tools or [protocol](https://docs.evmos.org/protocol) to help
 out building the core protocol.
