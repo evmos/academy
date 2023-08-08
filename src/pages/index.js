@@ -1,17 +1,16 @@
 import React from "react"
 import Layout from "@theme/Layout"
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import styles from "./index.module.css"
 import Card from "../components/Card"
 import FeatureCard from "../components/FeatureCard"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBook, faComputer, faGlobe } from "@fortawesome/free-solid-svg-icons"
 import ArticleCard from "../components/ArticleCard";
-import { faDiscord, faTelegram } from "@fortawesome/free-brands-svg-icons"
+import { faDiscord, faTelegram } from "@fortawesome/free-brands-svg-icons";
+import blackHoleImg from "@site/static/img/Blackhole0.png";
 
 const testImageLink = "https://cryptoslate.com/wp-content/uploads/2022/04/image_2022-04-28_183437814.png";
 function Home() {
-  const context = useDocusaurusContext();
 
   return (
     <Layout title="Homepage" description="Evmos Academy">
@@ -20,7 +19,7 @@ function Home() {
         <div className="container">
           <h1 align="center" className="evmos-display evmos-header" style={{ fontWeight: '800'}}>LEARN EVERYTHING</h1>
           <div className="landing-page-box">
-            <img src={testImageLink} />
+            <img src={blackHoleImg.src} />
           </div>
         </div>
         <div className="container gap-top">
@@ -39,19 +38,19 @@ function Home() {
           <div className="row">
             <div className="col col--4">
               <FeatureCard
-                icon={<FontAwesomeIcon icon={faComputer} className="burgundy" size="3x" />}
+                icon={<FontAwesomeIcon icon={faComputer} size="3x" />}
                 title="For Developers"
               />
             </div>
             <div className="col col--4">
               <FeatureCard
-                icon={<FontAwesomeIcon icon={faGlobe} className="burgundy" size="3x" />}
+                icon={<FontAwesomeIcon icon={faGlobe} size="3x" />}
                 title="Enjoy Community"
               />
             </div>
             <div className="col col--4">
               <FeatureCard
-                icon={<FontAwesomeIcon icon={faBook} className="burgundy" size="3x" />}
+                icon={<FontAwesomeIcon icon={faBook} size="3x" />}
                 title="Browse Glossary"              
               />
             </div>
