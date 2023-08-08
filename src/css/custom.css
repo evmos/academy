@@ -73,8 +73,8 @@
 
 @font-face {
   font-family: 'Evmos Display';
-  src: url('../../static/fonts/Evmos/EvmosDisplay-ExtraBold.otf');
-  src: url('../../static/fonts/Evmos/EvmosDisplay-Regular.otf');
+  src: url('../../static/fonts/Evmos-Display/EvmosDisplay-ExtraBold.otf');
+  src: url('../../static/fonts/Evmos-Display/EvmosDisplay-Regular.otf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -168,7 +168,7 @@ h2, h3, h4, h5, h6 {
   --footer-bg-color: #000000;
   --header-color: #000000;
   --frame-border-color: black;
-  --footer-link-item-color: white;
+  --footer-link-item-color: #A3A18B;
 }
 
 .pseudo-icon {
@@ -348,12 +348,16 @@ html[data-theme='light'] {
     width: 100%;
     height: 500px;
     margin-top: 2%;
+    position: relative;
   }
 
   .article-card img {
     width:100%;
-    height:200px;
+    max-height: 50%;
     border-radius:10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 
   .article-text {
@@ -390,7 +394,7 @@ html[data-theme='light'] {
 
   .article-card img {
     width:100%;
-    height:210px;
+    height:213px;
     border-radius:10px;
     margin-left: 7%;
   }
