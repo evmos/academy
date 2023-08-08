@@ -162,6 +162,7 @@ h2, h3, h4, h5, h6 {
   --header-color: var(--burgundy);  
   --frame-border-color: white;
   --description-color: var(--burgundy);
+  --background-color: #121212;
 }
 
 [data-theme='light'] {
@@ -169,6 +170,7 @@ h2, h3, h4, h5, h6 {
   --header-color: #000000;
   --frame-border-color: black;
   --footer-link-item-color: #A3A18B;
+  --background-color: #FAFAEB;
 }
 
 .pseudo-icon {
@@ -272,11 +274,15 @@ article a[href^="http"]::after {
 }
 
 html[data-theme='dark'] {
-  background-color: #121212;
+  background-color: var(--background-color);
 }
 
 html[data-theme='light'] {
-  background-color: #FFF4E1;
+  background-color: var(--background-color);
+}
+
+.navbar {
+  background-color: var(--background-color);
 }
 
 .footer {
@@ -440,4 +446,9 @@ html[data-theme='light'] {
 
 .m-left {
   margin-left: 5%;
+}
+
+details {
+  background-color: #76705B !important;
+  border: 1px solid black !important;
 }

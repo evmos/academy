@@ -262,7 +262,7 @@ To withdraw or deposit (IBC transfer) any assets to and from Evmos you can use t
 
 <details>
 
-<summary><b>where can I find the official Evmos Logo Kit?</b></summary>
+<summary><b>Where can I find the official Evmos Logo Kit?</b></summary>
 
 The Evmos Press Kit can be found [here](https://drive.google.com/drive/folders/1fw9a8DgLJ0X-LuI4hHG36JkMC9eFGJL6). Make sure to follow the guidelines mentioned in the PDF file when making use of the kit.
 

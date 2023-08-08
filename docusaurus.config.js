@@ -49,6 +49,15 @@ const config = {
     locales: ['en'],
   },
 
+  scripts: [
+    {
+      src: 'https://widget.mava.app',
+      async: true,
+      'data-token': '11db9fa83c1a56a2b225847978e9685d6f9ba5879716279aa9bf513f55bc2523',
+      defer: true
+    }
+  ],
+
   customFields: {
     project: {
       name: "Evmos",
