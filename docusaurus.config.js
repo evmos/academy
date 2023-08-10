@@ -135,7 +135,7 @@ const config = {
           {
             position: 'left',
             label: 'Articles',
-            to: '/articles/beginner/wallets',
+            to: '/articles',
           },
           {
             position: 'left',

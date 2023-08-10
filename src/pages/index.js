@@ -18,9 +18,12 @@ function Home() {
         <br />
         <div className="container">
           <h1 align="center" className="evmos-display evmos-header" style={{ fontWeight: '800'}}>LEARN EVERYTHING</h1>
-          <div className="landing-page-box">
-            <img src={blackHoleImg.src} />
+          <div className="box">
+            <div className="line-top"></div>
+            <img src={blackHoleImg.src} style={{width:'100%', height:400}} />
+            <div className="line-bottom"></div>
           </div>
+          
         </div>
         <div className="container gap-top">
           <div className="row">
