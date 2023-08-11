@@ -244,6 +244,7 @@ h2, h3, h4, h5, h6 {
   --frame-border-color: white;
   --description-color: var(--burgundy);
   --background-color: #121212;
+  --article-bg-color: #232334;
 }
 
 [data-theme='light'] {
@@ -252,6 +253,8 @@ h2, h3, h4, h5, h6 {
   --frame-border-color: black;
   --footer-link-item-color: #A3A18B;
   --background-color: #FAFAEB;
+  --description-color: #000000;
+  --article-bg-color: #76705B;
 }
 
 .pseudo-icon {
@@ -450,6 +453,10 @@ html[data-theme='light'] {
     padding: 20px;
     margin-left: 5px;
   }
+
+  .filter-button {
+    margin-top: 5%;
+  }
 }
 
 @media screen and (min-width: 996px){
@@ -595,8 +602,8 @@ details {
 
 .filter-button {
   background-color: var(--background-color);
-  border: 1px solid white;
-  color: white;
+  border: 1px solid var(--frame-border-color);
+  color: var(--description-color);
   padding: 12px;
   text-align: center;
   border-radius: 10px;
@@ -608,7 +615,7 @@ details {
   height: 50vh;
   border: 1px solid white;
   border-radius: 10px;
-  background-color: #232334;
+  background-color: var(--article-bg-color);
   margin-top: 10%;
   padding: 10px;
   cursor: pointer;
@@ -644,4 +651,12 @@ details {
   background-color: #6966ff;
   font-weight: bold;
   font-family: 'NB International';
+}
+
+.read-article {
+  border: 1px solid white;
+  height: 40px;
+  margin-left: 5%;
+  border-radius: 10px;
+  text-align: center;
 }
