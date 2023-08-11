@@ -1,6 +1,6 @@
 import React from "react";
 import articleBg from "@site/static/img/Bridgeless.png";
-import ArticleBadge from "./Badges/articleBadge";
+import ArticleBadge from "./Badges/ArticleBadge";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faClock } from "@fortawesome/free-solid-svg-icons";
 
