@@ -244,7 +244,8 @@ h2, h3, h4, h5, h6 {
   --frame-border-color: white;
   --description-color: var(--burgundy);
   --background-color: #121212;
-  --article-bg-color: #232334;
+  --article-bg-color: #Fe5f05;
+  --article-text-color: black;
 }
 
 [data-theme='light'] {
@@ -255,6 +256,7 @@ h2, h3, h4, h5, h6 {
   --background-color: #FAFAEB;
   --description-color: #000000;
   --article-bg-color: #76705B;
+  --article-text-color: white;
 }
 
 .pseudo-icon {
@@ -616,6 +618,7 @@ details {
   border: 1px solid white;
   border-radius: 10px;
   background-color: var(--article-bg-color);
+  color: var(--article-text-color);
   margin-top: 10%;
   padding: 10px;
   cursor: pointer;
