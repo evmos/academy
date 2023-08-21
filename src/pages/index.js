@@ -20,7 +20,7 @@ function Home() {
           <h1 align="center" className="evmos-display evmos-header" style={{ fontWeight: '800'}}>LEARN EVERYTHING</h1>
           <div className="box">
             <div className="line-top"></div>
-            <img src={blackHoleImg.src} style={{width:'100%', height:400}} />
+            <img src={blackHoleImg.src} style={{width:'100%', height:250}} />
             <div className="line-bottom"></div>
           </div>
           

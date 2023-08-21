@@ -23,7 +23,7 @@ export default function AcademyArticleCard(props) {
                 <h3>Market makers vs market takers</h3>
             </div>
             <div className="row">
-                <div className="col col--12" style={{textAlign:'right', marginTop:'20%'}}>
+                <div className="col col--12 duration" style={{textAlign:'right'}}>
                     <FontAwesomeIcon icon={faClock} />
                     <span style={{marginLeft:5}}>4 Min</span>
                 </div>
