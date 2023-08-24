@@ -30,7 +30,6 @@ without having to be dependent upon the foundation alone.
 
 ## FAQ
 
-
 <details>
 
 <summary><b>How is the Community Pool funded?</b></summary>
@@ -50,7 +49,6 @@ Funded projects that fail to deliver may return funding to Community Pool
 and entities may help fund the Community Pool by depositing funds directly to the escrow account.
 
 </details>
-
 
 <details>
 

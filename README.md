@@ -1,16 +1,16 @@
 # Evmos Academy
 
-Welcome to the Academy Docs, the official place to dive deeper into the world of Evmos. 
+Welcome to the Academy Docs, the official place to dive deeper into the world of Evmos.
 
 ## How to contribute?
 
 To contribute/update content in the Academy website, we welcome you to create a pull request.
 
-### Steps to create a pull request:
+### Steps to create a pull request
 
-You must have git installed and configured on your local computer. 
+You must have git installed and configured on your local computer.
 
-#### Step 1: Fork the repository:
+#### Step 1: Fork the repository
 
 ![Fork Academy](static/img/AcademyFork.png)
 
@@ -65,7 +65,7 @@ A brief intro to [markdown](https://www.markdownguide.org/getting-started/):
 
 **4.4**: (Optional) Add images:
 
-Upload your image to `static/img` folder. 
+Upload your image to `static/img` folder.
 
 Images in Markdown can be added this way:
 
@@ -93,10 +93,8 @@ Push to academy repository:
 
 #### Step 6: Create a pull request on Github
 
-Go to the repository you forked in Github and click on Pull Requests -> New Pull Request -> and ensure the following: 
+Go to the repository you forked in Github and click on Pull Requests -> New Pull Request -> and ensure the following:
 `base respository: evmos/academy` and `base:main`
 with `head repository` being the forked repository and `compare` with the branch you wish to merge.
 
 !['Create PR'](static/img/create-pr.png)
-
-

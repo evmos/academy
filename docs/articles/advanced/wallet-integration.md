@@ -11,7 +11,6 @@ Check out both the [MetaMask Wallet Documentation](https://docs.metamask.io/guid
 and [Keplr Wallet Documentation](https://docs.keplr.app/).
 :::
 
-
 ## Installation
 
 Follow the build and installation instructions specified in
@@ -19,7 +18,7 @@ Follow the build and installation instructions specified in
 
 ## Packages
 
-Visit our documentation on 
+Visit our documentation on
 [client integrations](https://docs.evmos.org/develop/tools/client-integrations)
 to learn more about [EvmosJS](https://github.com/evmos/evmosjs) and
 the libraries we recommend in integrations.

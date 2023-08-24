@@ -13,7 +13,6 @@ dApp from another chain, you'll want to check out the sections on
 2. Integrating [wallets](./develop/wallet-integration) (e.g. Keplr and MetaMask) into your Frontend
 4. Available developer [Tools](./tools/index.md)
 
-
 Once tested on [Testnet](./../develop/testnet) and deployed on [Mainnet](./../develop/mainnet), you can
 start [earning an income](./../develop/mainnet#revenue) on transaction fees from interacting with your dApp or
 [register your tokens](./../develop/mainnet#token-registration) for cross-chain use.

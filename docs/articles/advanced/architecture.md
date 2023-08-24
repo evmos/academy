@@ -53,10 +53,10 @@ Evmos enables EVM compatibility by implementing various components
 that together support all the EVM state transitions
 while ensuring the same developer experience as Ethereum:
 
-- Ethereum's transaction format as a Cosmos SDK `Tx` and `Msg` interface
-- Ethereum's `secp256k1` curve for the Cosmos Keyring
-- `StateDB` interface for state updates and queries
-- [JSON-RPC](../develop/api/ethereum-json-rpc) client for interacting with the EVM
+* Ethereum's transaction format as a Cosmos SDK `Tx` and `Msg` interface
+* Ethereum's `secp256k1` curve for the Cosmos Keyring
+* `StateDB` interface for state updates and queries
+* [JSON-RPC](../develop/api/ethereum-json-rpc) client for interacting with the EVM
 
 Most components are implemented in the [EVM module](modules/evm.md)
 To achieve a seamless developer UX, however, some of the components are implemented

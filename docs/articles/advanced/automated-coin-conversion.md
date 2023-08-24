@@ -33,18 +33,17 @@ to send ERC-20 tokens cross-chain (via an IBC transfer) in a single step.
 To do so, you only need to ensure that the corresponding denomination is passed
 as a parameter, when performing an outgoing [transfer via IBC](https://ibc.cosmos.network/main/apps/transfer/messages.html#msgtransfer).
 
-
 ```go
 type MsgTransfer struct {
-	// ...
-	// the tokens to be transferred
-	Token types.Coin `protobuf:"bytes,3,opt,name=token,proto3" json:"token"`
-	// ...
+ // ...
+ // the tokens to be transferred
+ Token types.Coin `protobuf:"bytes,3,opt,name=token,proto3" json:"token"`
+ // ...
 }
 
 type Coin struct {
-	Denom  string `protobuf:"bytes,1,opt,name=denom,proto3" json:"denom,omitempty"`
-	Amount Int    `protobuf:"bytes,2,opt,name=amount,proto3,customtype=Int" json:"amount"`
+ Denom  string `protobuf:"bytes,1,opt,name=denom,proto3" json:"denom,omitempty"`
+ Amount Int    `protobuf:"bytes,2,opt,name=amount,proto3,customtype=Int" json:"amount"`
 }
 ```
 

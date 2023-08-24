@@ -4,7 +4,6 @@ sidebar_position: 8
 
 # Testnet
 
-
 The Evmos Testnet is a decentralized blockchain network
 that runs parallel to the Mainnet.
 It allows developers to test and deploy their decentralized applications (dApps)

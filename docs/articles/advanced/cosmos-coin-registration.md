@@ -50,12 +50,12 @@ The following topics must be addressed when drafting a Cosmos Coin Proposal:
 
 1. Provide the profile of the person(s)/entity making the proposal.
 
-	Who are you? What is your involvement in Cosmos and/or other blockchain networks?
-	If you are working with a team,
-	who are the team members involved and what is their relevant experience?
-	What is the mission statement of your organization or business?
-	Do you have a website?
-	Showcase some work you've done and some proof of who you are.
+ Who are you? What is your involvement in Cosmos and/or other blockchain networks?
+ If you are working with a team,
+ who are the team members involved and what is their relevant experience?
+ What is the mission statement of your organization or business?
+ Do you have a website?
+ Showcase some work you've done and some proof of who you are.
 
 2. Promote understanding of the ERC-20 Module.
 
