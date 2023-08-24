@@ -25,7 +25,7 @@ Onramping to Evmos (obtaining EVMOS tokens) is required to start using Evmos as 
 Here are some examples of how to onramp to Evmos:
 
 * Use a decentralized exchange like Osmosis
-* Ask a friend to transfer you EVMOS 
+* Ask a friend to transfer you EVMOS
 * Use services that allow you to exchange fiat currencies (e.g. $USD) for cryptocurrencies, (e.g. [C14](https://www.c14.money/buy))
 
 ## Send assets on the same chain

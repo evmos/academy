@@ -1,7 +1,6 @@
 
 # Frequently Asked Questions
 
-
 ## General
 
 <details>
@@ -72,7 +71,7 @@ A detailed breakdown of the Evmos token model can be found [here](https://medium
 
 <summary><b>Where can I find data about the Evmos network and its parameters, such as the staking APR, Inflation and validator list?</b></summary>
 
-[Mintscan](https://www.mintscan.io/evmos) is a great way to find information and data on the Evmos network (or other Cosmos chains). Another example would be [SmartStake](https://evmos.smartstake.io/). 
+[Mintscan](https://www.mintscan.io/evmos) is a great way to find information and data on the Evmos network (or other Cosmos chains). Another example would be [SmartStake](https://evmos.smartstake.io/).
 
 </details>
 
@@ -91,9 +90,6 @@ Articles published by the Evmos team can be found on the Evmos [Medium page](htt
 You may send your proposal via our support ticket system on [Discord](https://discord.com/invite/evmos) or [Telegram](https://t.me/EvmosOrg).
 
 </details>
-
-
-
 
 ## Wallets / Addresses
 
@@ -203,7 +199,7 @@ Yes, you can do so via [Disperze](https://evmos.disperze.network/welcome), which
 
 <summary><b>Where can I check the time left until my staked tokens are fully unbonded?</b></summary>
 
-1. Navigate to [https://www.mintscan.io/evmos](https://www.mintscan.io/evmos) 
+1. Navigate to [https://www.mintscan.io/evmos](https://www.mintscan.io/evmos)
 2. Search for your Evmos address using the search bar
 3. Click on the “Unbondings” tab
 
@@ -224,7 +220,7 @@ This depends. If it is your first time re-delegating your tokens, the redelegati
 <summary><b>I’m having an issue. Where can I ask for help?</b></summary>
 
 The easiest and fastest way to get support is by opening a [support-ticket](https://discord.com/channels/809048090249134080/976564857048559636)
- on our official [Discord](https://discord.com/invite/evmos) server. 
+ on our official [Discord](https://discord.com/invite/evmos) server.
 
 </details>
 
