@@ -3,8 +3,23 @@ import Layout from "@theme/Layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFilter, faSearch } from "@fortawesome/free-solid-svg-icons"
 import AcademyVideoCard from "../../components/AcademyVideoCard"
+import { VideoData } from "../../data"
 
 export default function Videos() {
+
+    const [videoData, setVideoData] = React.useState(VideoData);
+    const [searchTerm, setSearchTerm] = React.useState('');
+
+    const filterVideos = (filter) => {
+        if(filter === '') {
+            setVideoData(VideoData);
+            return;
+        }
+        let videos = VideoData;
+        videos = videos.filter(video => video.category.includes(filter));
+        setVideoData(videos);
+    }
+
     return (
         <Layout title="Videos" description="Videos on Evmos Academy">
             <main>
@@ -17,46 +32,38 @@ export default function Videos() {
                                 <div className="col col--8">
                                     <div className="search-input">
                                         <FontAwesomeIcon icon={faSearch} />
-                                        <input placeholder="Search Video library"></input>
+                                        <input value={searchTerm} onChange={(e) => {
+                                            setSearchTerm(e.target.value);
+                                            let videos = VideoData;
+                                            videos = videos.filter(videos => videos.title.includes(e.target.value));
+                                            setVideoData(videos);
+                                            if(e.target.value === '') {
+                                                setVideoData(VideoData);
+                                            }
+                                        }} placeholder="Search Video library"></input>
                                     </div>
                                 </div>
                                 <div className="col col--2" >
-                                    <div className="filter-button">
-                                        <FontAwesomeIcon style={{fontSize:18}} icon={faFilter} />
-                                        <span style={{marginLeft:'5%', fontSize:18}}>Filters</span>
-                                    </div>
+                                    <select className="filter-button">
+                                        <optgroup style={{fontStyle:'normal'}} label="Filter">
+                                            <option onClick={() => filterVideos('')}>Filters</option>
+                                        </optgroup>
+                                        <optgroup style={{fontStyle:'normal'}} label="Level">
+                                            <option onClick={() => filterVideos('Beginner')}>Beginner</option>
+                                            <option onClick={() => filterVideos('Intermediate')}>Intermediate</option>
+                                            <option onClick={() => filterVideos('Advanced')}>Advanced</option>
+                                        </optgroup>
+                                    </select>
                                 </div>
                             </div>
                             
                         </div>
                         <div className="row">
-                            <div className="col col--4">
-                                <AcademyVideoCard />
-                            </div>
-                            <div className="col col--4">
-                                <AcademyVideoCard />
-                            </div>
-                            <div className="col col--4">
-                                <AcademyVideoCard />
-                            </div>
-                            <div className="col col--4">
-                                <AcademyVideoCard />
-                            </div>
-                            <div className="col col--4">
-                                <AcademyVideoCard />
-                            </div>
-                            <div className="col col--4">
-                                <AcademyVideoCard />
-                            </div>
-                            <div className="col col--4">
-                                <AcademyVideoCard />
-                            </div>
-                            <div className="col col--4">
-                                <AcademyVideoCard />
-                            </div>
-                            <div className="col col--4">
-                                <AcademyVideoCard />
-                            </div>
+                            {videoData.length > 0 && videoData.map((video, index) => 
+                                <div key={index} className="col col--4">
+                                    <AcademyVideoCard video={video} />
+                                </div>    
+                            )}
                         </div>
                     </div>
                 </section>

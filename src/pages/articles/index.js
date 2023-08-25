@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "@theme/Layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFilter, faSearch } from "@fortawesome/free-solid-svg-icons"
+import { faSearch } from "@fortawesome/free-solid-svg-icons"
 import AcademyArticleCard from "../../components/AcademyArticleCard"
 import { ArticleData } from "../../data"
 
@@ -9,9 +9,12 @@ export default function Articles() {
 
     const [articleData, setArticleData] = React.useState(ArticleData);
     const [searchTerm, setSearchTerm] = React.useState('');
-    const [filterSelection, setFilterSelection] = React.useState('');
 
     const filterArticles = (filter) => {
+        if(filter === '') {
+            setArticleData(ArticleData);
+            return;
+        }
         let articles = ArticleData;
         articles = articles.filter(article => article.category.includes(filter));
         setArticleData(articles);

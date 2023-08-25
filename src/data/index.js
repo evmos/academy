@@ -45,3 +45,21 @@ export const ArticleData = [
         route: 'articles/governance/submit-a-proposal'
     }
 ]
+
+export const VideoData = [
+    {
+        title: 'What is a Crypto Wallet',
+        category: ['Beginner'],
+        route: '/videos/crypto_wallet'
+    },
+    {
+        title: 'What is DeFi and TradFi',
+        category: ['Intermediate'],
+        route: '/videos/what_is_defi_and_tradfi'
+    },
+    {
+        title: 'What is IBC',
+        category: ['Advanced'],
+        route: '/videos/what_is_ibc'
+    }
+]
