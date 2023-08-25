@@ -21,21 +21,18 @@ function Home() {
         <div className="container">
           <h1 align="center" className="evmos-display evmos-header" style={{ fontWeight: '800'}}>LEARN EVERYTHING</h1>
           <div className="row">
-            <div className="box col col--4">
+            <div className="col col--1" />
+            <div className="box col col--5">
               <div className="line-top"></div>
                 <img src={blackHoleImg.src} style={{width:'100%', height:250}} />
               <div className="line-bottom"></div>
             </div>
-            <div className="box col col--4">
+            <div className="box col col--5">
               <div className="line-top"></div>
                 <img src={accretionImg.src} style={{width:'100%', height:250}} />
               <div className="line-bottom"></div>
             </div>
-            <div className="box col col--4">
-              <div className="line-top"></div>
-                <img src={galaxyImg.src} style={{width:'100%', height:250}} />
-              <div className="line-bottom"></div>
-            </div>
+            <div className="col col--1" />
           </div>
           
           
