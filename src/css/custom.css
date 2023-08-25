@@ -464,6 +464,7 @@ html[data-theme='light'] {
 
   .filter-button {
     margin-top: 5%;
+    width: 100%;
   }
 
   .box{
@@ -638,6 +639,7 @@ details a{
   padding: 12px;
   text-align: center;
   border-radius: 10px;
+  height: 55px;
   cursor: pointer;
 }
 
