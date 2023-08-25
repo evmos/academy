@@ -7,7 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBook, faComputer, faGlobe } from "@fortawesome/free-solid-svg-icons"
 import ArticleCard from "../components/ArticleCard";
 import { faDiscord, faTelegram } from "@fortawesome/free-brands-svg-icons";
-import blackHoleImg from "@site/static/img/Blackhole0.png";
+import blackHoleImg from "@site/static/img/blackhole0.png";
+import accretionImg from "@site/static/img/accretion.png";
+import galaxyImg from "@site/static/img/galaxy.png";
 import evmosBg from "@site/static/img/Evmos-BG-3.jpg";
 
 function Home() {
@@ -18,11 +20,24 @@ function Home() {
         <br />
         <div className="container">
           <h1 align="center" className="evmos-display evmos-header" style={{ fontWeight: '800'}}>LEARN EVERYTHING</h1>
-          <div className="box">
-            <div className="line-top"></div>
-            <img src={blackHoleImg.src} style={{width:'100%', height:250}} />
-            <div className="line-bottom"></div>
+          <div className="row">
+            <div className="box col col--4">
+              <div className="line-top"></div>
+                <img src={blackHoleImg.src} style={{width:'100%', height:250}} />
+              <div className="line-bottom"></div>
+            </div>
+            <div className="box col col--4">
+              <div className="line-top"></div>
+                <img src={accretionImg.src} style={{width:'100%', height:250}} />
+              <div className="line-bottom"></div>
+            </div>
+            <div className="box col col--4">
+              <div className="line-top"></div>
+                <img src={galaxyImg.src} style={{width:'100%', height:250}} />
+              <div className="line-bottom"></div>
+            </div>
           </div>
+          
           
         </div>
         <div className="container gap-top">
