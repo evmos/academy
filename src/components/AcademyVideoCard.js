@@ -1,14 +1,13 @@
 import React from "react";
-import articleBg from "@site/static/img/Bridgeless.png";
 import ArticleBadge from "./Badges/ArticleBadge";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBook, faClock } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
 
 export default function AcademyVideoCard({video}) {
 
     return(
         <div className="academy-article" onClick={() => window.location.href=`${video.route}`}>
-            <div className="article-image" style={{backgroundImage: `url(${articleBg.src})`}}>
+            <div className="article-image" style={{backgroundImage: `url(${video.imgSrc.src})`, backgroundSize: '100% 100%'}}>
             </div>
             <div style={{marginTop:'5%'}}>
                 {video.category.map((category, index) => 

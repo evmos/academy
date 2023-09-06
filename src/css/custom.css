@@ -679,6 +679,7 @@ details a{
   border-radius: 10px;
   text-align: center;
   width: 30%;
+  color: white !important;
 }
 
 .article-badge {

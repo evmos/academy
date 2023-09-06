@@ -8,7 +8,7 @@ export default function AcademyArticleCard({article}) {
     
     return(
         <div className="academy-article" onClick={() => window.location.href=`${article.route}`}>
-            <div className="article-image" style={{backgroundImage: `url(${articleBg.src})`}}>
+            <div className="article-image" style={{backgroundImage: `url(${article.imgSrc.src})`, backgroundSize: '100% 100%'}}>
                 <div className="date">
                     <span className="day">5</span>
                     <br />
