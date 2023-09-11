@@ -24,12 +24,12 @@ function Home() {
             <div className="col col--1" />
             <div className="box col col--5">
               <div className="line-top"></div>
-                <img src={blackHoleImg.src} style={{width:'100%', height:250}} />
+                <img src={blackHoleImg.src} style={{width:'100%'}} />
               <div className="line-bottom"></div>
             </div>
             <div className="box col col--5">
               <div className="line-top"></div>
-                <img src={accretionImg.src} style={{width:'100%', height:250}} />
+                <img src={accretionImg.src} style={{width:'100%'}} />
               <div className="line-bottom"></div>
             </div>
             <div className="col col--1" />

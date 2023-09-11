@@ -45,8 +45,8 @@ export default function Articles() {
                                 </div>
                                 <div className="col col--2" >
                                     <select className="filter-button">
-                                        <optgroup style={{fontStyle:'normal'}} label="Filter">
-                                            <option onClick={() => filterArticles('')}>Filters</option>
+                                        <optgroup style={{fontStyle:'normal', display:'none'}} label="Filter">
+                                            <option onClick={() => filterArticles('')} style={{display:'none'}}>Filters</option>
                                         </optgroup>
                                         <optgroup style={{fontStyle:'normal'}} label="Level">
                                             <option onClick={() => filterArticles('Beginner')}>Beginner</option>

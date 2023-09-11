@@ -473,7 +473,7 @@ html[data-theme='light'] {
   }
 
   .box img {
-    height: 18vh !important;
+    height: 100% !important;
   }
 }
 
@@ -529,7 +529,7 @@ html[data-theme='light'] {
   }
 
   .box img {
-    height: 28vh !important;
+    height: 100% !important;
   }
 }
 

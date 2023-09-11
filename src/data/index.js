@@ -5,7 +5,7 @@ import ibc from "@site/static/img/IBC.jpg";
 
 //Article Images
 import accretion from "@site/static/img/accretion.png";
-import blackhole from "@site/static/img/Blackhole0.png";
+import blackhole from "@site/static/img/blackhole0.png";
 import governance from "@site/static/img/evmos_governance.png";
 
 export const ArticleData = [
