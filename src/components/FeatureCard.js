@@ -13,7 +13,7 @@ export default function FeatureCard({title, icon, link}) {
                     </span>
                     <span style={{width: '75%'}}>
                         <span style={{marginTop:'5%', fontWeight:'bold'}}>{title}</span> <br />
-                        <a href={link} className="burgundy" >See More <FontAwesomeIcon icon={faArrowRight} /></a>
+                        <a href={link} target="_blank" className="burgundy" >See More <FontAwesomeIcon icon={faArrowRight} /></a>
                     </span>
                 </div>
             </div>

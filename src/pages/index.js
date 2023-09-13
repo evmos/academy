@@ -55,6 +55,7 @@ function Home() {
               <FeatureCard
                 icon={<FontAwesomeIcon icon={faComputer} size="3x" />}
                 title="For Developers"
+                link={"https://docs.evmos.org/"}
               />
             </div>
             <div className="col col--4">
