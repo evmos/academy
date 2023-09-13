@@ -26,7 +26,7 @@ Evmos enables the full composability and modularity of the [Cosmos SDK](https://
 As a Cosmos chain, Evmos is a sovereign blockchain with its own native token,
 that can connect to other chains through IBC. It includes standard modules from the Cosmos SDK,
 that work side to side with Evmos-specific modules, built by the Evmos core development team.
-Check out the [list of modules](modules/index.md) to get an overview of what each module is responsible for.
+Check out the [list of modules](https://docs.evmos.org/protocol/modules) to get an overview of what each module is responsible for.
 
 ## CometBFT & ABCI
 
@@ -58,17 +58,17 @@ while ensuring the same developer experience as Ethereum:
 * `StateDB` interface for state updates and queries
 * [JSON-RPC](../develop/api/ethereum-json-rpc) client for interacting with the EVM
 
-Most components are implemented in the [EVM module](modules/evm.md)
+Most components are implemented in the [EVM module](https://docs.evmos.org/protocol/modules/evm)
 To achieve a seamless developer UX, however, some of the components are implemented
 outside of the module.
 
 If you want to learn more about how Evmos achieves EVM compatibility as a Cosmos chain,
 we recommend understanding the following concepts:
 
-* [Accounts](./concepts/accounts.md)
-* [Gas and Fees](./concepts/gas-and-fees.md)
-* [Token representations](./concepts/tokens.md)
-* [Transactions](./concepts/transactions.md)
+* [Accounts](https://docs.evmos.org/protocol/concepts/accounts)
+* [Gas and Fees](https://docs.evmos.org/protocol/concepts/gas-and-fees)
+* [Token representations](https://docs.evmos.org/protocol/concepts/tokens)
+* [Transactions](https://docs.evmos.org/protocol/concepts/transactions)
 
 ## Contributing
 
@@ -81,4 +81,4 @@ Then if you're hooked you can
 * Contribute open-source to [issues on GitHub](https://github.com/evmos/evmos/issues)
   using the [Evmos Contributor Guideline](https://github.com/evmos/evmos/blob/main/CONTRIBUTING.md)
 * Apply to [open positions at Evmos](https://boards.eu.greenhouse.io/evmos)
-* Search for [bugs and earn a bounty](bugs.md)
+* Search for [bugs and earn a bounty](https://docs.evmos.org/protocol/bugs)

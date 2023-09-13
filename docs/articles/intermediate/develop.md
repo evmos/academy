@@ -11,7 +11,7 @@ dApp from another chain, you'll want to check out the sections on
 
 1. Building and deploying [EVM Smart Contracts](./develop/smart-contracts)
 2. Integrating [wallets](./develop/wallet-integration) (e.g. Keplr and MetaMask) into your Frontend
-4. Available developer [Tools](./tools/index.md)
+4. Available developer [Tools](https://docs.evmos.org/develop/tools)
 
 Once tested on [Testnet](./../develop/testnet) and deployed on [Mainnet](./../develop/mainnet), you can
 start [earning an income](./../develop/mainnet#revenue) on transaction fees from interacting with your dApp or
@@ -35,6 +35,6 @@ through the Inter Blockchain Communication Protocol (IBC).
 
 ## Contributors
 
-You can also contribute to the Evmos ecosystem without building a dApp. Head over to [tools](./tools/index.md) to learn
+You can also contribute to the Evmos ecosystem without building a dApp. Head over to [tools](https://docs.evmos.org/develop/tools) to learn
 how to contribute as a full-stack developer by building new dev tools or [protocol](https://docs.evmos.org/protocol) to help
 out building the core protocol.
