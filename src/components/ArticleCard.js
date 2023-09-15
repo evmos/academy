@@ -4,7 +4,7 @@ import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 export default function ArticleCard({title, imgLink, desc, link}) {
     return(
-        <div className="latest-article">
+        <div className="latest-article" onClick={() => window.location.href={link}}>
             <img src={imgLink} style={{borderRadius:10}} />
             <div className="text-left">
                 <h3>{title}</h3>

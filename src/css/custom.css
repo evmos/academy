@@ -475,6 +475,11 @@ html[data-theme='light'] {
   .box img {
     height: 100% !important;
   }
+
+  .latest-article img {
+    width: 100vw;
+    height: 25vh;
+  }
 }
 
 @media screen and (min-width: 996px){
@@ -530,6 +535,11 @@ html[data-theme='light'] {
 
   .box img {
     height: 100% !important;
+  }
+
+  .latest-article img {
+    width: 80vw;
+    height: 25vh;
   }
 }
 

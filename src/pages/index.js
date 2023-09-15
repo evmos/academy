@@ -6,13 +6,25 @@ import FeatureCard from "../components/FeatureCard"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBook, faComputer, faGlobe } from "@fortawesome/free-solid-svg-icons"
 import ArticleCard from "../components/ArticleCard";
-import { faDiscord, faTelegram } from "@fortawesome/free-brands-svg-icons";
+import crossChain from "@site/static/img/Midjourney.jpg"
 import blackHoleImg from "@site/static/img/blackhole0.png";
-import accretionImg from "@site/static/img/accretion.png";
-import galaxyImg from "@site/static/img/galaxy.png";
 import evmosBg from "@site/static/img/Evmos-BG-3.jpg";
+import { ArticleData } from "../data"
+
 
 function Home() {
+
+  
+ const [articleInfo, setArticleInfo] = React.useState();
+
+ React.useEffect(() => {
+  const articlesToAdd = []
+  for (let i=0; i<4; i++){
+    const random = Math.floor(Math.random()*9)
+    articlesToAdd.push(ArticleData[random])
+  }
+  setArticleInfo(articlesToAdd)
+ }, [])
 
   return (
     <Layout title="Homepage" description="Evmos Academy">
@@ -21,18 +33,12 @@ function Home() {
         <div className="container">
           <h1 align="center" className="evmos-display evmos-header" style={{ fontWeight: '800'}}>LEARN EVERYTHING</h1>
           <div className="row">
-            <div className="col col--1" />
-            <div className="box col col--5">
+            <div className="col col--2" />
+              <div className="box col col--8">
               <div className="line-top"></div>
                 <img src={blackHoleImg.src} style={{width:'100%'}} />
               <div className="line-bottom"></div>
             </div>
-            <div className="box col col--5">
-              <div className="line-top"></div>
-                <img src={accretionImg.src} style={{width:'100%'}} />
-              <div className="line-bottom"></div>
-            </div>
-            <div className="col col--1" />
           </div>
           
           
@@ -62,6 +68,7 @@ function Home() {
               <FeatureCard
                 icon={<FontAwesomeIcon icon={faGlobe} size="3x" />}
                 title="Enjoy Community"
+                link={"articles/beginner/gettingstarted"}
               />
             </div>
             <div className="col col--4">
@@ -73,21 +80,23 @@ function Home() {
           </div>
         </div>
 
-        <div className="container gap-top">
-          <div className="article-card">
-            <div className="row">
-              <div className="col col--5 article-text" >
-                <h2 className="burgundy">Title of Article</h2>
-                <p>Praesent et blandit ligula, at euismod dolor. Cras tincidunt mi eget porta sagittis. 
-                  Praesent finibus sem quis nibh egestas feugiat. Aliquam eleifend ex et diam volutpat, a egestas purus semper. 
-                </p>
-              </div>
-              <div className="col col--6">
-                <img src={blackHoleImg.src}  />
-              </div>
+        {articleInfo && articleInfo[3].title ? 
+          <div className="container gap-top" >
+            <div className="article-card" onClick={() => {
+            const link = articleInfo[3]['route'];
+            window.location.href = link;
+            }}>
+              <div className="row">
+                <div className="col col--5 article-text" >
+                  <h2 className="burgundy">{articleInfo[3].title}</h2>
+                  <p>{articleInfo[0].description}</p>
+                </div>
+                <div className="col col--6">
+                  <img src={articleInfo[3].imgSrc.src} />
+                </div>
             </div>
           </div>
-        </div>
+        </div> : <></> }
 
         <div className="container gap-top">
           <div className="row">
@@ -95,31 +104,20 @@ function Home() {
               <h2>Latest Articles</h2>
             </div>
             <div className="col col--6 text-right">
-              <button className="action-button">ALL ARTICLES</button>
+              <button className="action-button" onClick={() => window.location.href = "/articles"}>ALL ARTICLES</button>
             </div>
           </div>
           <div className="row gap-top">
-            <div className="col col--4">
-              <ArticleCard
-                  title="Frequently Asked Questions"
-                  desc="Quisque nec neque et felis maximus ac dolor."
-                  imgLink={blackHoleImg.src}
-              />
-            </div>
-            <div className="col col--4">
-              <ArticleCard
-                  title="What's the EVM?"
-                  desc="Quisque nec neque et felis maximus ac dolor."
-                  imgLink={blackHoleImg.src}
-              />
-            </div>
-            <div className="col col--4">
-              <ArticleCard
-                  title="What's the EVM?"
-                  desc="Quisque nec neque et felis maximus ac dolor."
-                  imgLink={blackHoleImg.src}
-              />
-            </div>
+            {articleInfo && articleInfo.slice(0,3).map(article => 
+              <div className="col col--4">
+                <ArticleCard
+                    title={article.title}
+                    desc={article.description.slice(0,100)+'....'}
+                    imgLink={article.imgSrc.src}
+                    link={article.route}
+                />
+              </div>
+            )}
           </div>
         </div>
 
@@ -134,7 +132,7 @@ function Home() {
                 <button className="action-button">EXPLORE GLOSSARY</button>
               </div>
               <div className="col col--6">
-                <img src={blackHoleImg.src}  />
+                <img src={crossChain.src}  />
               </div>
             </div>
           </div>
@@ -145,15 +143,7 @@ function Home() {
             <div className="row">
               <div className="col col--6">
                 <h1 className="evmos-display evmos-header" style={{ fontWeight: '800', color:'white'}}>GET SUPPORT</h1>
-                <p style={{color:'white'}}>Chat with one of our community moderators. Or shoot us an email and we’ll get back to you ASAP.</p>
-                <span>
-                  <button className="action-button">
-                    <FontAwesomeIcon icon={faTelegram} /> Telegram
-                  </button>
-                  <button className="action-button m-left">
-                    <FontAwesomeIcon icon={faDiscord} /> Discord
-                  </button>
-                </span>
+                <p style={{color:'white'}}>Chat with one of our community moderators by clicking on the icon at the bottom of your screen. Or shoot us an email and we’ll get back to you ASAP.</p>
               </div>
             </div>
           </div>

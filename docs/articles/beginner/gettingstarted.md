@@ -4,6 +4,14 @@ sidebar_position: 1
 
 # Getting Started
 
+## Connect with Evmos Community
+
+Please find below our socials, Discord and Telegram. We encourage you to come join us.
+
+* [Twitter](https://twitter.com/EvmosOrg)
+* [Discord](https://discord.com/invite/evmos)
+* [Github](https://github.com/evmos/evmos)
+
 ## What is Evmos?
 
 Evmos is the blockchain network, that lets you use a new generation of applications, built by developers across the world. Using and building on the network is permissionless so it doesn't require any authorization and you can get started right now.
