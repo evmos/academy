@@ -5,6 +5,7 @@ sidebar_position: 11
 # Using Evmos ipRPC
 
 ## Overview  📋
+
 In order to provide decentralized, reliable and public RPC to all developers in the ecosystem, Evmos uses [Lava](https://www.lavanet.xyz/?utm_source=using-evmos-iprpc&utm_medium=evmos-academy&utm_campaign=evmos-iprpc) to serve RPC to its developer community. Lava aggregates and routes RPC requests to a peer-to-peer network of top-performing node providers, with built-in fraud detection, conflict resolution, and quality of service guarantees for all requests. All relays are conducted securely with no man-in-the-middle. For more details on Lava's protocol, take a look at [the Lava litepaper](https://litepaper.lavanet.xyz/?utm_source=using-evmos-iprpc&utm_medium=evmos-academy&utm_campaign=evmos-iprpc).
 
 Lava ipRPC aggregates RPC providers and provides a unified endpoint for Evmos's entire ecosystem. Regardless of whether you're using `gRPC`, `REST`, `JSON-RPC`, `TendermintRPC`, or `Web-gRPC`, you can query Evmos or post transactions. You can also use websockets to establish a continuous connection instead of conducting a discrete handshake for each relay.
