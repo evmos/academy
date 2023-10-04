@@ -44,7 +44,7 @@ For `mainnet` use:
 ./evmosd config node https://tm.evmos.lava.build:443
 ```
 
-⚆ For `testnet` use:
+For `testnet` use:
 ```bash
 ./evmosd config node https://tm.evmos-testnet.lava.build:443
 ```
