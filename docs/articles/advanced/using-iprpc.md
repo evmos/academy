@@ -39,7 +39,7 @@ A complete list of endpoints available are available [here](https://docs.evmos.o
 
 You can set your `evmosd` installation to use ipRPC for all calls and requests. To do so, you need to configure your default node to use the Tendermint-RPC URL for your respective network.
 
-⚆ For `mainnet` use:
+For `mainnet` use:
 ```bash
 ./evmosd config node https://tm.evmos.lava.build:443
 ```
