@@ -49,7 +49,7 @@ For `testnet` use:
 ./evmosd config node https://tm.evmos-testnet.lava.build:443
 ```
 
-⚆ To ensure that your `evmosd` is correctly setup run the following:
+To ensure that your `evmosd` is correctly setup run the following:
 ```bash
 ./evmosd status 
 ```
