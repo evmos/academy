@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFilter, faSearch } from "@fortawesome/free-solid-svg-icons"
 import AcademyVideoCard from "../../components/AcademyVideoCard"
 import { VideoData } from "../../data"
+import VideoCard from "../../components/VideoCard"
 
 export default function Videos() {
 
@@ -61,7 +62,12 @@ export default function Videos() {
                         <div className="row">
                             {videoData.length > 0 && videoData.map((video, index) => 
                                 <div key={index} className="col col--4">
-                                    <AcademyVideoCard video={video} />
+                                    <VideoCard
+                                        title={video.title}
+                                        imgLink={video.imgSrc.src}
+                                        link={video.route}
+                                        category={video.category[0]}
+                                    />
                                 </div>    
                             )}
                         </div>

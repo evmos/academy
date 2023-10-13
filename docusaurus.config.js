@@ -140,12 +140,12 @@ const config = {
         items: [
           {
             position: 'left',
-            label: 'Articles',
+            label: 'ARTICLES',
             to: '/articles',
           },
           {
             position: 'left',
-            label: 'Videos',
+            label: 'VIDEOS',
             to: '/videos',
           },
           {
@@ -161,7 +161,7 @@ const config = {
           // },
           {
             position: 'right',
-            label: 'Developer Docs',
+            label: 'DOCS',
             to: 'https://docs.evmos.org',
           },
           {
@@ -190,45 +190,49 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Developer',
+            title: 'Discover',
             items: [
               {
-                label: 'Docs',
-                to: '/articles/advanced/incentives-registration',
+                label: 'Articles',
+                to: '/articles',
               },
               {
-                label: 'Onboarding',
-                to: '/articles/advanced/wallet-integration',
+                label: 'Videos',
+                to: '/videos',
               },
               {
-                label: 'Bug Bounty',
-                to: '/articles/terminology',
+                label: 'FAQ',
+                to: '/faq',
               },
               {
-                label: 'Evmos Academy',
-                to: '/articles/terminology',
+                label: 'Developer Docs',
+                to: 'https://docs.evmos.org',
               }
             ],
           },
           {
-            title: 'Explore',
+            title: 'Evmos',
             items: [
               {
-                label: 'Ecosystem',
-                href: 'https://t.me/EvmosOrg',
+                label: 'Evmos Apps',
+                href: 'https://app.evmos.org',
               },
               {
-                label: 'Learn (Community)',
-                href: 'https://discord.gg/evmos',
+                label: 'Evmos Homepage',
+                href: 'https://evmos.org',
               },
               {
-                label: 'Block Explorers',
-                href: 'https://twitter.com/EvmosOrg',
+                label: 'Evmos Blog',
+                href: 'https://medium.com/evmos',
+              },
+              {
+                label: 'Evmos Careers',
+                href: 'https://boards.eu.greenhouse.io/evmos',
               },
             ],
           },
           {
-            title: 'Social',
+            title: 'Connect',
             items: [
               {
                 label: 'Twitter',
@@ -240,15 +244,19 @@ const config = {
               },
               {
                 label: 'Telegram',
+                href: 'https://t.me/EvmosOrg',
+              },
+              {
+                label: 'Github',
                 href: 'https://github.com/evmos',
               },
               {
                 label: 'Commonwealth',
-                href: 'https://github.com/evmos',
+                href: 'https://commonwealth.im/evmos/discussions',
               },
               {
-                label: 'Reddit',
-                href: 'https://github.com/evmos',
+                label: 'YouTube',
+                href: 'https://www.youtube.com/@Evmos',
               },
             ],
           },

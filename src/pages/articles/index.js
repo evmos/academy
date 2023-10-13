@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "@theme/Layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
-import AcademyArticleCard from "../../components/AcademyArticleCard"
+import ArticleCard from "../../components/ArticleCard"
 import { ArticleData } from "../../data"
 
 export default function Articles() {
@@ -63,10 +63,16 @@ export default function Articles() {
                             </div>
                             
                         </div>
-                        <div className="row">
+                        <div className="row" >
                             {articleData.length > 0 && articleData.map((article, index) => 
-                                <div key={index} className="col col--4">
-                                    <AcademyArticleCard article={article} />
+                                <div key={index} className="col col--4" style={{marginTop:'3%'}}>
+                                    <ArticleCard
+                                        title={article.title}
+                                        desc={article.description.slice(0,100)+'....'}
+                                        imgLink={article.imgSrc.src}
+                                        link={article.route}
+                                        category={article.category[0]}
+                                    />
                                 </div>    
                             )}
                         </div>

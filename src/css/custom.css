@@ -118,9 +118,10 @@ button,
   }
 }
 
-h1 {
+h1, h2 {
   font-family: 'Evmos Display';
   font-weight: bolder;
+  color: var(--font-color);
 }
 
 
@@ -128,7 +129,7 @@ p {
   font-family: 'NB International';
 }
 
-h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   font-family: 'NB International', sans-serif;
   font-weight: bold;
 }
@@ -249,6 +250,7 @@ h2, h3, h4, h5, h6 {
   --details-bg-color: #Fe5f05;
   --details-text-color: black;
   --details-anchor-color: #FFF4E1;
+  --font-color: #FFF4E1;
 }
 
 [data-theme='light'] {
@@ -367,6 +369,7 @@ article a[href^="http"]::after {
 
 html[data-theme='dark'] {
   background-color: var(--background-color);
+  color: var(--font-color);
 }
 
 html[data-theme='light'] {
@@ -411,7 +414,7 @@ html[data-theme='light'] {
   font-weight: 100%; 
   font-size: 100%; 
   line-height: 99px; 
-  color: var(--header-color);
+  color: var(--font-color);
 }
 
 .feature-card {
@@ -557,15 +560,33 @@ html[data-theme='light'] {
 }
 
 .action-button {
-  background: white;
+  background: #fe5f05;
+  color: white;
+  padding: 15px;
+  height: 55px;
+  border-radius: 10px;
+  font-family: 'IBM Plex';
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: none;
+}
+
+.action-button-social {
+  background: #fff4e1;
   color: black;
   padding: 15px;
   height: 55px;
   border-radius: 10px;
-  font-family: 'NB International', sans-serif;
+  font-family: 'IBM Plex';
   font-weight: 500;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: none;
 }
 
 .m-left {
@@ -679,8 +700,13 @@ details a{
   border-radius: 10px;
 }
 
-.academy-article:hover {
+.academy-article:hover, .latest-article:hover {
   transform: scale(1.05);
+  transition: transform .2s;
+}
+
+.latest-article{
+  cursor: pointer;
 }
 
 .academy-article .date {
@@ -697,12 +723,12 @@ details a{
   padding: 5px;
   border-radius: 5px;
   border: 1px solid white;
-  margin-left: 2%;
   text-align: center;
-  background-color: #9f05fe;
-  color: white;
+  background-color: #fff4e1;
+  color: black;
   font-weight: bold;
-  font-family: 'NB International';
+  font-family: 'IBM Plex';
+  font-size: 12px;
 }
 
 .read-article {
@@ -711,4 +737,8 @@ details a{
   margin-left: 5%;
   border-radius: 10px;
   text-align: center;
+}
+
+.navbar__item {
+  font-family: 'IBM Plex';
 }

@@ -9,7 +9,9 @@ import ArticleCard from "../components/ArticleCard";
 import crossChain from "@site/static/img/Midjourney.jpg"
 import blackHoleImg from "@site/static/img/blackhole0.png";
 import evmosBg from "@site/static/img/Evmos-BG-3.jpg";
-import { ArticleData } from "../data"
+import { ArticleData, VideoData } from "../data"
+import VideoCard from "../components/VideoCard"
+import { faTelegram, faDiscord } from "@fortawesome/free-brands-svg-icons"
 
 
 function Home() {
@@ -78,14 +80,15 @@ function Home() {
             </div>
             <div className="col col--4">
               <FeatureCard
+                link={"/faq"}
                 icon={<FontAwesomeIcon icon={faBook} size="3x" />}
-                title="Browse Glossary"              
+                title="Browse FAQ"              
               />
             </div>
           </div>
         </div>
 
-        {articleInfo && articleInfo[3].title ? 
+        {articleInfo && articleInfo[3].title && false ? 
           <div className="container gap-top" >
             <div className="article-card" onClick={() => {
             const link = articleInfo[3]['route'];
@@ -106,7 +109,7 @@ function Home() {
         <div className="container gap-top">
           <div className="row">
             <div className="col col--6">
-              <h2>Recommended Articles</h2>
+              <h2>LATEST ARTICLES</h2>
             </div>
             <div className="col col--6 text-right">
               <button className="action-button" onClick={() => window.location.href = "/articles"}>ALL ARTICLES</button>
@@ -127,6 +130,29 @@ function Home() {
         </div>
 
         <div className="container gap-top">
+          <div className="row">
+            <div className="col col--6">
+              <h2>LATEST VIDEOS</h2>
+            </div>
+            <div className="col col--6 text-right">
+              <button className="action-button" onClick={() => window.location.href = "/videos"}>ALL VIDEOS</button>
+            </div>
+          </div>
+          <div className="row gap-top">
+            {VideoData && VideoData.slice(0,3).map(video => 
+              <div className="col col--4">
+                <VideoCard
+                    title={video.title}
+                    imgLink={video.imgSrc.src}
+                    link={video.route}
+                />
+              </div>
+            )}
+          </div>
+        </div>
+        
+        {false ? 
+        <div className="container gap-top">
           <div className="article-card glossary-card">
             <div className="row">
               <div className="col col--5 article-text" >
@@ -140,7 +166,7 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> : <></> }
 
         <div className="support-section gap-top" style={{backgroundImage: `url(${evmosBg.src})`}}>
           <div className="container">
@@ -148,6 +174,19 @@ function Home() {
               <div className="col col--6">
                 <h1 className="evmos-display evmos-header" style={{ fontWeight: '800', color:'white'}}>GET SUPPORT</h1>
                 <p style={{color:'white'}}>Chat with one of our community moderators by clicking on the icon at the bottom of your screen. Or shoot us an email and we’ll get back to you ASAP.</p>
+                <span>
+                  <a href="https://t.me/EvmosOrg" target="_blank" rel="noreferred">
+                  <button className="action-button-social" >
+                    <FontAwesomeIcon icon={faTelegram} /> TELEGRAM
+                  </button>
+                  </a>
+                  <a href="https://discord.com/invite/evmos" target="_blank" rel="noreferred">
+                    <button className="action-button-social m-left">
+                      <FontAwesomeIcon icon={faDiscord} /> DISCORD
+                    </button>
+                  </a>
+                  
+                </span>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import ArticleBadge from "./Badges/ArticleBadge";
 
-export default function ArticleCard({title, imgLink, desc, link, category}) {
+export default function VideoCard({title, imgLink, link, category}) {
     return(
         <div className="latest-article" onClick={() => window.location.href=`${link}`}>
             <img src={imgLink} style={{borderRadius:10}} />
@@ -13,9 +13,8 @@ export default function ArticleCard({title, imgLink, desc, link, category}) {
                     <ArticleBadge title={category.toString().toUpperCase()} />
                 </div> : <></> }
                 <h3 style={{marginBottom:'2px', marginTop:'5px'}}>{title}</h3>
-                <p>{desc}</p>
                 <span>
-                    <a href={link} style={{marginRight:5}}>Read More</a>
+                    <a href={link} style={{marginRight:5}}>View Video</a>
                     <FontAwesomeIcon icon={faArrowRight} />
                 </span>
                 
