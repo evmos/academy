@@ -19,8 +19,13 @@ function Home() {
 
  React.useEffect(() => {
   const articlesToAdd = []
+  const indices = []
   for (let i=0; i<4; i++){
     const random = Math.floor(Math.random()*9)
+    if(indices.includes(random)) {
+      i = i-1;
+      continue;
+    }
     articlesToAdd.push(ArticleData[random])
   }
   setArticleInfo(articlesToAdd)
@@ -101,7 +106,7 @@ function Home() {
         <div className="container gap-top">
           <div className="row">
             <div className="col col--6">
-              <h2>Latest Articles</h2>
+              <h2>Recommended Articles</h2>
             </div>
             <div className="col col--6 text-right">
               <button className="action-button" onClick={() => window.location.href = "/articles"}>ALL ARTICLES</button>
@@ -125,11 +130,10 @@ function Home() {
           <div className="article-card glossary-card">
             <div className="row">
               <div className="col col--5 article-text" >
-                <h2 className="burgundy">Glossary</h2>
-                <p>Praesent et blandit ligula, at euismod dolor. Cras tincidunt mi eget porta sagittis.
-                  Praesent finibus sem quis nibh egestas feugiat. Aliquam eleifend ex et diam volutpat, a egestas purus semper.
-                </p>
-                <button className="action-button">EXPLORE GLOSSARY</button>
+                <h2 className="burgundy">FAQ</h2>
+                <p><strong>Does Evmos have a roadmap?</strong></p>
+                <p>Yes! You can find out about Evmos' roadmap by reading the <a href="https://medium.com/evmos/the-evmos-manifesto-7fe5d1ab0d67">Evmos Manifesto</a>.</p>
+                <button className="action-button" onClick={() => window.location.href="/faq"}>EXPLORE THE FAQ</button>
               </div>
               <div className="col col--6">
                 <img src={crossChain.src}  />

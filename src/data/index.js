@@ -14,6 +14,9 @@ export const ImageCategories = {
     "governance": [governance, ibc]
 }
 
+//Choice per track (beginner/advanced/etc...) and choice per category
+//Write up issue on TG channel re side-navbar
+
 export const ArticleData = [
     {
         title: 'What are crypto wallets',
