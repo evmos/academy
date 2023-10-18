@@ -43,7 +43,7 @@ export default function Articles() {
                                         }} placeholder="Search article library"></input>
                                     </div>
                                 </div>
-                                <div className="col col--2" >
+                                <div className="col col--2" style={{display:'none'}}>
                                     <select className="filter-button">
                                         <optgroup style={{fontStyle:'normal', display:'none'}} label="Filter">
                                             <option onClick={() => filterArticles('')} style={{display:'none'}}>Filters</option>

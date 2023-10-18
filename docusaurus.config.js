@@ -132,10 +132,10 @@ const config = {
         }
       },
       navbar: {
-        title: 'Evmos Academy',
+        //title: 'Evmos Academy',
         logo: {
           alt: 'Evmos Logo',
-          src: 'img/evmos.svg',
+          src: 'img/Academy-Logo.svg',
         },
         items: [
           {
@@ -242,10 +242,12 @@ const config = {
                 label: 'Discord',
                 href: 'https://github.com/evmos',
               },
+              /*
               {
                 label: 'Telegram',
                 href: 'https://t.me/EvmosOrg',
               },
+              */
               {
                 label: 'Github',
                 href: 'https://github.com/evmos',
@@ -260,6 +262,7 @@ const config = {
               },
             ],
           },
+          /*
           {
             title: 'About',
             items: [
@@ -280,7 +283,7 @@ const config = {
                 href: 'https://github.com/evmos',
               }
             ],
-          },
+          },*/
         ],
         //copyright: `Built with ❤️ by the Evmos Team. © ${new Date().getFullYear()} All rights reserved.`,
       },

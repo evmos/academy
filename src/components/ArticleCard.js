@@ -13,9 +13,9 @@ export default function ArticleCard({title, imgLink, desc, link, category}) {
                     <ArticleBadge title={category.toString().toUpperCase()} />
                 </div> : <></> }
                 <h3 style={{marginBottom:'2px', marginTop:'5px'}}>{title}</h3>
-                <p>{desc}</p>
+                <p style={{color:'#A3A18B'}}>{desc}</p>
                 <span>
-                    <a href={link} style={{marginRight:5}}>Read More</a>
+                    <a href={link} style={{marginRight:5}}>Read Article</a>
                     <FontAwesomeIcon icon={faArrowRight} />
                 </span>
                 

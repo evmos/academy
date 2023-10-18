@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "@theme/Layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFilter, faSearch } from "@fortawesome/free-solid-svg-icons"
-import AcademyVideoCard from "../../components/AcademyVideoCard"
 import { VideoData } from "../../data"
 import VideoCard from "../../components/VideoCard"
 
@@ -44,7 +43,7 @@ export default function Videos() {
                                         }} placeholder="Search Video library"></input>
                                     </div>
                                 </div>
-                                <div className="col col--2" >
+                                <div className="col col--2" style={{display:'none'}}>
                                     <select className="filter-button">
                                         <optgroup style={{fontStyle:'normal', display:'none'}} label="Filter">
                                             <option onClick={() => filterVideos('')} style={{display:'none'}}>Filters</option>
@@ -61,7 +60,7 @@ export default function Videos() {
                         </div>
                         <div className="row">
                             {videoData.length > 0 && videoData.map((video, index) => 
-                                <div key={index} className="col col--4">
+                                <div key={index} className="col col--4" style={{marginTop:'3%'}}>
                                     <VideoCard
                                         title={video.title}
                                         imgLink={video.imgSrc.src}
