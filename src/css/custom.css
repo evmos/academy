@@ -594,9 +594,11 @@ html[data-theme='light'] {
 }
 
 details {
-  background-color: var(--details-bg-color) !important;
-  color: var(--details-text-color) !important;
-  border: 1px solid black !important;
+  background-color: var(--background-color) !important;
+  color: var(--burgundy) !important;
+  border: 1px solid var(--burgundy) !important;
+  font-family: 'IBM Plex';
+  text-transform: uppercase;
 }
 
 details a{

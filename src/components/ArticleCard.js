@@ -6,7 +6,9 @@ import ArticleBadge from "./Badges/ArticleBadge";
 export default function ArticleCard({title, imgLink, desc, link, category}) {
     return(
         <div className="latest-article" onClick={() => window.location.href=`${link}`}>
-            <img src={imgLink} style={{borderRadius:10}} />
+            <div style={{textAlign:"center"}}>
+                <img src={imgLink} style={{borderRadius:10, width:"75%"}} />
+            </div>
             <div className="text-left">
                 {category ? 
                 <div>

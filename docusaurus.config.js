@@ -236,11 +236,11 @@ const config = {
             items: [
               {
                 label: 'Twitter',
-                href: 'https://medium.com/evmos',
+                href: 'https://twitter.com/EvmosOrg',
               },
               {
                 label: 'Discord',
-                href: 'https://github.com/evmos',
+                href: 'https://discord.com/invite/evmos',
               },
               /*
               {

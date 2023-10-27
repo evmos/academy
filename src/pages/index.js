@@ -12,7 +12,9 @@ import evmosBg from "@site/static/img/Evmos-BG-3.jpg";
 import { ArticleData, VideoData } from "../data"
 import VideoCard from "../components/VideoCard"
 import { faTelegram, faDiscord } from "@fortawesome/free-brands-svg-icons"
-
+import GlossaryIcon from "@site/static/img/glossary.svg"
+import CommunityIcon from "@site/static/img/community.svg"
+import DevIcon from "@site/static/img/dev.svg"
 
 function Home() {
 
@@ -66,14 +68,14 @@ function Home() {
           <div className="row">
             <div className="col col--4">
               <FeatureCard
-                icon={<FontAwesomeIcon icon={faComputer} size="3x" />}
+                icon={<DevIcon />}
                 title="For Developers"
                 link={"https://docs.evmos.org/"}
               />
             </div>
             <div className="col col--4">
               <FeatureCard
-                icon={<FontAwesomeIcon icon={faGlobe} size="3x" />}
+                icon={<CommunityIcon />}
                 title="Enjoy Community"
                 link={"articles/beginner/gettingstarted"}
               />
@@ -81,7 +83,7 @@ function Home() {
             <div className="col col--4">
               <FeatureCard
                 link={"/faq"}
-                icon={<FontAwesomeIcon icon={faBook} size="3x" />}
+                icon={<GlossaryIcon />}
                 title="Browse FAQ"              
               />
             </div>
