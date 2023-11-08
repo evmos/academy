@@ -265,6 +265,7 @@ h3, h4, h5, h6 {
   --details-bg-color: #76705B;
   --details-text-color: white;
   --details-anchor-color: black;
+  --logo-color: black;
 }
 
 .pseudo-icon {
@@ -480,8 +481,10 @@ html[data-theme='light'] {
   }
 
   .latest-article img {
+    min-height: 250px;
     max-width: 300px;
-    height: 25vh;
+    height: 250px;
+    width: 300px;
   }
 }
 
@@ -542,7 +545,9 @@ html[data-theme='light'] {
 
   .latest-article img {
     max-width: 300px;
-    height: 25vh;
+    min-height: 250px;
+    height: 250px;
+    width: 300px;
   }
 }
 
@@ -743,4 +748,8 @@ details a{
 
 .navbar__item {
   font-family: 'IBM Plex';
+}
+
+html[data-theme='light'] .navbar .navbar__logo {
+  content: url('/static/img/logo-light-mode.svg')
 }
