@@ -5,13 +5,13 @@ sidebar_position: 1
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TmXdIPGDdYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Let’s talk about crypto wallets. 
+## Let’s talk about crypto wallets
 
 - What they are.
-- How they work. 
+- How they work.
 - Why you should care.  
 
-Unlike traditional wallets, Crypto wallets don’t actually store physical fiat currency. In fact, they don’t store crypto or NFTs, either! 
+Unlike traditional wallets, Crypto wallets don’t actually store physical fiat currency. In fact, they don’t store crypto or NFTs, either!
 
 Crypto wallets store your private keys.  AKA the passwords that give you ACCESS to your crypto assets. Think of it as proof of ownership.
 

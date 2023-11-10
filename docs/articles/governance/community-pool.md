@@ -7,7 +7,7 @@ sidebar_position: 5
 Evmos token-holders can cast a vote to approve spending from the Community Pool to fund development
 and projects in the Evmos ecosystem.
 
-## Why create a proposal to use Community Pool funds?
+## Why create a proposal to use community pool funds?
 
 There are other funding options, most notably the [Evmos Grants Program](https://medium.com/evmos/announcing-evmos-grants-78aa28562db6).
 Why create a community-spend proposal?
@@ -30,7 +30,6 @@ without having to be dependent upon the foundation alone.
 
 ## FAQ
 
-
 <details>
 
 <summary><b>How is the Community Pool funded?</b></summary>
@@ -50,7 +49,6 @@ Funded projects that fail to deliver may return funding to Community Pool
 and entities may help fund the Community Pool by depositing funds directly to the escrow account.
 
 </details>
-
 
 <details>
 

@@ -16,7 +16,7 @@ sidebar_position: 3
 
 :::
 
-## General Advice: Community Outreach
+## General advice: community outreach
 
 Engagement is likely to be critical to the success of a proposal.
 The degree to which you engage with Evmos community should be relative to the potential impact
@@ -69,7 +69,7 @@ and if possible, why it will be valuable to them as long-term stakeholders.
 - If you've drafted your proposal, engaged with the community, and submitted your proposal to the testnet,
   [skip to Stage 3](#stage-3-your-on-chain-proposal).
 
-## Stage 1: Your Idea
+## Stage 1: Your idea
 
 ### Not yet confident about your idea?
 
@@ -111,13 +111,13 @@ and if your idea is important enough,
 you may want to pursue it regardless of whether or not you are confident
 that the voting power will support it.
 
-## Stage 2: Your Draft Proposal
+## Stage 2: Your draft proposal
 
 The next major section outlines and describes some potential elements of drafting a proposal.
 Ensure that you have considered your proposal and anticipated questions that the community will likely ask.
 Once your proposal is on-chain, you will not be able to change it.
 
-### Proposal Elements
+### Proposal elements
 
 It will be important to balance two things: being detailed and being concise.
 You'll want to be concise so that people can assess your proposal quickly.
@@ -136,7 +136,7 @@ Assume that many people will stop reading at this point.
 However, it is important to provide in-depth information,
 so a few more pointers for Parameter-Change, Community Spend, and ERC-20 Module proposals are below.
 
-#### Parameter-Change Proposal
+#### Parameter-Change proposal
 
 1. Problem/Value - generally the problem or value that's motivating the parameter change(s)
 2. Solution - generally how changing the parameter(s) will address the problem or improve the network
@@ -146,7 +146,7 @@ so a few more pointers for Parameter-Change, Community Spend, and ERC-20 Module 
    may expose stakeholders to new benefits and/or risks
 4. Supplementary materials - optional materials eg. models, graphs, tables, research, signed petition, etc
 
-#### Community Spend Proposal
+#### Community spend proposal
 
 1. Applicant(s) - the profile of the person(s)/entity making the proposal
    - who you are and your involvement in Cosmos and/or other blockchain networks
@@ -192,7 +192,7 @@ so a few more pointers for Parameter-Change, Community Spend, and ERC-20 Module 
    - what are the risks involved with this work?
    - do you have conflicts of interest to declare?
 
-#### ERC-20 Proposal
+#### ERC-20 proposal
 
 1. Applicant(s) - the profile of the person(s)/entity making the proposal
    - who you are and your involvement in Cosmos and/or other blockchain networks
@@ -266,7 +266,7 @@ you can test the parameter changes in advance (if you have enough support from t
 Submitting your proposal to the testnet increases the likelihood of engagement
 and the possibility that you will be alerted to a flaw before deploying your proposal to mainnet.
 
-## Stage 3: Your On-Chain Proposal
+## Stage 3: Your on-chain proposal
 
 A majority of the voting community should probably be aware of the proposal
 and have considered it before the proposal goes live on-chain.
@@ -276,7 +276,7 @@ Make revisions to your draft proposal after each stage of engagement.
 
 See the [submitting guide](./submit-a-proposal) for more on submitting proposals.
 
-### The Deposit Period
+### The deposit period
 
 The deposit period currently lasts 3 days.
 If you submitted your transaction with the minimum deposit (3500 EVMOS),
@@ -297,7 +297,7 @@ A large cross-section of the blockchain/cryptocurrency community exists on Twitt
 Having your proposal in the deposit period is a good time to engage the Evmos community
 to prepare validators to vote and EVMOS-holders that are staking.
 
-### The Voting Period
+### The voting period
 
 At this point you'll want to track which validator has voted and which has not.
 You'll want to re-engage directly with top stake-holders, ie.

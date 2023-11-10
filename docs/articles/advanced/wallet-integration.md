@@ -11,7 +11,6 @@ Check out both the [MetaMask Wallet Documentation](https://docs.metamask.io/guid
 and [Keplr Wallet Documentation](https://docs.keplr.app/).
 :::
 
-
 ## Installation
 
 Follow the build and installation instructions specified in
@@ -19,7 +18,7 @@ Follow the build and installation instructions specified in
 
 ## Packages
 
-Visit our documentation on 
+Visit our documentation on
 [client integrations](https://docs.evmos.org/develop/tools/client-integrations)
 to learn more about [EvmosJS](https://github.com/evmos/evmosjs) and
 the libraries we recommend in integrations.
@@ -39,7 +38,7 @@ For instance, consider the "Connect to a wallet" button on
 the interface of [EvmoSwap](https://app.evmoswap.org/swap)
 or the analogous button on the interface of [Evmos Dashboard Assets](https://app.evmos.org/assets).
 
-### Identify the User's Wallet
+### Identify the user's wallet
 
 Developers should determine whether users are using Keplr or MetaMask.
 This can be determined by checking the corresponding `window.ethereum` or `window.keplr` value.
@@ -65,7 +64,7 @@ if (!userHasMetaMask && !userHasKeplr) {
 After determining the wallet type, developers can list a user's
 connected accounts.
 
-### Get Connected Accounts
+### Get connected accounts
 
 :::tip
 **Note**: The example below uses the Evmos Mainnet `chainID`.
@@ -155,7 +154,7 @@ const result = await rawResult.json()
 */
 ```
 
-### Retrieve a User's Public Key
+### Retrieve a user's public key
 
 If the public key is not returned with the query above, developers must retrieve the public
 key using the wallet. The public key is needed to sign Cosmos transactions.
@@ -265,7 +264,7 @@ const params: MsgSendParams = {
 const tx: TxPayload = createTxMsgSend(context, params)
 ```
 
-### Sign the Transaction
+### Sign the transaction
 
 After creating the transaction, developers need to send the payload to the appropriate wallet to be signed.
 
@@ -285,7 +284,7 @@ signing format or the native Cosmos `SignDirect` format.
 We encourage using the `SignDirect` format, since it provides
 a native signing experience.
 
-#### Sign the Transaction with MetaMask (EIP-712)
+#### Sign the transaction with MetaMask (EIP-712)
 
 Evmos supports EIP-712 signatures to sign [Cosmos transactions](https://docs.cosmos.network/main/core/transactions)
 using Ethereum wallets such as MetaMask.
@@ -408,7 +407,7 @@ const signedTx = createTxRaw(
 )
 ```
 
-### Broadcast the Transaction
+### Broadcast the transaction
 
 Broadcasting takes place the same way for all Cosmos transactions, regardless of how
 they are signed.
@@ -441,12 +440,12 @@ const broadcastPost = await fetch(
 const response = await broadcastPost.json()
 ```
 
-## Send Ethereum Transactions
+## Send Ethereum transactions
 
 In addition to Cosmos transactions, developers can generate, sign, and broadcast
 Ethereum Virtual Machine (EVM) payloads. Both MetaMask and Keplr offer this functionality.
 
-### Sign EVM Transaction using MetaMask
+### Sign EVM transaction using MetaMask
 
 Signing EVM transactions using MetaMask follows the same procedure as on any
 other EVM chain. See [MetaMask's documentation](https://docs.metamask.io/guide/sending-transactions.html)
@@ -471,7 +470,7 @@ const txHash = await ethereum.request({
 })
 ```
 
-### Sign EVM Transaction using Keplr
+### Sign EVM transaction using Keplr
 
 Keplr supports signing EVM transactions from the wallet. These must be
 broadcast using a provider, such as that from

@@ -12,12 +12,12 @@ This guide will cover the following topics:
 - [filtered EVM tracing with JS](#filtered-evm-tracing-with-js) <!-- markdown-link-check-disable-next-line -->
 - [JSON-RPC `debug_trace*` endpoints](#json-rpc-debugtrace-endpoints)
 
-## Basic EVM Tracing with JS
+## Basic EVM tracing with JS
 
 Tracing a transaction means requesting an Evmos node to re-execute the desired transaction
 with varying degrees of data collection.
 
-### Tracing Prerequisites
+### Tracing prerequisites
 
 Re-executing a transaction has a few prerequisites to be met.
 All historical state accessed by the transaction must be available, including:
@@ -36,7 +36,7 @@ and imported based on the synchronization and pruning configuration of a node.
   for which all required historical state is readily available in the network
   (however, data availability cannot be reasonably assumed).
 
-### Basic Traces
+### Basic traces
 
 The simplest type of transaction trace that [Geth](https://geth.ethereum.org/) can generate are raw EVM opcode traces.
 For every VM instruction the transaction executes, a structured log entry is emitted,
@@ -88,7 +88,7 @@ An example log for a single opcode entry has the following format:
 }
 ```
 
-### Limits of Basic Traces
+### Limits of basic traces
 
 Although raw opcode traces generated above are useful,
 having an individual log entry for every single opcode is too low level for most use cases,
@@ -101,14 +101,14 @@ To avoid these issues, [Geth](https://geth.ethereum.org/) supports running custo
 which have full access to the EVM stack, memory, and contract storage.
 This means developers only have to gather data that they actually need, and do any processing at the source.
 
-## Filtered EVM Tracing with JS
+## Filtered EVM tracing with JS
 
 Basic traces can include the complete status of the EVM at every point in the transaction's execution,
 which is huge space-wise.
 Usually, developers are only interested in a small subset of this information,
 which can be obtained by specifying a JavaScript filter.
 
-### Running a Simple Trace
+### Running a simple trace
 
 :::warning
 **Note**: `debug.traceTransaction` must be invoked from within the [Geth](https://geth.ethereum.org/) console,
@@ -166,7 +166,7 @@ so see [this document](https://docs.evmos.org/protocol/evmos-cli/single-node#ena
   The JSON.stringify function's documentation is [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify).
 If we just return the output, we get `\n` for newlines, which is why we need to use `console.log`.
 
-### How Does it Work?
+### How does it work?
 
 We call the same `debug.traceTransaction` function used for [basic traces](#basic-traces), but with a new parameter, `tracer`.
 This parameter is a string, which is the JavaScript object we use.
@@ -193,7 +193,7 @@ In this case, we use `retVal` to store the list of strings that we'll return in 
 The `step` function here adds to `retVal`: the program counter, and the name of the opcode there.
 Then, in `result`, we return this list to be sent to the caller.
 
-### Actual Filtering
+### Actual filtering
 
 For actual filtered tracing, we need an `if` statement to only log relevant information.
 For example, if we are interested in the transaction's interaction with storage, we might use:
@@ -236,7 +236,7 @@ The output looks similar to this:
 ]
 ```
 
-### Stack Information
+### Stack information
 
 The trace above tells us the program counter and whether the program read from storage or wrote to it.
 To know more, you can use the `log.stack.peek` function to peek into the stack.
@@ -347,7 +347,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"debug_traceBlockByNumber","param
 {"jsonrpc":"2.0","id":1,"result":[{"result":["68410", "51470"]}]}
 ```
 
-## Additional Information
+## Additional information
 
 See the sources below for details not covered above:
 

@@ -33,22 +33,21 @@ to send ERC-20 tokens cross-chain (via an IBC transfer) in a single step.
 To do so, you only need to ensure that the corresponding denomination is passed
 as a parameter, when performing an outgoing [transfer via IBC](https://ibc.cosmos.network/main/apps/transfer/messages.html#msgtransfer).
 
-
 ```go
 type MsgTransfer struct {
-	// ...
-	// the tokens to be transferred
-	Token types.Coin `protobuf:"bytes,3,opt,name=token,proto3" json:"token"`
-	// ...
+ // ...
+ // the tokens to be transferred
+ Token types.Coin `protobuf:"bytes,3,opt,name=token,proto3" json:"token"`
+ // ...
 }
 
 type Coin struct {
-	Denom  string `protobuf:"bytes,1,opt,name=denom,proto3" json:"denom,omitempty"`
-	Amount Int    `protobuf:"bytes,2,opt,name=amount,proto3,customtype=Int" json:"amount"`
+ Denom  string `protobuf:"bytes,1,opt,name=denom,proto3" json:"denom,omitempty"`
+ Amount Int    `protobuf:"bytes,2,opt,name=amount,proto3,customtype=Int" json:"amount"`
 }
 ```
 
-### ERC20 Token Pairs
+### ERC20 token pairs
 
 For [ERC-20 tokens that were deployed on the Evmos chain and then registered through governance](./erc20-registration.md) to support cross-chain transfer, you will have to specify the
 corresponding IBC denom (e.g. `erc20/0xe46910336479F254723710D57e7b683F3315b22B`)
@@ -62,7 +61,7 @@ token_pair:
   erc20_address: 0xe46910336479F254723710D57e7b683F3315b22B
 ```
 
-### Cosmos Token Pairs
+### Cosmos token pairs
 
 For [Cosmos tokens that were registered through governance](./cosmos-coin-registration.md) to support usage on
 the EVM (e.g. OSMO), you can specify the corresponding IBC denom (e.g.

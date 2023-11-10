@@ -44,18 +44,18 @@ which introduced the ERC-20 Module on Evmos.
 
 To register a Cosmos Coin, consider the following stages:
 
-## Drafting the Cosmos Coin Proposal
+## Drafting the cosmos coin proposal
 
 The following topics must be addressed when drafting a Cosmos Coin Proposal:
 
 1. Provide the profile of the person(s)/entity making the proposal.
 
-	Who are you? What is your involvement in Cosmos and/or other blockchain networks?
-	If you are working with a team,
-	who are the team members involved and what is their relevant experience?
-	What is the mission statement of your organization or business?
-	Do you have a website?
-	Showcase some work you've done and some proof of who you are.
+ Who are you? What is your involvement in Cosmos and/or other blockchain networks?
+ If you are working with a team,
+ who are the team members involved and what is their relevant experience?
+ What is the mission statement of your organization or business?
+ Do you have a website?
+ Showcase some work you've done and some proof of who you are.
 
 2. Promote understanding of the ERC-20 Module.
 
@@ -78,7 +78,7 @@ The following topics must be addressed when drafting a Cosmos Coin Proposal:
 Remember to provide links to the relevant [Commonwealth Evmos community](https://commonwealth.im/evmos) discussions
 concerning your proposal, as well as the [proposal on testnet](#submit-the-proposal-to-testnet).
 
-## Adding Network to Evmos Chain Registry
+## Adding network to Evmos chain registry
 
 All chain registry information can be found [here](https://github.com/evmos/chain-token-registry).
 The [Cosmos Chain Registry](https://github.com/cosmos/chain-registry) is used
@@ -88,11 +88,11 @@ To add chain registry information,
 please submit a pull request with the network details.
 Pull requests should be merged one business day after governance passes.
 
-## Submitting the Cosmos Coin Proposal
+## Submitting the Cosmos coin proposal
 
 After the drafting process, the Cosmos Coin Proposal can be submitted.
 
-### Formatting the Proposal's Text
+### Formatting the proposal's text
 
 The ideal format for a proposal is as a Markdown file (`*.md`) in a Github repo or [HackMD](https://hackmd.io/).
 Markdown
@@ -101,7 +101,7 @@ is a simple and accessible format for writing plain text files that is easy to l
 See the [Github Markdown Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 for details on writing markdown files.
 
-### Submit the Proposal to Testnet
+### Submit the proposal to testnet
 
 To [submit the proposal](governance/submit-a-proposal) to testnet
 through the command line with [`evmosd`](https://docs.evmos.org/protocol/evmos-cli#using-evmosd),
@@ -191,7 +191,7 @@ increases the likelihood of engagement
 and the possibility that you will be alert to a flaw
 before deploying your proposal to mainnet.
 
-## The On-Chain ERC-20 Proposal
+## The on-chain ERC-20 proposal
 
 A majority of the voting community
 should probably be aware of the proposal
@@ -201,7 +201,7 @@ you should have reasonable confidence that your proposal will pass
 before risking deposit contributions by [submitting the proposal](governance/submit-a-proposal).
 Make revisions to your draft proposal after each stage of engagement.
 
-### The Deposit Period
+### The deposit period
 
 The deposit period currently lasts 14 days.
 If you submitted your transaction with the minimum deposit (64 EVMOS),
@@ -226,7 +226,7 @@ Having your proposal in the deposit period is a good time
 to engage the Evmos community to prepare validators to vote
 and EVMOS-holders that are staking.
 
-### The Voting Period
+### The voting period
 
 At this point you'll want to track
 which validator has voted and which has not.

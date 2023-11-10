@@ -37,7 +37,7 @@ which introduced the ERC-20 Module on Evmos.
 
 To register an ERC-20, consider the following stages:
 
-## Drafting the ERC-20 Proposal
+## Drafting the ERC-20 proposal
 
 The following topics must be addressed when drafting an ERC-20 Proposal:
 
@@ -76,11 +76,11 @@ It's also a good idea to link the [ERC-20 Module documentation](https://docs.evm
 Remember to provide links to the relevant [Commonwealth Evmos community](https://commonwealth.im/evmos) discussions
 concerning your proposal, as well as the [proposal on testnet](#submit-the-proposal-to-testnet).
 
-## Submitting the ERC-20 Proposal
+## Submitting the ERC-20 proposal
 
 After the drafting process, the ERC-20 Proposal can be submitted.
 
-### Formatting the Proposal's Text
+### Formatting the proposal's text
 
 The ideal format for a proposal is as a Markdown file (ie.
 `.md`) in a Github repo or [HackMd](https://hackmd.io/).
@@ -93,7 +93,7 @@ learn.
 See the [Github Markdown Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 for details on writing markdown files.
 
-### Submit the Proposal to Testnet
+### Submit the proposal to testnet
 
 To [submit the proposal](governance/submit-a-proposal) to testnet through the command line
 with [`evmosd`](https://docs.evmos.org/protocol/evmos-cli#using-evmosd), use the following command with `register-erc20`:
@@ -131,7 +131,7 @@ and to signal that your proposal is about to go live on the mainnet.
 Submitting your proposal to the testnet increases the likelihood of engagement
 and the possibility that you will be alerted to a flaw before deploying your proposal to mainnet.
 
-## Register Token and Network to Chain-Token-Registry repo
+## Register token and network to chain-token-registry repo
 
 Before proceeding to an On-Chain proposal,
 it is crucial to list the token pair and network to our chain and token registry,
@@ -145,7 +145,7 @@ If there are a set of endpoints or preferred providers, please do suggest it in 
 Please consult our chain registry schema for more details.
 Once the governance proposal passes, the pull request should be merged in around one business day.
 
-## The On-Chain ERC-20 Proposal
+## The on-chain ERC-20 proposal
 
 A majority of the voting community should probably be aware of the proposal
 and have considered it before the proposal goes live on-chain.
@@ -153,7 +153,7 @@ If you're taking a conservative approach, you should have reasonable confidence
 that your proposal will pass before risking deposit contributions by [submitting the proposal](governance/submit-a-proposal).
 Make revisions to your draft proposal after each stage of engagement.
 
-### The Deposit Period
+### The deposit period
 
 The deposit period currently lasts 14 days.
 If you submitted your transaction with the minimum deposit (64 EVMOS),
@@ -174,7 +174,7 @@ A large cross-section of the blockchain/cryptocurrency community exists on Twitt
 Having your proposal in the deposit period is a good time to engage the Evmos community to prepare validators to vote
 and EVMOS-holders that are staking.
 
-### The Voting Period
+### The voting period
 
 At this point you'll want to track which validator has voted and which has not.
 You'll want to re-engage directly with top stake-holders, ie.

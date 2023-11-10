@@ -25,7 +25,7 @@ This document also discusses [incentives analysis through telemetry](#incentives
 
 Check out the [incentives module specification](https://docs.evmos.org/protocol/modules/incentives/) for more information on incentives.
 
-## Drafting the Contract Incentives Proposal
+## Drafting the contract incentives proposal
 
 The following topics must be addressed when drafting a Contract Incentives Proposal:
 
@@ -56,11 +56,11 @@ The following topics must be addressed when drafting a Contract Incentives Propo
 Remember to provide links to the relevant [Commonwealth Evmos community](https://commonwealth.im/evmos) discussions
 concerning your proposal, as well as the [proposal on testnet](#submit-the-proposal-to-testnet).
 
-## Submitting the Contract Incentives Proposal
+## Submitting the contract incentives proposal
 
 After the drafting process, the Contract Incentives Proposal can be submitted.
 
-### Formatting the Proposal's Text
+### Formatting the proposal's text
 
 The ideal format for a proposal is as a Markdown file (ie.
 `.md`) in a Github repo or [HackMd](https://hackmd.io/).
@@ -71,7 +71,7 @@ learn.
 See the [Github Markdown Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 for details on writing markdown files.
 
-### Submit the Proposal to Testnet
+### Submit the proposal to testnet
 
 To [submit the proposal](governance/submit-a-proposal) to testnet through the command line
 with [`evmosd`](https://docs.evmos.org/protocol/evmos-cli#using-evmosd),
@@ -131,7 +131,7 @@ and to signal that your proposal is about to go live on the mainnet.
 Submitting your proposal to the testnet increases the likelihood of engagement and the possibility
 that you will be alerted to a flaw before deploying your proposal to mainnet.
 
-## The On-Chain Contract Incentives Proposal
+## The on-chain contract incentives proposal
 
 A majority of the voting community should probably be aware of the proposal
 and have considered it before the proposal goes live on-chain.
@@ -139,7 +139,7 @@ If you're taking a conservative approach, you should have reasonable confidence
 that your proposal will pass before risking deposit contributions by [submitting the proposal](governance/submit-a-proposal).
 Make revisions to your draft proposal after each stage of engagement.
 
-### The Deposit Period
+### The deposit period
 
 The deposit period currently lasts 14 days.
 If you submitted your transaction with the minimum deposit (64 EVMOS),
@@ -160,7 +160,7 @@ A large cross-section of the blockchain/cryptocurrency community exists on Twitt
 Having your proposal in the deposit period is a good time to engage the Evmos community
 to prepare validators to vote and EVMOS-holders that are staking.
 
-### The Voting Period
+### The voting period
 
 At this point you'll want to track which validator has voted and which has not.
 You'll want to re-engage directly with top stake-holders, ie.
@@ -179,9 +179,9 @@ remember that no validator is obligated to vote,
 and that operators are likely occupied by competing demands for their attention.
 Take care not to stress any potential relationship with validator operators.
 
-## Incentives Analysis through Telemetry
+## Incentives analysis through telemetry
 
-### Telemetry Basics & Setup
+### Telemetry basics & setup
 
 The telemetry package of the [Cosmos SDK](https://github.com/cosmos/cosmos-sdk) allows operators and developers
 to gain insight into the performance and behavior of their applications.
@@ -193,7 +193,7 @@ This means that metrics will be aggregated over ten seconds, and metrics will be
 To query active metrics, set `api.enabled = true` in the `app.toml`.
 This exposes a single API endpoint: `http://localhost:1317/metrics?format={text|prometheus}`, the default being `text`.
 
-### Incentive Metrics
+### Incentive metrics
 
 Evmos supports the following metrics related to the `x/incentives` module,
 which can be collected for incentive analysis:
@@ -211,7 +211,7 @@ custom metrics will have to be made following the [above section](#telemetry-bas
 In addition, gRPC queries related to the `x/incentives` module found
 [here](https://docs.evmos.org/protocol/modules/incentives/) can produce useful analysis.
 
-### Additional Telemetry Information
+### Additional telemetry information
 
 See the telemetry sources below for details not covered above:
 

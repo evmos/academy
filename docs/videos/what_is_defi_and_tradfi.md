@@ -8,4 +8,4 @@ sidebar_position: 2
 
 ## Confused about what DeFi and TradFi mean?
 
-Don't worry - we got your back. 
+Don't worry - we got your back.

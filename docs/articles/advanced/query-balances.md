@@ -9,9 +9,9 @@ Learn how to query balances of IBC Cosmos Coins and ERC-20s on Evmos.
 This guide will cover the following query methods:
 
 - [Query Balances](#query-balances)
-  - [`evmosd` \& Tendermint RPC](#evmosd--tendermint-rpc)
-  - [JSON-RPC](#json-rpc)
-  - [gRPC](#grpc)
+    - [`evmosd` \& Tendermint RPC](#evmosd--tendermint-rpc)
+    - [JSON-RPC](#json-rpc)
+    - [gRPC](#grpc)
 
 :::warning
 **Note**: In this document, the command line is used to interact with endpoints.

@@ -12,7 +12,7 @@ and specifically the [best practices](best-practices#parameter-change-proposal).
 
 If a parameter-change proposal is successful, the change takes effect immediately upon completion of the voting period.
 
-## List of Parameters
+## List of parameters
 
 For a comprehensive list of available module parameters see the table below:
 
