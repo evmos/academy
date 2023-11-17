@@ -1,5 +1,4 @@
-# Governance Voting
-
+# Voting and Delegations
 
 ## Voting Period
 
@@ -18,12 +17,14 @@ Voting `NoWithVeto` provides a mechanism for a minority group representing a *th
 
 There are four criteria:
 
-1. A minimum deposit of 192 EVMOS is required for the proposal to enter the voting period
+<ol>
+   <li>1. A minimum deposit of 192 EVMOS is required for the proposal to enter the voting period
    - anyone may contribute to this deposit
-   - the deposit must be reached within 3 days (this is the deposit period)
-2. A minimum of 33.4% of the network's voting power (quorum) is required to participate to make the proposal valid
-3. A simple majority (greater than 50%) of the participating voting power must back the `Yes` vote during the 5-day voting period
-4. Less than 33.4% of participating voting power votes `NoWithVeto`
+   - the deposit must be reached within 3 days (this is the deposit period)</li>
+   <li>2. A minimum of 33.4% of the network's voting power (quorum) is required to participate to make the proposal valid</li>
+   <li>3. A simple majority (greater than 50%) of the participating voting power must back the `Yes` vote during the 5-day voting period</li>
+   <li>4. Less than 33.4% of participating voting power votes `NoWithVeto`</li>
+</ol>
 
 Currently, the criteria for submitting and passing/failing all proposal types is the same.
 

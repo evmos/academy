@@ -143,6 +143,11 @@ button,
   --ifm-color-primary-lighter: #dca06e;
   --ifm-color-primary-lightest: #c09068;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --step-text-color: white;
+}
+
+[data-theme='light']{
+  --step-text-color: black;
 }
 
 .pseudo-icon {
@@ -243,4 +248,12 @@ article a[href^="http"]::after {
   width: 0.6rem;
   display: inline-block;
   margin-left: 0.3rem;
+}
+
+.MuiStepper-root span {
+  color: var(--step-text-color) !important;
+}
+
+ul {
+  list-style-type: disc;
 }

@@ -16,16 +16,14 @@ While the governance module in Cosmos SDK is sufficient for on-chain governance,
 
 # Governance Overview
 
-:::tip
-**Note:** Working on a governance proposal? Make sure to look at the [best practices](./best-practices).
-:::
-
 Evmos has an on-chain governance mechanism for passing
 text proposals, changing [chain parameters](./chain-parameters),
 and spending [funds from the community pool](./community-pool).
 
 ## On- and off-chain Governance Structure
-
+:::tip
+**Note:** Working on a governance proposal? Make sure to look at the [best practices](./best-practices).
+:::
 ### Communication Methods
 
 Governance practices and decisions are communicated through different types of documents and design artifacts:
@@ -54,7 +52,3 @@ involvement from members in the extended community occurs organically.
     - General Evmos Telegram group
 - **[Twitter (@EvmosOrg)](https://twitter.com/EvmosOrg)**
     - Official Evmos Twitter
-
-## Future Plans
-
-WIP
