@@ -1,6 +1,4 @@
-
-
-# Proposal Submission for Voting
+# Submission Guidelines
 
 ## Preparing the Proposal Payload
 
@@ -50,12 +48,13 @@ At the end of the on-chain proposal, provide the IPFS hash or IPNS link to the p
 ### Community Pool
 
 For community pool spend proposals, there are five components:
-
-1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
-2. **Description** - the body of the proposal that further describes what is being proposed and details surrounding the proposal
-3. **Recipient** - the Evmos (bech32-based) address that will receive funding from the Community Pool
-4. **Amount** - the amount of funding that the recipient will receive in atto-EVMOS (`aevmos`)
-5. **Deposit** - the amount that will be contributed to the deposit (in `aevmos`) from the account submitting the proposal
+<ol>
+  <li>1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals</li>
+  <li>2. **Description** - the body of the proposal that further describes what is being proposed and details surrounding the proposal</li>
+  <li>3. **Recipient** - the Evmos (bech32-based) address that will receive funding from the Community Pool</li>
+  <li>4. **Amount** - the amount of funding that the recipient will receive in atto-EVMOS (`aevmos`)</li>
+  <li>5. **Deposit** - the amount that will be contributed to the deposit (in `aevmos`) from the account submitting the proposal</li>
+</ol>
 
 **Community Pool Spend Payloads**
 
@@ -92,13 +91,15 @@ Changes to the `gov` module are different from the other kinds of parameter chan
 
 For parameter-change proposals, there are seven components:
 
-1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
-2. **Description** - the body of the proposal that further describes what is being proposed and details surrounding the proposal
-3. **Subspace** - the Evmos module with the parameter that is being changed
-4. **Key** - the parameter that will be changed
-5. **Value** - the value of the parameter that will be changed by the governance mechanism
-6. **Denom** - `aevmos` (atto-EVMOS) will be the type of asset used as the deposit
-7. **Amount** - the amount that will be contributed to the deposit (in `aevmos`) from the account submitting the proposal
+<ol>
+  <li>1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals</li>
+  <li>2. **Description** - the body of the proposal that further describes what is being proposed and details surrounding the proposal</li>
+  <li>3. **Subspace** - the Evmos module with the parameter that is being changed</li>
+  <li>4. **Key** - the parameter that will be changed</li>
+  <li>5. **Value** - the value of the parameter that will be changed by the governance mechanism</li>
+  <li>6. **Denom** - `aevmos` (atto-EVMOS) will be the type of asset used as the deposit</li>
+  <li>7. **Amount** - the amount that will be contributed to the deposit (in `aevmos`) from the account submitting the proposal</li>
+</ol>
 
 **ParamChange Proposal Example**
 
@@ -133,27 +134,30 @@ The deposit `denom` is `aevmos` and `amount` is `20100000000000000000`. Therefor
 
 For information on how to use `evmosd` binary to submit an on-chain proposal through the governance module.
 
-1. `evmosd` is the command-line interface client that is used to send transactions and query Evmos
-2. `tx gov submit-proposal param-change` indicates that the transaction is submitting a parameter-change proposal
-3. `--from mykey` is the account key that pays the transaction fee and deposit amount
-4. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction
+<ol>
+  <li>1. `evmosd` is the command-line interface client that is used to send transactions and query Evmos</li>
+  <li>2. `tx gov submit-proposal param-change` indicates that the transaction is submitting a parameter-change proposal</li>
+  <li>3. `--from mykey` is the account key that pays the transaction fee and deposit amount</li>
+  <li>4. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction
    - the more content there is in the description of your proposal, the more gas your transaction will consume
    - if this number isn't high enough and there isn't enough gas to process your transaction, the transaction will fail
-   - the transaction will only use the amount of gas needed to process the transaction
-5. `--gas-prices` is the flat-rate per unit of gas value for a validator to process your transaction
-6. `--chain-id evmos_9001-2` is Evmos Mainnet. 
-   - the testnet chain ID is `evmos_9000-4`. For current and past testnet information, please look at the [testnet repository](https://github.com/evmos/testnets)
-7. `--node` is using a full node to send the transaction to the Evmos Mainnet
-
+   - the transaction will only use the amount of gas needed to process the transaction</li>
+  <li>5. `--gas-prices` is the flat-rate per unit of gas value for a validator to process your transaction</li>
+  <li>6. `--chain-id evmos_9001-2` is Evmos Mainnet. 
+   - the testnet chain ID is `evmos_9000-4`. For current and past testnet information, please look at the [testnet repository](https://github.com/evmos/testnets)</li>
+  <li>7. `--node` is using a full node to send the transaction to the Evmos Mainnet</li>
+</ol>
 
 ### Testnet Submission
 
 You may want to submit your proposal to the testnet chain before the mainnet for a number of reasons:
 
-1. To see what the proposal description will look like
-2. To signal that your proposal is about to go live on the mainnet
-3. To share what the proposal will look like in advance with stakeholders
-4. To test the functionality of the governance features
+<ol>
+<li>1. To see what the proposal description will look like</li>
+<li>2. To signal that your proposal is about to go live on the mainnet</li>
+<li>3. To share what the proposal will look like in advance with stakeholders</li>
+<li>4. To test the functionality of the governance features</li>
+</ol>
 
 Submitting your proposal to the testnet increases the likelihood that you will discover a flaw before deploying your proposal on mainnet. A few things to keep in mind:
 

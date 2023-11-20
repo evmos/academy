@@ -1,4 +1,4 @@
-# Core Definitions and Concepts
+# Definitions and Concepts
 
 ## Proposal Types
 
@@ -11,9 +11,9 @@ On-chain governance refers to all protocol level execution of proposals using Co
 Off-chain governance refers to all community decisions that do not require an on-chain protocol-level change. These types of decisions include a wide variety of topics and concepts, from passing meta-governance proposals to the formation of special task forces or workstreams. 
 
 
-<Callout type="warning" emoji="⚠️">
+:::tip
 All proposals are assumed to be `On-Chain Proposals` until the necessary infrastructure and toolings for `Off-Chain Voting` is established. Cosmos SDK's `TextProposal` will be used for `Off-Chain Proposals` for the time being.
-</Callout>
+:::
 
 ---
 
@@ -85,9 +85,9 @@ Special Initiatives and Projects are DAO-funded projects with a set budget and "
 | `crisis`       | `cosmos-sdk` | `ConstantFee` |The crisis module halts the blockchain under the circumstance that a blockchain invariant is broken. [Ref.](https://docs.cosmos.network/v0.46/modules/crisis/04_params.html)| 
 | `upgrade`       | `cosmos-sdk` | `MsgSoftwareUpgrade` | `x/upgrade` is an implementation of a Cosmos SDK module that facilitates smoothly upgrading a live Cosmos chain to a new (breaking) software version.  [Ref.](https://docs.cosmos.network/v0.46/modules/upgrade/)| 
 
-<Callout type="warning" emoji="⚠️">
+:::tip
 Emergency and Network Upgrade Proposals are exempt from following the Proposal Lifecycle Framework. The community is expected to do its due dilligence when such proposals are uploaded. 
-</Callout>
+:::
 
 ---
 
@@ -98,9 +98,9 @@ Emergency and Network Upgrade Proposals are exempt from following the Proposal L
 Proposal Phases are denoted as: `[IDEATION]`, `[PRE-PROPOSAL]`, `[PROPOSAL]`, `[VOTING]` for the 4-phases, and `[PASSED]`, `[REJECTED]`, `[DEFERRED]` for proposals in the other stages. Refer to the [Proposal Lifecycle](/governance/proposals/lifecycle) page for more information on proposal lifecycle phases. 
 
 
-<Callout type="warning" emoji="⚠️">
+:::tip
 Proposal Identification Tags are only required for Governance, Workstream (subDAO), and Community Treasury Related Proposals Only
-</Callout>
+:::
 
 The `ECP-#` tag will be assigned and added by a Governance Council member in the `Phase 2: ECP Formalization` or `Phase 3: ECP Signaling` phase. **You do not have to worry about adding in the tag yourself.**
 
