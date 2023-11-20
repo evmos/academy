@@ -419,7 +419,6 @@ html[data-theme='light'] {
 }
 
 .feature-card {
-  border: 1px solid #A3A18B;
   border-radius: 10px;
   padding: 20px;
   width: 100%;
@@ -486,6 +485,10 @@ html[data-theme='light'] {
     height: 250px;
     width: 300px;
   }
+ 
+  .landing-page-banner {
+    height: 140vh;
+  }
 }
 
 @media screen and (min-width: 996px){
@@ -549,6 +552,11 @@ html[data-theme='light'] {
     height: 250px;
     width: 300px;
   }
+
+  .landing-page-banner {
+    height: 100vh;
+  }
+
 }
 
 
@@ -752,4 +760,41 @@ details a{
 
 html[data-theme='light'] .navbar .navbar__logo {
   content: url('/static/img/logo-light-mode.svg')
+}
+
+
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 600px;
+  width: 100vw;
+  text-align: center;
+  vertical-align: center;
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-position: center center; /* Center the image horizontally and vertically */
+}
+
+.landing-page-banner h1{
+  font-size: 60px;
+  margin-top: 16%;
+  color: black;
+}
+
+.bg-default {
+  background-color: var(--background-color);
+}
+
+.banner-text {
+  font-size: 100px;
+  justify-content: center;
+  align-items: center;
+  line-height: 80%;
 }

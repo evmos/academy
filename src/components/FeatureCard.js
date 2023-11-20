@@ -5,7 +5,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default function FeatureCard({title, icon, link}) {
 
     return(
-        <div className="feature-card" style={{cursor:'pointer'}} onClick={() => window.location.href=`${link}`}>
+        <div className="feature-card bg-default" style={{cursor:'pointer'}} onClick={() => window.location.href=`${link}`}>
             <div className="container">
                 <div className="row">
                     <span style={{width: '25%', marginLeft:'5%'}}>

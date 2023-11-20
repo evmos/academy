@@ -15,6 +15,7 @@ import { faTelegram, faDiscord } from "@fortawesome/free-brands-svg-icons"
 import GlossaryIcon from "@site/static/img/glossary.svg"
 import CommunityIcon from "@site/static/img/community.svg"
 import DevIcon from "@site/static/img/dev.svg"
+import evmosBanner from "@site/static/img/evmos-banner.png";
 
 function Home() {
 
@@ -39,54 +40,43 @@ function Home() {
     <Layout title="Homepage" description="Evmos Academy">
       <main>
         <br />
-        <div className="container">
-          <h1 align="center" className="evmos-display evmos-header" style={{ fontWeight: '800'}}>LEARN EVERYTHING</h1>
-          <div className="row">
-            <div className="col col--2" />
-              <div className="box col col--8">
-              <div className="line-top"></div>
-                <img src={blackHoleImg.src} style={{width:'100%'}} />
-              <div className="line-bottom"></div>
+        <div className="landing-page">
+          <div className="landing-page-banner" style={{backgroundImage: `url(${evmosBanner.src})`}}>
+            <h1 className="banner-text" >LEARN <br/> EVERYTHING <br/> EVMOS</h1>
+            <div style={{marginBottom:'1%', marginTop:'1%'}}>
+              <button className="action-button" onClick={() => window.location.href = "/articles"}>Watch Videos</button>
+              <button className="action-button" onClick={() => window.location.href = "/articles"} style={{marginLeft:'5%'}}>Explore Articles</button>
             </div>
-          </div>
-          
-          
-        </div>
-        <div className="container gap-top">
-          <div className="row">
-            <div className="col col--6">
-              <h1 className="evmos-display evmos-header" >Evmos</h1>
+            <div className="row">
+              <div className="col col--1" />
+              <div className="col col--3">
+                <FeatureCard
+                  icon={<DevIcon style={{display:'inline'}} />}
+                  title="For Developers"
+                  link={"https://docs.evmos.org/"}
+                />
+              </div>
+              
+              <div className="col col--3">
+                <FeatureCard
+                  icon={<CommunityIcon style={{display:'inline'}} />}
+                  title="Enjoy Community"
+                  link={"articles/beginner/gettingstarted"}
+                />
+              </div>
+              
+              <div className="col col--3">
+                <FeatureCard
+                  link={"/faq"}
+                  icon={<GlossaryIcon style={{display:'inline'}} />}
+                  title="Browse FAQ"              
+                />
+              </div>
             </div>
-            <div className="col col--6">
-              <p className="fccream">The Evmos Academy is your guide to building on and using Evmos. Learn how to deploy an app, integrate wallets,
-                create a governance proposal, and more.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="container gap-top">
-          <div className="row">
-            <div className="col col--4">
-              <FeatureCard
-                icon={<DevIcon />}
-                title="For Developers"
-                link={"https://docs.evmos.org/"}
-              />
-            </div>
-            <div className="col col--4">
-              <FeatureCard
-                icon={<CommunityIcon />}
-                title="Enjoy Community"
-                link={"articles/beginner/gettingstarted"}
-              />
-            </div>
-            <div className="col col--4">
-              <FeatureCard
-                link={"/faq"}
-                icon={<GlossaryIcon />}
-                title="Browse FAQ"              
-              />
-            </div>
+            <p style={{marginTop:10}}>
+              The Evmos Academy is your guide to building on and using Evmos. Learn how to deploy an app,
+              integrate wallets, create a governance proposal, and more.            
+            </p>
           </div>
         </div>
 
