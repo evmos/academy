@@ -487,7 +487,7 @@ html[data-theme='light'] {
   }
  
   .landing-page-banner {
-    height: 140vh;
+    height: 160vh;
   }
 }
 
@@ -554,7 +554,7 @@ html[data-theme='light'] {
   }
 
   .landing-page-banner {
-    height: 100vh;
+    height: 120vh;
   }
 
 }
@@ -783,8 +783,8 @@ html[data-theme='light'] .navbar .navbar__logo {
 }
 
 .landing-page-banner h1{
-  font-size: 60px;
-  margin-top: 16%;
+  font-size: 120px;
+  margin-top: 18%;
   color: black;
 }
 
