@@ -1,0 +1,437 @@
+import Card from '@mui/material/Card';
+import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
+import Chip from '@mui/material/Chip';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import LaunchIcon from '@mui/icons-material/Launch';
+import Values from '/src/components/WSValues';
+import FundingTable from '/src/components/FundingRequest';
+import TabPanel from '/src/components/ContentTabs';
+
+# Operating Workstreams
+
+Workstreams have five potential states. Each of the five states and the requirements for a workstream in each state are outlined below:
+
+- **⚪ Informal:** The workstream is not funded by the DAO, and has not made a formal proposal with its goals and a budgetary request.
+- **🟡 Proposed:** The workstream has made a formal proposal to the DAO for a working budget.
+- **🟢 Active:** The workstream is active and funded by the DAO. 
+- **🛑 Inactive:** The workstream has been discontinued and is no longer being funded by the DAO.
+
+## Overview
+
+
+| 🔌  | Workstream  | Mission   | Budget  | Established  |
+|---|---|---|---|---|
+| ⚪  | [Governance Council](/governance/workstreams/current#governance-council)  | Protect, improve, and serve the Evmos network and community with neutrality and transparency. | TBD | Jul 22  |
+| ⚪  | [Community Mod & Support](/governance/workstreams/current#community-moderation-and-support)  | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. | TBD  | Jun 22  |
+
+
+## Informal Workstreams
+
+### Governance Council (WIP)
+
+    <Box mt={3}>
+    <Card sx={{ padding: '40px', pt: 0, backgroundColor: '#1212128f', backgroundImage: 'unset' }}>
+    <Divider textAlign="center" sx={{ mt: 2, mb: 2, fontWeight: 700, fontSize: '1.1rem'}}>
+    <Chip label="Workstream Introduction" />
+    </Divider>
+
+Decentralized governance is a double-edged sword with constant challenges to overcome and often burdened with inefficient processes. It is also the beauty and soul of a DAO, with the ethos of decentralization and equality at the very core. The Governance Council exists and operates as a neutral party with allegiances only to the Evmos network and the guiding values of the Evmos Constitution. While the workstream is tasked with various duties, our mandate is simple: to facilitate and protect the integrity of Evmos' governance processes and, to the best of our ability, create a fair and transparent environment in which the network and the community can prosper and thrive.  
+
+    <Values 
+        mission="Protect, improve, and serve the Evmos network and community with neutrality and transparency." 
+        vision="To see Evmos DAO evolve into a fully decentralized and self-sustainable organization that is capable of propelling the growth of the network."
+        values="Progressive Decentralization, Continuous Improvement, Hybrid Governance"
+    />
+
+    <Divider textAlign="center" sx={{ mt: 3, mb: 2, fontWeight: 700}}>
+    <Chip label="Workstream Scope and Duties" />
+    </Divider>
+
+<h4>Primary Duties</h4>
+
+    <Divider sx={{ mt: 2, mb: 2, fontWeight: 700}} />
+
+<div className="duties">
+
+**A. Governance Framework Improvement & Implementation**
+
+- The Constitution must be completed and amended as promised in Proposal 51, which ratified the *Interim* Constitution.
+- The Evmos Governance Framework serves to empower each member of the community by providing clear and standardized methods of interacting with the wider DAO, thereby defining its future shape and trajectory. It is crucial that we strive to continuously improve our processes. 
+- Governance processes that have been passed by the community must be implemented and enforced assuming that they adhere to the Guiding Principles of our Constitution.
+- We must be diligent in listening to the community's feedback on governance painpoints, shortcomings, and inefficiencies. 
+- We must strive to fix or improve inefficiencies and shortcomings when a viable plan is ideated or presented.
+- We must continue our research and observations into other DAOs and remain up to date with evolving DAO philosophies, tools, and scientific research. 
+
+**B. Growing Governance Participation & Engagement**
+
+- The strength of our governance relates directly to the participation levels in both on-chain and off-chain governance. 
+- Decisions and proposals can only be as well-rounded and well-defined as the number of participants that played a role in contributing to the ideation and feedback process. Similarly, a decision or proposal is only as credible as the consensus surrounding it. 
+- The Governance Workstream should aim to promote and increase engagement by stakeholders in all aspects of the governance processes.
+- The Governance Council will work to improve and provide access to the resources necessary to participate in the governance process — for all members of the community.
+- The Governance Workstream should be in constant engagement with the community, in as many mediums as possible. 
+
+**C. Facilitating Communications and the Flow of Information**
+
+- Effective communication is a crucial strategy that must be used by the Governance Workstream. Transparent and effective governance requires an effective, reliable, and unbiased communications strategy. Without communication and information flow, it is extremely difficult to facilitate an effective and efficient governance. 
+- The Governance Council will work to improve and create easier access to the resources necessary to understand and stay up-to-date in our governance — for all members of the community.
+- The Governance Council must establish a more consistent, high-quality information feed of all issues and proposals for the community at large to digest.
+- The Governance Council, when requested by the community, will act as a liasion to the Evmos Foundation and attempt to seek information and clarity into concerns or issues brought up. 
+- The Governance Council will remain in constant communication with the Foundation to ensure the alignment of the goals of the DAO, the community, and the core members. 
+- The Governance Council will work with the Community Moderation & Support team in the ideation of better communication initiatives, as well as pinpointing areas that are in need of improvements or clarifications.
+- The Governance Council will host community meetings, project introductions, and public forums when requested.
+- The Governance Council will continue to attend, participate in, and — if requested — take on the responsibility of hosting the weekly Governance meetings on Discord.
+
+**D. Governance and Proposal Framework Guidance and Feedback**
+
+- The Governance Council will continue to provide assistance to individuals, teams, and projects that are seeking to submit a proposal. This includes all phases, from pre-Commonwealth ideation to the final on-chain submission, assuming that all procedures are being followed properly and in good faith. Our assistance in drafting proposals should not be seen as an endorsement or guarantee.
+- The Governance Workstream will always strive to voice all thoughts on an issue or proposal from a neutral, rational point of view.
+- The Governance Council will continue to work on improving governance documentation and begin ideating tools and resources for a more effective and user-friendly governance.
+
+**E. Onboarding of New Workstreams and sub-DAOs**
+
+The Governance Council will assist in the creation of new workstreams. When focusing on accelerating the progress of the DAO, the goal is to grow horizontally via more sub-DAOs (vs. growing vertically). Through more sub-DAOs, the entire org can increase the number of teams trying new approaches to solving and innovating on existing problems and focuses while maintaining the same level of meta-organizational admin/overhead required to run. Our general stance on workstream or funding proposals will be: 
+
+- Support funding proposals that presents a decent chance of driving forward KPIs
+- Explore funding proposals that may have a chance of bringing value and test the waters
+- Support the allocation of more resources to sub-DAOs that are producing results and are looking to expand
+- Investigate and potentially look into de-funding teams or initiatives that are not producing any results
+
+**F. Protocol & Cross-Chain Collaboration**
+
+- The Governance Workstream will continue to engage with and act as a community liaison with protocols and projects seeking to collaborate. 
+- The Governance Council will continue to engage in outreach to projects and protocols for potential collaborative initiatives that could be beneficial to the overall Evmos ecosystem.
+
+**G. Evmos DAO's Treasury Management, Diversification, & Growth**
+
+- The Governance Council will deploy a Gnosis Safe multi-sig contract to be used as Evmos DAO's Treasury.
+- This contract will act as the DAO's liquid treasury for various purposes, including contributor and bounty rewards, DAO grants, liquidity and incentive programs, asset diversification, and minor expenses that do not warrant its own proposal. 
+- The Governance Council will soon release its research and propose a plan for its plans to create a self-sustaining DAO.
+
+(More in ECP-3)
+
+</div>
+
+
+<h4>Special Projects & Initiatives</h4>
+
+    <Divider sx={{ mt: 2, mb: 2, fontWeight: 700}} />
+
+<div className="duties">
+
+**A. Community Liquidity Incentives Programs** (In Progress)
+
+- Although we have begun the "manual" Liquidity Incentives Program with our recent "Kickstart Evmos DeFi" proposal, our goal is to ultimately have this process be determined by the community on a merit or milestone based system.
+- In order to achieve this in a truly transparent and permissionless way, an Off-Chain Governance Framework is required. 
+
+**B. Off-Chain Community Governance Framework** (In Research)
+
+- Off-Chain governance, in the context of Evmos DAO, can be explained simply as all governance decisions that do not need to utilize the Cosmos SDKs `gov` module.
+- This is particularly an interesting topic, as it opens up a whole new realm of possibilities for conducting off-chain governance. For example, we are looking into [Conviction Voting](https://medium.com/giveth/conviction-voting-a-novel-continuous-decision-making-alternative-to-governance-aa746cfb9475) as a possible way to make future incentive programs' distributions allocated by the direct community.
+- Another example of our research into off-chain governance can be [viewed here](https://devfolio.co/projects/interchaindao-or-snapshot-proposal-to-cosmos-sdk-bebe) in which Snapshot, a very popular DAO platform for EVMs, was used to execute a testnet proposal. 
+
+
+**C. Perpetual Bounty Program** (Planned)
+
+The Community Bounty Fund is a perpetual, self-replenishing bounty fund that is designed to minimize community spending while helping with network decentralization efforts.
+
+The concept of a perpetual bounty fund is very straightforward and the establishment of the fund would only require a one-time spend request from the community pool.
+
+1. The initial funds are delegated to a distributed set of validators that are in the mid-low ranking.
+2. The authz module from Cosmos SDK is utilized to re-stake a minimum “maintenance” amount (to account for decreasing APY rates)
+3. Utilizing authz, the remainder of the rewards are sent to a multisig wallet.
+4. The daily rewards are then utilized to fund bounty programs for the community.
+
+When compared to a normal community pool budget request, this model would A) take the initial funding amount out of the unbonded circulating supply; B) align with the community goals of striving towards more decentralization; C) provide a steady stream of a workable budget to be bountied out responsibly and methodically.
+
+**D. Governance Engagement Initiatives** (In Research)
+
+- The Governance Workstream is constantly looking into ideas or tools that may help with participation rate pre-voting on chain.
+- We strongly believe that the best way to reduce failed proposals is to addresss all community concerns during the early stages of a proposal. Increased participation in these early stage proposals would greatly benefit Evmos governance, and is an initiative we are taking seriously.
+
+**E. Proposal Summary and Risk Assessment Reports** (Planned)
+
+- The Governance Workstream is looking to provide proposal summaries, context, and our risk assessments for all proposals that go on chain.
+- Talks of potentially integrating these reports and other valuable metadata around a proposal into popular block explorers have been initiated and may be considered.
+
+**F. Deployment of Public Goods and Services** (In Research)
+
+The Governance Council is currently looking into public goods and infrastructure that we believe is needed to:
+
+- Attract more projects and organizations to migrate to Evmos
+- Attract more developers to build on Evmos
+- Allow more flexibility and functionality in what's possible via governance
+- Increase governance participation rate and the flow of information
+
+Some projects that the Governance Council has initiated in this domain:
+
+- [Governance Issue Tracker](https://www.evmos.community/)
+- [Evmos RPC Proxy](https://github.com/EvmosGov/evmos-rpc-proxy)
+- [Evmos Datahub](https://github.com/EvmosGov/evmos-datahub)
+- [Webmos React Bootstrapping Kit](https://github.com/EvmosGov/webmos)
+- **Smart contracts for:** token vesting, payment streaming, payment splits
+
+**G. Validator Fairness Initiative** (In Progress)
+
+- The VFI Group was created a few months back in an attempt to get consensus on a Code of Conduct for Validators.
+- Although currently at a stalemate, there has been great discussions and is now over 100 members strong.
+- We must reach a consensus, as the Interim Constitution was proposed on the premise that these difficult but pressing issues would not be forgotten.
+
+
+<h4>Progress Report and Achievements</h4>
+
+The Evmos DAO has been operating informally with Governance Initiatives since early June 2022, and was formally recognized by the Evmos Community when the Constitution was ratified on August 31st, 2022. While we realize that we have much work ahead of us, we humbly celebrate the achievements the workstream and DAO members have made thus far.
+
+**Evmos Community Proposals**
+
+Assisted in, provided support to, or played a direct role in the proposals listed below.
+
+| #   | Title                                                               | Role              |
+| --- | ------------------------------------------------------------------- | ----------------- |
+| 27  | Evmos Get Momentum - $1m Evmos Developer Incentive Program Proposal | Feedback, Support |
+| 31  | Grant Request to Sponsor EVMOS Public RPC by Pocket Network         | Feedback          |
+| 34  | Extend Rektdrop Claims Period by 21 days                            | Direct            |
+| 35  | Register ERC20 for Osmosis                                          | Direct            |
+| 37  | Register ERC20 for ATOM (Cosmos Hub)                                | Direct            |
+| 39  | Evmos external incentives on Osmosis                                | Direct, Multisig  |
+| 40  | Evmos Developer Acquisition with Dystopia Labs                      | Feedback, Support |
+| 42  | Evmos Sponsorship of HackAtom Seoul 2022 / Korea Blockchain Week    | Direct, Multisig  |
+| 44  | Parameter change (maximum deposit time, minimum deposit amount.)    | Direct            |
+| 45  | Sponsor volunteer researcher for EVM-Inter-Chain lobby for Evmos    | Multisig          |
+| 48  | Register ERC20 for Stargaze (STARS)                                 | Direct            |
+| 49  | Register ERC20 for Regen Network (REGEN)                            | Direct            |
+| 51  | The Interim Constitution of Evmos DAO                               | Direct            |
+| 53  | Register ERC20 for Juno                                             | Direct            |
+| 54  | Covalent API's Integration and the #OneMillionWallets Hackathon     | Support, Multisig |
+| 56  | Register ERC20 for EEUR (e-Money Euro)                              | Direct            |
+| 57  | Incubation: ChainHub Texas Blockchain Projects for Evmos            | Support, Feedback |
+| 58  | Register ERC20 for axlUSDC (Axelar USDC)                            | Direct            |
+| 60  | Register ERC20 for axlWBTC (Axelar wBTC)                            | Direct            |
+| 61  | Register ERC20 for axlWETH (Axelar wETH)                            | Direct            |
+| 62  | Ethermint Funding Proposal For Past Development                     | Multisig          |
+| 64  | Launching the Evmos Liquidity Incentives Program                    | Direct, Multisig  |
+| 65  | Register ERC20 for stATOM (Stride Staked Atom)                      | Direct            |
+| 67  | Liquidity Mining for Axelar, Celer, and Gravity on Kinesis          | Support, Multisig |
+| 68  | Register ERC20 for USK (Stablecoin of Kujira)                       | Direct            |
+| 70  | Extending Osmosis External Incentives                               | Direct, Multisig  |
+| 71  | Evmos Faucet for DeFi Kickoff                                       | Direct, Multisig  |
+
+After posting the ["Passing a Community Proposal, Best Practices"](https://commonwealth.im/evmos/discussion/6022-passing-a-community-proposal-best-practices) guide, the Governance Workstream and DAO contributors assisted in passing **24 out of 25 proposals for a success rate of 96%.**
+
+We are currently assisting in the facilitation and/or drafting of various additional proposals ranging from protocol onboarding to incentives programs.
+
+**On-Chain Governance Participation**
+
+Evmos on-chain governance participation rate is currently the highest among the top Cosmos chains (as of data pulled Oct. 8th 2022) and is barely managing to maintain an upwards trend. With a participation rate of almost 90%, the Governance Workstream will most likely be fighting to maintain the status quo, as we are almost at the ceiling.
+
+| Rank | Network  | Voter Turnout | Sample Data (20 Props) | Data |
+| ---- | -------- | ------------- | --------------------------------- |-------------|
+| 1    | Evmos    | 87.35%        | Proposals 44 - 64                 | [Source <LaunchIcon />](https://docs.google.com/spreadsheets/d/1gOeVy87__DMSnd-qMkrD2zt4sLU_hNGU1B7KsTf25bo/edit#gid=1701165887)  |
+| 2    | Juno     | 82.88%        | Proposals 14 - 39                   | [Source <LaunchIcon />](https://docs.google.com/spreadsheets/d/1gOeVy87__DMSnd-qMkrD2zt4sLU_hNGU1B7KsTf25bo/edit#gid=248293121)  |
+| 3    | Osmosis  | 64.74%        | Proposals 319 - 340                | [Source <LaunchIcon />](https://docs.google.com/spreadsheets/d/1gOeVy87__DMSnd-qMkrD2zt4sLU_hNGU1B7KsTf25bo/edit#gid=1919390603)   |
+| 4    | Stargaze | 61.85%        | Proposals 30 - 53                    | [Source <LaunchIcon />](https://docs.google.com/spreadsheets/d/1gOeVy87__DMSnd-qMkrD2zt4sLU_hNGU1B7KsTf25bo/edit#gid=508354030) |
+| 5    | Cosmos   | 47.49%        | Proposals 56 - 77                    | [Source <LaunchIcon />](https://docs.google.com/spreadsheets/d/1gOeVy87__DMSnd-qMkrD2zt4sLU_hNGU1B7KsTf25bo/edit#gid=206262929) |
+
+
+<a href="https://docs.google.com/spreadsheets/d/1gOeVy87__DMSnd-qMkrD2zt4sLU_hNGU1B7KsTf25bo/edit#gid=1962230140" target="_blank"><img src="/gov-chart-2.svg" alt="Participation Rate" className="gov-chart"/></a>
+
+**Off-Chain Governance Participation**
+
+In addition to all the proposals that have gone on-chain, the Evmos Community has seen a tremendous, sustained growth in off-chain governance participation, specifically on Commonwealth.  
+
+**Achievements**
+
+- The Drafting & Ratification of the Interim Constitution
+- Sponsored 2 Hackathons, with 1 Upcoming
+- Consistant Growth in Commonwealth Engagement Rates
+- #2 Most Active Global Community on Commonwealth only after Ethereum
+- Visible Increase in Weekly Governance Council Attendance
+
+(**WIP**)
+
+</div>
+
+
+    <Divider textAlign="center" sx={{ mt: 4, mb: 2, fontWeight: 700}}>
+    <Chip label="Workstream Members & Responsibilities" />
+    </Divider>
+
+<div className="duties">
+
+
+<h4>Workstream Members and Organizational Structure</h4>
+
+**Workstream Structure**
+
+- The Governance Workstream will function as a two-level hierarchy, consisting of **Council Directors** and **Council Contributors**. The key difference between Directors and contributors is that contributors are not required to manage the budget and that they are not directly answerable to Evmos DAO for failing to fulfill the workstream's duties and responsibilities. 
+- This difference in accountability means that decision-making power must lie in the hands of the Directors rather than the contributors, and is the reason for this explicit hierarchy.
+- Workstream leaders in their second term are automatically elected to a Governance Council Director role.
+- In practice, it is expected that Council Contributors and Council Directors operate and communicate as equals. Directors will seek to always consult Contributors when making decisions regarding the future of the Governance Workstream.
+
+**Governance Council Directors**
+
+|Name |Role |Responsibilities |
+|---|---|---|
+|LPX |Governance Steward |Meta-Governance, Off-Chain Community Governance Framework, Perpetual Bounty Program, Governance Engagement Initiatives, Deployment of Public Goods and Services |
+|Benny Lava |Governance Steward |Community Liquidity Incentives Programs, Protocol & Cross-Chain Collaboration, DeFi Initiatives, IBC Liaison |
+|Kilo  |CMS Workstream Leader |Management of Community Mod & Support Team |
+|GV |Validator Liaison |Validator Fairness Initiative, Validator Communications and Notices |
+|Tricky |Foundation Liaison |Evmos DAO and Evmos Core Goal Alignment, Biz Dev Lead |
+
+**Governance Council Contributors | Open Positions** 
+
+We are looking for part-time or full-time contributors to fill the following positions that play a crucial role in assisting the Governance Council.  
+
+ - Executive Secretary of the Council
+     - The Executive Secretary will be responsible for various high-level administrative support including the scheduling and preparations of weekly meetings, maintaining a public DAO calendar, ensuring deadlines are met, etc.  
+ - Governance Counselors (x3)
+     - Governance Counselors assist projects and developers through our governance process, including pre-proposal feedback to proposal drafting assistance. 
+     - Governance Counselors should have excellent written communication skills and should be experts in Evmos DAO's Governance Framework. 
+ - Council Historian
+     - The Council Historian will work closely with the Executive Secretary and ensure that all public meetings are recorded and minutes provided. 
+     - The Council Historian will also be responsible for weekly data collection on Governance Metrics, as directed by the Directors.
+
+---
+
+**Governance Council Directors | Open Positions** 
+
+We are looking for full-time contributors to fill the following roles. The goal of these full-time contributor roles is to eventually grow into its own workstream.  
+
+ - Department of Education
+     - The mission of the Department of Education is to develop, maintain, and promote educational contents and programs for the Evmos Community. 
+     - This includes the creation of interactive educational content in governance related topics, and eventually the creation of technical content for developers.
+ - Department of Communications
+     - The Department of Communications is responsible for creating and coordinating direct dialogue between the Evmos DAO and the diverse Community Members.
+     - Through outreach, communication, townhall meetings, and official announcements from the Governance Council and the various workstreams of the DAO, the Dept. of Communications removes obstacles and barriers and creates opportunities to improve public awareness and involvement in the DAO.
+     - The Department of Communications will also be responsible for the creation of documentation and communication channels in non-English languages.
+     - The Department of Communications helps build and maintain the transparent, responsible, and accountable governance system that the Constitution calls for.
+ - Department of Growth & Outreach
+     - The Department of Growth will be responsible for the strategic outreach and engagement of developers, projects, and other DAOs for the purpose of ecosystem growth.
+     - Through the generation of leads, coordination with biz dev, outreach campaigns, and strategic bounties, the Department of Growth should ramp up community engagement, elevate the Evmos brand and awareness, illustrate our vision, mission, and values, and enable the facilitation of easy onboarding of projects and developers.
+ - Department of Research & Development
+     - The Department of R&D will work closely with the Governance Council to research, develop, and maintain key infrastructure and public goods and services. 
+
+---
+
+</div>
+
+
+    <Divider textAlign="center" sx={{ mt: 4, mb: 2, fontWeight: 700}}>
+    <Chip label="Workstream Budget Request" />
+    </Divider>
+
+<div className="duties">
+
+
+<h4>Funding Request</h4>
+
+Funding request made in ECP-2A.
+
+</div>
+
+
+    </Card>
+    </Box>
+
+### Community Moderation and Support (WIP)
+
+    <Box mt={3}>
+    <Card sx={{ padding: '40px', pt: 0, backgroundColor: '#1212128f', backgroundImage: 'unset' }}>
+
+    <Divider textAlign="center" sx={{ mt: 2, mb: 2, fontWeight: 700, fontSize: '1.1rem'}}>
+    <Chip label="Workstream Introduction" />
+    </Divider>
+
+<h4>Introduction</h4>
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    <Values 
+        mission="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt." 
+        vision="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+        values="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    />
+
+    <Divider textAlign="center" sx={{ mt: 3, mb: 2, fontWeight: 700}}>
+    <Chip label="Workstream Scope and Duties" />
+    </Divider>
+
+<h4>Primary Duties</h4>
+
+
+<div className="duties">
+
+**A. Governance Framework Improvement & Implementation**
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+- Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+- Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+
+</div>
+
+
+<h4>Achievements, Milestones, & Timelines</h4>
+
+<ul>
+    <li>What are the key milestones for the initial target?</li>
+    <li>What is the timeline for completing the initial target?</li>
+</ul>
+
+    <Divider textAlign="center" sx={{ mt: 4, mb: 2, fontWeight: 700}}>
+    <Chip label="Workstream Members & Responsibilities" />
+    </Divider>
+
+<h4>Workstream Members and Organizational Structure</h4>
+
+<ul>
+    <li>Steward(s) / Leader(s): Who are the members managing the workstream and accountable for its outcomes?</li>
+    <li>Members: who is committed to working on this project and what are their responsibilities?</li>
+    <li>Compensation: what is the compensation amount per member, how will compensation work, and justify the amounts.</li>
+</ul>
+
+    <Divider textAlign="center" sx={{ mt: 4, mb: 2, fontWeight: 700}}>
+    <Chip label="Workstream Budget Request" />
+    </Divider>
+
+<div className="duties">
+
+<h4>Itemized Funding Request</h4>
+
+    <FundingTable rows={
+        [
+            { name: 'A. Member Compensation', amount: 1, denom: 'EVMOS', note: 'Distributed Once a Month'},
+            { name: 'B. Metrics Bonus', amount: 1, denom: 'EVMOS', note: 'A'}
+        ]
+    }
+    />
+
+<h4>Distribution of Funds</h4>
+
+- Requesting From: `CommunityPool`
+- Multisig Address: `TBD`
+- Contract Signatories: `TBD`
+
+</div>
+
+    </Card>
+    </Box>
+
+## Proposed Workstreams
+
+TBD
+
+## Probationary Workstreams
+
+N/A
+
+## Active Workstreams
+
+N/A
+
+## Inactive Workstreams
+
+N/A
+
+
