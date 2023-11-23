@@ -6,10 +6,12 @@ The voting period is currently a fixed 5-day period. During the voting period, p
 
 ## Voting Options
 
-1. **`Abstain`**: indicates that the voter is impartial to the outcome of the proposal.
-2. **`Yes`**: indicates approval of the proposal in its current form.
-3. **`No`**: indicates disapproval of the proposal in its current form.
-4. **`NoWithVeto`**: indicates stronger opposition to the proposal than simply voting `No`. If the number of `NoWithVeto` votes is greater than a third of total votes excluding `Abstain` votes, the proposal is rejected and the deposits are [burned](#burned-deposits).
+<ol>
+   <li>1. **`Abstain`**: indicates that the voter is impartial to the outcome of the proposal.</li>
+   <li>2. **`Yes`**: indicates approval of the proposal in its current form.</li>
+   <li>3. **`No`**: indicates disapproval of the proposal in its current form.</li>
+   <li>4. **`NoWithVeto`**: indicates stronger opposition to the proposal than simply voting `No`. If the number of `NoWithVeto` votes is greater than a third of total votes excluding `Abstain` votes, the proposal is rejected and the deposits are [burned](#burned-deposits).</li>
+</ol>
 
 Voting `NoWithVeto` provides a mechanism for a minority group representing a *third* of the participating voting power to reject a proposal that would otherwise pass. This makes explicit an aspect of the consensus protocol: it works as long as only up to [a third of nodes fail](https://docs.tendermint.com/v0.35/introduction/what-is-tendermint.html). In other words, greater than a third of validators are always in a position to cause a proposal to fail outside the formalized governance process and the network's norms, such as by censoring transactions. The purpose of internalizing this aspect of the consensus protocol into the governance process is to discourage validators from relying on collusion and censorship tactics to influence voting outcomes.
 
