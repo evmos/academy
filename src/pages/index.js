@@ -44,7 +44,7 @@ function Home() {
           <div className="landing-page-banner" style={{backgroundImage: `url(${evmosBanner.src})`}}>
             <h1 className="banner-text" >LEARN <br/> EVERYTHING <br/> EVMOS</h1>
             <div style={{marginBottom:5, marginTop:5}}>
-              <button className="action-button" onClick={() => window.location.href = "/articles"}>Watch Videos</button>
+              <button className="action-button" onClick={() => window.location.href = "/videos"}>Watch Videos</button>
               <button className="action-button" onClick={() => window.location.href = "/articles"} style={{marginLeft:'5%'}}>Explore Articles</button>
             </div>
             <div className="row">
