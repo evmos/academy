@@ -97,7 +97,7 @@ You may send your proposal via our support ticket system on [Discord](https://di
 
 <summary><b>Which wallets can I use for Evmos?</b></summary>
 
-You can find an overview of Evmos-compatible wallets [here](https://docs.evmos.org/use/wallet).
+You can find an overview of Evmos-compatible wallets [here](https://academy.evmos.org/articles/beginner/wallets).
 
 </details>
 
@@ -107,7 +107,7 @@ You can find an overview of Evmos-compatible wallets [here](https://docs.evmos.o
 
 Guides on how to add the Evmos network to your wallet:
 
-- Metamask [guide](https://docs.evmos.org/use/connect-your-wallet/metamask)
+- Metamask [guide](https://academy.evmos.org/articles/beginner/wallets)
 - Keplr [guide](https://www.notion.so/FAQ-6120cf83326942a498862aabab5a49c1)
 
 </details>
@@ -116,7 +116,7 @@ Guides on how to add the Evmos network to your wallet:
 
 <summary><b>Can I use Ledger with Evmos?</b></summary>
 
-Yes. A guide on how to start using Ledger with Evmos can be found [here](https://docs.evmos.org/use/connect-your-wallet/ledger).
+Yes. A guide on how to start using Ledger with Evmos can be found [here](https://academy.evmos.org/articles/beginner/connect-your-wallet/ledger).
 
 </details>
 
