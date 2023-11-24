@@ -819,7 +819,7 @@ html[data-theme='light'] .navbar .navbar__logo {
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1320px !important;
 }
 
 .footer__link-item svg {
