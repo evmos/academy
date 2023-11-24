@@ -28,6 +28,16 @@ const SECTIONS = [
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  
+  scripts: [
+    {
+      src: 'https://widget.mava.app',
+      id: 'MavaWebChat',
+      'data-token': '11db9fa83c1a56a2b225847978e9685d6f9ba5879716279aa9bf513f55bc2523',
+      defer: true
+    }
+  ],
+
   title: 'Evmos Academy',
   tagline: 'Learning Evmos',
   url: 'https://academy.evmos.org',
@@ -127,21 +137,26 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true
+        }
+      },
       navbar: {
-        title: 'Evmos Academy',
+        //title: 'Evmos Academy',
         logo: {
           alt: 'Evmos Logo',
-          src: 'img/evmos.svg',
+          src: 'img/Academy-Logo.svg',
         },
         items: [
           {
             position: 'left',
-            label: 'Articles',
-            to: '/articles/beginner/wallets',
+            label: 'ARTICLES',
+            to: '/articles',
           },
           {
             position: 'left',
-            label: 'Videos',
+            label: 'VIDEOS',
             to: '/videos',
           },
           {
@@ -157,7 +172,7 @@ const config = {
           // },
           {
             position: 'right',
-            label: 'Developer Docs',
+            label: 'DOCS',
             to: 'https://docs.evmos.org',
           },
           {
@@ -186,54 +201,102 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Academy',
+            title: 'Discover',
             items: [
               {
-                label: 'Register and Earn Revenue',
-                to: '/articles/advanced/incentives-registration',
+                label: 'Articles',
+                to: '/articles',
               },
               {
-                label: 'Learn About Wallet Integration',
-                to: '/articles/advanced/wallet-integration',
+                label: 'Videos',
+                to: '/videos',
               },
               {
-                label: 'Terminology',
-                to: '/articles/terminology',
+                label: 'FAQ',
+                to: '/faq',
+              },
+              {
+                label: 'Developer Docs',
+                to: 'https://docs.evmos.org',
+              }
+            ],
+          },
+          {
+            title: 'Evmos',
+            items: [
+              {
+                label: 'Evmos Apps',
+                href: 'https://app.evmos.org',
+              },
+              {
+                label: 'Evmos Homepage',
+                href: 'https://evmos.org',
+              },
+              {
+                label: 'Evmos Blog',
+                href: 'https://medium.com/evmos',
+              },
+              {
+                label: 'Evmos Careers',
+                href: 'https://boards.eu.greenhouse.io/evmos',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Connect',
             items: [
-              {
-                label: 'Telegram',
-                href: 'https://t.me/EvmosOrg',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/evmos',
-              },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/EvmosOrg',
               },
+              {
+                label: 'Discord',
+                href: 'https://discord.com/invite/evmos',
+              },
+              /*
+              {
+                label: 'Telegram',
+                href: 'https://t.me/EvmosOrg',
+              },
+              */
+              {
+                label: 'Github',
+                href: 'https://github.com/evmos',
+              },
+              {
+                label: 'Commonwealth',
+                href: 'https://commonwealth.im/evmos/discussions',
+              },
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/@Evmos',
+              },
             ],
           },
+          /*
           {
-            title: 'Links',
+            title: 'About',
             items: [
               {
-                label: 'Blog',
+                label: 'Manifesto',
                 href: 'https://medium.com/evmos',
               },
               {
-                label: 'Evmos GitHub',
+                label: 'Blog',
                 href: 'https://github.com/evmos',
               },
+              {
+                label: 'Careers',
+                href: 'https://github.com/evmos',
+              },
+              {
+                label: 'Contact Us',
+                href: 'https://github.com/evmos',
+              }
             ],
-          },
+          },*/
         ],
-        copyright: `Built with ❤️ by the Evmos Team. © ${new Date().getFullYear()} All rights reserved.`,
+        //copyright: `Built with ❤️ by the Evmos Team. © ${new Date().getFullYear()} All rights reserved.`,
       },
       prism: {
         theme: lightCodeTheme,
