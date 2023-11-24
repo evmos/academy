@@ -108,7 +108,7 @@ You can find an overview of Evmos-compatible wallets [here](https://academy.evmo
 Guides on how to add the Evmos network to your wallet:
 
 - Metamask [guide](https://academy.evmos.org/articles/beginner/wallets)
-- Keplr [guide](https://www.notion.so/FAQ-6120cf83326942a498862aabab5a49c1)
+- Keplr [guide](https://academy.evmos.org/articles/beginner/connect-your-wallet/keplr)
 
 </details>
 
