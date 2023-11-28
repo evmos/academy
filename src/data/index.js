@@ -48,27 +48,6 @@ export const ArticleData = [
         description: "Welcome builders! We are excited to have you build on Evmos. This guide will provide an overview of the available resources, infrastructure, and socials to get you running. This guide will be updated frequently to reflect the latest and greatest on Evmos."
     },
     {
-        title: 'Development',
-        category: ['Intermediate', 'Development'],
-        route: 'articles/intermediate/develop',
-        imgSrc: image1,
-        description: "Looking to build a dApp on Evmos? Following this documentation and our academy you can learn how and become part of the rich ecosystem of EVM builders on Cosmos."
-    },
-    {
-        title: 'Technical Architecture',
-        category: ['Advanced', 'Development'],
-        route: 'articles/advanced/architecture',
-        imgSrc: image2,
-        description: "Evmos is a scalable Proof-of-Stake blockchain that is fully compatible and interoperable with the Ethereum Virtual Machine (EVM)."
-    },
-    {
-        title: 'Wallet Integration',
-        category: ['Advanced', 'Development'],
-        route: 'articles/advanced/wallet-integration',
-        imgSrc: image1,
-        description: "Developers should determine whether users are using Keplr or MetaMask. This can be determined by checking the corresponding window.ethereum or window.keplr value."
-    },
-    {
         title: 'Proposal Process',
         category: ['Advanced', 'Governance'],
         route: 'articles/governance/proposal-process',
