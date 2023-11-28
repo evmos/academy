@@ -4,10 +4,8 @@ import styles from "./index.module.css"
 import Card from "../components/Card"
 import FeatureCard from "../components/FeatureCard"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBook, faComputer, faGlobe } from "@fortawesome/free-solid-svg-icons"
 import ArticleCard from "../components/ArticleCard";
 import crossChain from "@site/static/img/Midjourney.jpg"
-import blackHoleImg from "@site/static/img/blackhole0.png";
 import evmosBg from "@site/static/img/Evmos-BG-3.jpg";
 import { ArticleData, VideoData } from "../data"
 import VideoCard from "../components/VideoCard"
@@ -24,14 +22,8 @@ function Home() {
 
  React.useEffect(() => {
   const articlesToAdd = []
-  const indices = []
-  for (let i=0; i<4; i++){
-    const random = Math.floor(Math.random()*9)
-    if(indices.includes(random)) {
-      i = i-1;
-      continue;
-    }
-    articlesToAdd.push(ArticleData[random])
+  for (let i=0; i<3; i++){
+    articlesToAdd.push(ArticleData[i])
   }
   setArticleInfo(articlesToAdd)
  }, [])
@@ -79,24 +71,6 @@ function Home() {
             </p>
           </div>
         </div>
-
-        {articleInfo && articleInfo[3].title && false ? 
-          <div className="container gap-top" >
-            <div className="article-card" onClick={() => {
-            const link = articleInfo[3]['route'];
-            window.location.href = link;
-            }}>
-              <div className="row">
-                <div className="col col--5 article-text" >
-                  <h2 className="burgundy">{articleInfo[3].title}</h2>
-                  <p>{articleInfo[0].description}</p>
-                </div>
-                <div className="col col--6">
-                  <img src={articleInfo[3].imgSrc.src} />
-                </div>
-            </div>
-          </div>
-        </div> : <></> }
 
         <div className="container gap-top">
           <div className="row">

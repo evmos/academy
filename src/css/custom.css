@@ -802,7 +802,7 @@ html[data-theme='light'] .navbar .navbar__logo {
 }
 
 .landing-page-banner h1{
-  font-size: 120px;
+  font-size: 120px !important;
   margin-top: 18%;
   color: black;
 }
@@ -824,4 +824,8 @@ html[data-theme='light'] .navbar .navbar__logo {
 
 .footer__link-item svg {
   display: inline;
+}
+
+h1 {
+  font-size: 3rem !important;
 }
