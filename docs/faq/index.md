@@ -97,7 +97,7 @@ You may send your proposal via our support ticket system on [Discord](https://di
 
 <summary><b>Which wallets can I use for Evmos?</b></summary>
 
-You can find an overview of Evmos-compatible wallets [here](https://docs.evmos.org/use/wallet).
+You can find an overview of Evmos-compatible wallets [here](https://academy.evmos.org/articles/beginner/wallets).
 
 </details>
 
@@ -107,8 +107,8 @@ You can find an overview of Evmos-compatible wallets [here](https://docs.evmos.o
 
 Guides on how to add the Evmos network to your wallet:
 
-- Metamask [guide](https://docs.evmos.org/use/connect-your-wallet/metamask)
-- Keplr [guide](https://www.notion.so/FAQ-6120cf83326942a498862aabab5a49c1)
+- Metamask [guide](https://academy.evmos.org/articles/beginner/wallets)
+- Keplr [guide](https://academy.evmos.org/articles/beginner/connect-your-wallet/keplr)
 
 </details>
 
@@ -116,7 +116,7 @@ Guides on how to add the Evmos network to your wallet:
 
 <summary><b>Can I use Ledger with Evmos?</b></summary>
 
-Yes. A guide on how to start using Ledger with Evmos can be found [here](https://docs.evmos.org/use/connect-your-wallet/ledger).
+Yes. A guide on how to start using Ledger with Evmos can be found [here](https://academy.evmos.org/articles/beginner/connect-your-wallet/ledger).
 
 </details>
 
@@ -258,7 +258,7 @@ To withdraw or deposit (IBC transfer) any assets to and from Evmos you can use t
 
 <details>
 
-<summary><b>where can I find the official Evmos Logo Kit?</b></summary>
+<summary><b>Where can I find the official Evmos Logo Kit?</b></summary>
 
 The Evmos Press Kit can be found [here](https://drive.google.com/drive/folders/1fw9a8DgLJ0X-LuI4hHG36JkMC9eFGJL6). Make sure to follow the guidelines mentioned in the PDF file when making use of the kit.
 
