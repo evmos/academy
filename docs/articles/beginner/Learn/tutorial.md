@@ -35,6 +35,7 @@ constructor() payable {
     evmosValue = 0;
 }
 ```
+
 Purpose: This is the constructor function, executed only once during contract deployment. It initializes the contract's state variables.
 In the above code, the state variables are values that are stored in the contract storage. These variables can be modified during contract execution provided there is a relevant function.
 
@@ -88,7 +89,6 @@ function addContractValue() public payable onlyOwner {
     evmosValue += msg.value;
 }
 ```
-
 
 Purpose: Allows the owner to add tEVMOS to the contract.
 
@@ -156,21 +156,21 @@ We use Remix IDE to develop our payroll smart contract. The web-based IDE can be
 Here are some key functionalities of Remix IDE:
 
 - **Smart Contract Development:**
-  - *Solidity Editor:* Remix provides a dedicated Solidity code editor with syntax highlighting, autocompletion, and error checking to facilitate the development of smart contracts.
+    - *Solidity Editor:* Remix provides a dedicated Solidity code editor with syntax highlighting, autocompletion, and error checking to facilitate the development of smart contracts.
 
 - **Deployment and Interaction:**
-  - *Deploy Contracts:* Remix allows developers to deploy smart contracts directly from the IDE to various networks, including Evmos, including the mainnet and testnets.
-  - *Interact with Contracts:* Developers can interact with deployed contracts, execute functions, and view contract state using Remix's user-friendly interface.
+    - *Deploy Contracts:* Remix allows developers to deploy smart contracts directly from the IDE to various networks, including Evmos, including the mainnet and testnets.
+    - *Interact with Contracts:* Developers can interact with deployed contracts, execute functions, and view contract state using Remix's user-friendly interface.
 
 - **Code Analysis and Compilation:**
-  - *Static Analysis:* Remix performs static analysis on smart contract code, highlighting potential issues and vulnerabilities before deployment.
-  - *Compilation:* The IDE compiles Solidity code into bytecode, which is necessary for deploying contracts to the blockchain.
+    - *Static Analysis:* Remix performs static analysis on smart contract code, highlighting potential issues and vulnerabilities before deployment.
+    - *Compilation:* The IDE compiles Solidity code into bytecode, which is necessary for deploying contracts to the blockchain.
 
 - **Debugging:**
-  - *Debugging Tools:* Remix provides debugging tools to help developers identify and fix issues in their smart contracts. This includes breakpoints, step-by-step execution, and variable inspection.
+    - *Debugging Tools:* Remix provides debugging tools to help developers identify and fix issues in their smart contracts. This includes breakpoints, step-by-step execution, and variable inspection.
 
 - **Testing:**
-  - *Unit Testing:* Developers can create and run unit tests for their smart contracts using Remix, ensuring that the code functions as expected.
+    - *Unit Testing:* Developers can create and run unit tests for their smart contracts using Remix, ensuring that the code functions as expected.
 
 Open the Remix IDE in your web browser.
 
@@ -218,14 +218,14 @@ Our MetaMask wallet is now set up to deploy and interact with the contracts on E
 
 Since the default network for Remix IDE is a local Ethereum testnet, we must configure Remix IDE to deploy the contract on Evmos testnet. To do this:
 
--   Switch to the "Deploy & Run Transactions" tab.
--   Set Environment to Injected Provider - MetaMask
+- Switch to the "Deploy & Run Transactions" tab.
+- Set Environment to Injected Provider - MetaMask
 
 ![Provider](/img/articles/Tutorial-7.png)
 
 At this point, you might observe MetaMask popping up to select accounts to connect with Remix IDE. Choose the accounts you wish to use and click on connect.
 
-Select an account you wish to use to deploy the contract from the “ACCOUNT” tab above, and click the "Deploy" button. 
+Select an account you wish to use to deploy the contract from the “ACCOUNT” tab above, and click the "Deploy" button.
 
 You will observe another MetaMask popup to review the transaction and submit it. Click on ‘Confirm’ to deploy the contract.
 
@@ -243,9 +243,9 @@ Additionally, you can also observe and interact with the contract in Remix IDE:
 
 Now that the contract is deployed, you can interact with it:
 
--   Use the addContractValue function to add funds to the contract.
--   Use the setSalary function to set salaries for employees.
--   Use the paySalary function to withdraw your salary.
+- Use the addContractValue function to add funds to the contract.
+- Use the setSalary function to set salaries for employees.
+- Use the paySalary function to withdraw your salary.
 
 Each of these functions require you to confirm MetaMask transactions before they are executed. It is important to confirm the transaction metadata before approving the transaction.
 
@@ -254,9 +254,3 @@ Each of these functions require you to confirm MetaMask transactions before they
 Congratulations! You've successfully created a simple payroll smart contract. This is a basic example, and real-world payroll systems would require additional features and security considerations.
 
 Feel free to explore more advanced features and integrate this contract into a larger decentralized application (dApp). Happy coding!
-
-
-
-
-
-

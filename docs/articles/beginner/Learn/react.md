@@ -6,13 +6,13 @@ In this tutorial, we will build a React Web App to interact with the previously 
 
 This is an advanced tutorial, and it is expected that you have a fundamental understanding of the following dApp development components:
 
--   web3 npm library: https://www.npmjs.com/package/web3
--   React Web-App Development
--   HTML and JavaScript
--   JavaScript functions, asynchronous functions (async and await)
--   React states, and hooks (useEffect)
--   MetaMask Wallet.
--   Node.js (ensure it is installed on your computer)
+- web3 npm library: https://www.npmjs.com/package/web3
+- React Web-App Development
+- HTML and JavaScript
+- JavaScript functions, asynchronous functions (async and await)
+- React states, and hooks (useEffect)
+- MetaMask Wallet.
+- Node.js (ensure it is installed on your computer)
 
 Let’s begin!
 
@@ -43,7 +43,7 @@ This library helps us instantiate the contract and interact with it using functi
 
 In this step, we will start building the React component and input fields for interaction.
 
-Let us create a new file `ContractInteraction.js` in the src folder and paste the provided code snippets for the `ContractInteraction ` component.
+Let us create a new file `ContractInteraction.js` in the src folder and paste the provided code snippets for the `ContractInteraction` component.
 
 ### Step 4: Configure Contract Information
 
@@ -77,7 +77,7 @@ import contractInfo from '../assets/contract.json';
 import Web3 from 'web3';
 ```
 
-We import the useEffect and useState hooks from React. 
+We import the useEffect and useState hooks from React.
 
 The contract information (deployed contract address, and the ABI) will be imported from contract.json
 
@@ -187,10 +187,10 @@ const handleAddContractValue = async () => {
 
 Explanation:
 
--   const account = accounts[0];: It extracts the first account from the array of accounts connected with Metamask, and the first account is often the one connected with the dApp.
--   await contract.methods.addContractValue().send({ ... });: This line sends a transaction to the addContractValue function of the smart contract using the send method. The from field specifies the account sending the transaction, and the value field specifies the amount of Evmos to send along with the transaction. 
--   const value = await contract.methods.seeContractValue().call();: After successfully sending the transaction, it retrieves the updated value of the contract by calling the seeContractValue method.
--   setEvmosValue(Number(value.toString()));: It updates the React state variable evmosValue with the new value fetched from the contract. 
+- const account = accounts[0];: It extracts the first account from the array of accounts connected with Metamask, and the first account is often the one connected with the dApp.
+- await contract.methods.addContractValue().send({ ... });: This line sends a transaction to the addContractValue function of the smart contract using the send method. The from field specifies the account sending the transaction, and the value field specifies the amount of Evmos to send along with the transaction.
+- const value = await contract.methods.seeContractValue().call();: After successfully sending the transaction, it retrieves the updated value of the contract by calling the seeContractValue method.
+- setEvmosValue(Number(value.toString()));: It updates the React state variable evmosValue with the new value fetched from the contract.
 
 Set User Salary
 
@@ -215,7 +215,7 @@ const setSalaryOfUser = async () => {
 
 Explanation:
 
--   await contract.methods.setSalary(salaryAddress, salaryValue).send({ ... });: This line sends a transaction to the setSalary function of the smart contract using the send method. The from field specifies the account sending the transaction, and the function arguments salaryAddress and salaryValue are passed to the setSalary function.
+- await contract.methods.setSalary(salaryAddress, salaryValue).send({ ... });: This line sends a transaction to the setSalary function of the smart contract using the send method. The from field specifies the account sending the transaction, and the function arguments salaryAddress and salaryValue are passed to the setSalary function.
 
 The salaryAddress and salaryValue are set by the administrator in an HTML form that we will create later.
 
@@ -240,8 +240,8 @@ const handleViewSalary = async () => {
 
 Explanation:
 
--   const salary = await contract.methods.salaries(viewSalaryAddress).call();: This line calls the salaries mapping getter function of the smart contract using the call method. It retrieves the salary associated with the provided viewSalaryAddress.
--   setViewSalaryValue(web3.utils.fromWei(salary, 'ether'));: This updates the state variable viewSalaryValue by converting the retrieved salary from wei to ether using the web3.utils.fromWei method. This assumes that the salary is stored in wei in the smart contract.
+- const salary = await contract.methods.salaries(viewSalaryAddress).call();: This line calls the salaries mapping getter function of the smart contract using the call method. It retrieves the salary associated with the provided viewSalaryAddress.
+- setViewSalaryValue(web3.utils.fromWei(salary, 'ether'));: This updates the state variable viewSalaryValue by converting the retrieved salary from wei to ether using the web3.utils.fromWei method. This assumes that the salary is stored in wei in the smart contract.
 
 ### Step 5: Create HTML input elements
 
@@ -310,15 +310,15 @@ Start your React app:
 
 `npm start`
 
-This launches your app in development mode. Open http://localhost:3000 in your browser to see your app.
+This launches your app in development mode. Open Localhost 3000 in your browser to see your app.
 
 ### Step 8: Interact with the Smart Contract
 
 Now our app is running, and we can try and interact with it via our front-end!
 
--   Connect your MetaMask wallet to the Evmos network.
--   Ensure your smart contract is deployed to the specified address in contract.json.
--   Use the provided buttons to interact with the smart contract: view contract value, add contract value, set salary, view salary, and withdraw salary.
+- Connect your MetaMask wallet to the Evmos network.
+- Ensure your smart contract is deployed to the specified address in contract.json.
+- Use the provided buttons to interact with the smart contract: view contract value, add contract value, set salary, view salary, and withdraw salary.
 
 ![React-App](/img/articles/React-3.png)
 <p>Image: React App Interface</p>
@@ -337,6 +337,5 @@ Now our app is running, and we can try and interact with it via our front-end!
 ![React-App](/img/articles/React-7.png)
 
 <p>Image: View Salary of Employee</p>
-
 
 Congratulations! You've successfully created a React app that interacts with a smart contract deployed on the Evmos network. This tutorial assumes you have a basic understanding of React and the Evmos blockchain. If you encounter any issues, make sure to check the console for error messages and consult the documentation for the libraries used.

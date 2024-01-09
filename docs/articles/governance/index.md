@@ -21,9 +21,11 @@ text proposals, changing [chain parameters](./chain-parameters),
 and spending [funds from the community pool](./community-pool).
 
 ## On- and off-chain Governance Structure
+
 :::tip
 **Note:** Working on a governance proposal? Make sure to look at the [best practices](./best-practices).
 :::
+
 ### Communication Methods
 
 Governance practices and decisions are communicated through different types of documents and design artifacts:
