@@ -66,6 +66,7 @@ Stride contributes significantly to the Evmos and Cosmos ecosystem with the foll
 </ul>
 
 ### Tutorials on Stride
+
 https://docs.stride.zone/docs/getting-started-liquid-stake
 
 https://docs.stride.zone/docs/providing-liquidity
@@ -79,5 +80,3 @@ https://docs.stride.zone/docs/unstaking
 Github: https://github.com/Stride-Labs
 
 Twitter: https://twitter.com/stride_zone
-
-

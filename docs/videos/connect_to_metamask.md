@@ -6,8 +6,8 @@ This video is created as part of EvmosNation grant project (organized by Encode 
 
 In this video, we will learn the following:
 
--   Creating a React app
--   Integrating Web3.js library to the React app
--   Using Web3.js library to connect to Metamask wallet
--   Load addresses from Metamask wallet
--   Switch accounts in Metamask wallet
+- Creating a React app
+- Integrating Web3.js library to the React app
+- Using Web3.js library to connect to Metamask wallet
+- Load addresses from Metamask wallet
+- Switch accounts in Metamask wallet
