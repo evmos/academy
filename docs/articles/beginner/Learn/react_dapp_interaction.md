@@ -1,6 +1,6 @@
 # React Web-App for dApp Interaction
 
-In the previous tutorial, we developed a smart contract using Remix IDE and deployed it on Evmos Testnet using Metamask wallet. Completing the previous tutorial before moving on to this one is strongly recommended.
+In the previous [tutorial](tutorial.md), we developed a smart contract using Remix IDE and deployed it on Evmos Testnet using Metamask wallet. Completing the previous tutorial before moving on to this one is strongly recommended.
 
 In this tutorial, we will build a React Web App to interact with the previously deployed Payroll smart contract.
 

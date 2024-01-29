@@ -30,12 +30,6 @@ Chains participating in Stride's liquid staking join the Airdrop Program, where 
 
 ![Stride Incentivised Staking](/img/articles/Stride-2.png)
 
-### Providing Liquidity on Osmosis
-
-Stride presents users with a unique opportunity to actively participate in the financial ecosystem of the Cosmos blockchain by providing liquidity for their staked tokens. Stride's user-friendly approach enables token holders to contribute to the broader financial ecosystem seamlessly, creating a space where their staked assets can actively participate in various financial activities and transactions within the Cosmos network. Similarly, we can also provide liquidity on other platforms such as Forge, Astroport, and Shade DEX.
-
-![Providing Liquidity](/img/articles/Stride-3.png)
-
 ### Borrowing against stTokens on Umee
 
 Once your stTokens have been moved to Umee, you can supply them on the Umee money market, unlocking opportunities to earn lending yield and utilize them as collateral for cross-chain borrowing. The Umee app provides a convenient interface where you can explore a curated list of featured markets for various assets, offering a seamless experience in managing and leveraging your stTokens within the Umee ecosystem. Additionally, we can also borrow tokens against stTokens on other platforms such as Mars Protocol.
