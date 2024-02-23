@@ -10,7 +10,6 @@ In order to provide decentralized, reliable and public RPC to all developers in 
 
 Lava ipRPC aggregates RPC providers and provides a unified endpoint for Evmos's entire ecosystem. Regardless of whether you're using `gRPC`, `REST`, `JSON-RPC`, `TendermintRPC`, or `Web-gRPC`, you can query Evmos or post transactions. You can also use websockets to establish a continuous connection instead of conducting a discrete handshake for each relay.
 
-
 ## Endpoints 🔗
 
 A complete list of endpoints available are available [here](https://docs.evmos.org/develop/api/networks). For ipRPC, please attend only to addresses on the list which have `Lava Network` as a maintainer. A list is provided below for your convenience, as well!
@@ -40,16 +39,19 @@ A complete list of endpoints available are available [here](https://docs.evmos.o
 You can set your `evmosd` installation to use ipRPC for all calls and requests. To do so, you need to configure your default node to use the Tendermint-RPC URL for your respective network.
 
 For `mainnet` use:
+
 ```bash
 ./evmosd config node https://tm.evmos.lava.build:443
 ```
 
 For `testnet` use:
+
 ```bash
 ./evmosd config node https://tm.evmos-testnet.lava.build:443
 ```
 
 To ensure that your `evmosd` is correctly setup run the following:
+
 ```bash
 ./evmosd status 
 ```
@@ -62,49 +64,59 @@ If you get a readout like the following, you're properly configured!
 
 Now, all `evmosd` commands which communicate with the blockchain will be carried out securely and efficiently over Lava ipRPC.
 
-
 ## Test Commands 🖥️
 
 You can send requests to each endpoint directly from the command line without intervention from `evmosd`. This can be done with the use of different tools such as `curl` for HTTP-responsive protocols, `wscat` for web sockets, and `grpcurl` for gRPC. You can also use any of the endpoints programmatically. Some examples are below:
 
-
 ### 🟢 REST
+
 Send get requests to the appropriate cosmos endpoints!
+
 ```bash
 curl -X GET -H "Content-Type: application/json" https://rest.evmos.lava.build/cosmos/base/tendermint/v1beta1/blocks/latest
 curl -X GET -H "Content-Type: application/json" https://rest.evmos-testnet.lava.build/cosmos/base/tendermint/v1beta1/blocks/latest
 ```
 
 ### 🟢 Tendermint
+
 Send post requests to the Tendermint-RPC endpoint!
+
 ```bash
 curl -X POST -H "Content-Type: application/json" https://tm.evmos.lava.build --data '{"jsonrpc": "2.0", "id": 1, "method": "status", "params": []}'
 curl -X POST -H "Content-Type: application/json" https://tm.evmos-testnet.lava.build --data '{"jsonrpc": "2.0", "id": 1, "method": "status", "params": []}'
 ```
 
 ### 🟢 Tendermint/Websocket
+
 Connect using websockets over Tendermint-RPC.
+
 ```bash
 wscat -c wss://tm.evmos.lava.build/websocket -x '{"jsonrpc": "2.0", "id": 1, "method": "status", "params": []}'
 wscat -c wss://tm.evmos-testnet.lava.build/websocket -x '{"jsonrpc": "2.0", "id": 1, "method": "status", "params": []}'
 ```
 
 ### 🟢 JSON-RPC
+
 Send EVM-style request to JSON-RPC endpoints!
+
 ```bash
 curl -X POST -H "Content-Type: application/json" https://evmos.lava.build --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 curl -X POST -H "Content-Type: application/json" https://evmos-testnet.lava.build --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 ```
 
 ### 🟢 JSON-RPC/Websocket
+
 Connect using websockets over JSON-RPC.
+
 ```bash
 wscat -c wss://evmos.lava.build/websocket -x '{"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []}'
 wscat -c wss://evmos-testnet.lava.build/websocket -x '{"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []}'
 ```
 
 ### 🟢 gRPC
+
 Use gRPC calls directly with the Cosmos API.
+
 ```bash
 grpcurl grpc.evmos.lava.build:443 cosmos.base.tendermint.v1beta1.Service/GetLatestBlock
 grpcurl grpc.evmos-testnet.lava.build:443 cosmos.base.tendermint.v1beta1.Service/GetLatestBlock
